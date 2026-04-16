@@ -1,0 +1,21 @@
+// VerilogA for Graduation_project, trans_gate, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module trans_gate(CLK, CLKB, GND, IN, OUT, VDD);
+inout CLK;
+electrical CLK;
+inout CLKB;
+electrical CLKB;
+inout GND;
+electrical GND;
+inout IN;
+electrical IN;
+inout OUT;
+electrical OUT;
+inout VDD;
+electrical VDD;
+
+
+endmodule
