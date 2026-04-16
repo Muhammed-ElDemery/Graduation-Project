@@ -1,0 +1,23 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Mar  3 01:10:58 2026 
+Best design point: 1
+Design specs: 
+	Graduation_project:razavi_bootstrap:1	corner	Nominal - 
+	Vout_ac		Error	No
+	VT("/net073")		Error	No
+Design parameters: 
+	wireopt		19
+	Fin		196.1M
+	Ton		625p
+	Ts		1.25n
+	Ncyc		251
+	Nfft		1.024K
+	Tstop		2.56u
+	Tdrop		1.28u
+
+Interactive.235
+Number of points completed: 1
+Number of simulation errors: 2
+Interactive.235 completed. 
+Current time: Tue Mar  3 01:12:14 2026 
