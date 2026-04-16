@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      root
+HostName                       berkeley
+ProcessIdentifier              3674
+ProcessCreationTime_UTC        1772394708
+ProcessCreationTime_Readable   Sun Mar  1 21:51:48 2026 EET
+AppIdentifier                  /EDA/Cadence/IC618/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/islam/Cadence/Graduation_project/SAR_LOGIC_TESTBENCH/constraint/prop.cfg
+TimeEditLocked                 Mon Mar  2 00:28:54 2026 EET

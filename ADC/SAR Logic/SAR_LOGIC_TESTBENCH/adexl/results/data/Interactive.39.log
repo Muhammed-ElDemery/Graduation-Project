@@ -1,0 +1,23 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Mar  2 23:55:17 2026 
+Best design point: 1
+Design specs: 
+	Graduation_project:SAR_LOGIC_TESTBENCH:1	corner	Nominal - 
+Design parameters: 
+	wireopt		19
+	TCLK		100n
+	TRF		10p
+	TS		1.2u
+	VDD		800m
+	VCOMP		800m
+	Muln		1
+	Mulp		1
+	NFn		64
+	NFp		64
+
+Interactive.39
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.39 completed. 
+Current time: Mon Mar  2 23:55:45 2026 
