@@ -1,0 +1,32 @@
+** sch_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_C_filter.sch
+**.subckt GM_C_filter
+x1 net1 net5 net2 GND GM_cell
+x2 net1 GND net1 GND GM_cell
+x3 net4 net2 net3 GND GM_cell
+x4 OUT net3 OUT GND GM_cell
+x5 net2 net1 net4 GND GM_cell
+x6 net3 net4 OUT GND GM_cell
+C1 net1 GND {L_1} m=1
+C2 net4 net1 {L_2} m=1
+C3 OUT net4 {L_4} m=1
+C4 net4 GND {L_3} m=1
+C5 OUT GND {L_5} m=1
+C6 net2 GND {C_2} m=1
+C7 net3 GND {C_4} m=1
+V1 net5 GND {VIN}
+**.ends
+
+* expanding   symbol:  GM_cell.sym # of pins=4
+** sym_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sym
+** sch_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sch
+.subckt GM_cell Ioutp Vinp Vinn Ioutn
+*.ipin Vinp
+*.ipin Vinn
+*.iopin Ioutn
+*.iopin Ioutp
+G1 Ioutn Ioutp Vinp Vinn {gm}
+R1 Ioutn Ioutp {RO} m=1
+.ends
+
+.GLOBAL GND
+.end
