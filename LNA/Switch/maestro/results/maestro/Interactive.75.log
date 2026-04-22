@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Apr 20 13:14:08 2027 
+Best design point: 1
+Design specs: 
+	GP:Switch:1	corner	Nominal - 
+	OP1dB		inf
+Design parameters: 
+	wireopt		19
+
+Interactive.75
+Number of points completed: 2
+Number of simulation errors: 0
+Interactive.75 completed. 
+Current time: Tue Apr 20 13:14:35 2027 
