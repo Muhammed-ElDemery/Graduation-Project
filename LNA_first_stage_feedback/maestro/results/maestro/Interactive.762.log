@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Apr 20 13:38:46 2027 
+Best design point: 1
+Design specs: 
+	GP:LNA_first_stage_feedback:1	corner	Nominal - 
+	Gain		17.39	No
+	NF		870m	Yes
+	OIP3		15.16	No
+Design parameters: 
+	wireopt		19
+
+Interactive.762
+Number of points completed: 2
+Number of simulation errors: 0
+Interactive.762 completed. 
+Current time: Tue Apr 20 13:39:13 2027 
