@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Jan 24 10:39:23 2027 
+Best design point: 1
+Design specs: 
+	GP:charecterize_devices:1	corner	Nominal - 
+	NFmin@8G		278.8m
+	FT		148.7G
+	FMAX		186.2G
+	JD		37.04
+Design parameters: 
+
+Interactive.32
+Number of points completed: 23
+Number of simulation errors: 0
+Interactive.32 completed. 
+Current time: Sun Jan 24 10:42:45 2027 
