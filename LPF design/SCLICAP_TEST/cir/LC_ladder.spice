@@ -1,0 +1,12 @@
+LC_ladder.spice
+L1 net1 IN {L_2} 
+L2 OUT net1 {L_4} 
+C1 IN 0 {C_1} 
+C2 net1 0 {C_3} 
+R1 OUT 0 {RL} 
+R2 IN net2 {RS} 
+V1 net2 0 {VIN}
+C3 OUT 0 {C_5} 
+C4 IN net1 {C_Z1} 
+C5 net1 OUT {C_Z2} 
+.end

@@ -1,0 +1,22 @@
+** sch_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/LC_ladder_series_first.sch
+**.subckt LC_ladder_series_first
+L1 net4 net8 {L_1} m=1
+L2 net3 net4 {L_3} m=1
+C2 net4 net6 {C_2} m=1
+R1 OUT GND {RL} m=1
+R2 IN net1 {RS} m=1
+V1 net1 GND {VIN}
+C3 net2 net7 {C_4} m=1
+L4 net5 GND {L_2} m=1
+L5 net9 GND {L_4} m=1
+L6 net10 net2 {L_5} m=1
+R3 net8 IN {L_1/Q} m=1
+R4 net2 net3 {L_3/Q} m=1
+R5 net5 net6 {L_2/Q} m=1
+R6 net6 net4 {Q/C_2} m=1
+R7 net7 net2 {Q/C_4} m=1
+R8 net9 net7 {L_4/Q} m=1
+R9 OUT net10 {L_5/Q} m=1
+**.ends
+.GLOBAL GND
+.end

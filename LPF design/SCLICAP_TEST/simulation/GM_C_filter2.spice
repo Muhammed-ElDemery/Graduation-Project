@@ -1,0 +1,39 @@
+** sch_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_C_filter2.sch
+**.subckt GM_C_filter2
+x1 net1 net6 GND GND GM_cell gm={k_1*gm_1} AV={AV_1}
+x2 net1 GND net1 GND GM_cell gm={gm_1*k_s} AV={AV_1}
+x3 net2 net1 GND GND GM_cell gm={k_1*gm_1} AV={AV_1}
+x4 net1 GND net2 GND GM_cell gm={k_1*gm_1} AV={AV_1}
+x5 net3 net2 GND GND GM_cell gm={k_1*gm_1} AV={AV_1}
+x6 net2 GND net3 GND GM_cell gm={k_1*gm_1} AV={AV_1}
+C1 net2 GND {C_1} m=1
+C2 net3 GND {L_1} m=1
+x7 net4 net3 GND GND GM_cell gm={k_1*gm_1} AV={AV_1}
+x8 net3 GND net4 GND GM_cell gm={k_1*gm_1} AV={AV_1}
+C3 net4 GND {C_2} m=1
+x9 net5 net4 GND GND GM_cell gm={k_1*gm_1} AV={AV_1}
+x10 net4 GND net5 GND GM_cell gm={k_1*gm_1} AV={AV_1}
+C4 net5 GND {L_2} m=1
+x11 OUT net5 GND GND GM_cell gm={k_1*gm_1} AV={AV_1}
+x12 net5 GND OUT GND GM_cell gm={k_1*gm_1} AV={AV_1}
+C5 OUT GND {C_5} m=1
+x13 OUT GND OUT GND GM_cell gm={k_l*gm_1} AV={AV_1}
+V1 net6 GND {VIN}
+C6 net4 net2 {C_3} m=1
+C7 OUT net4 {C_4} m=1
+**.ends
+
+* expanding   symbol:  GM_cell.sym # of pins=4
+** sym_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sym
+** sch_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sch
+.subckt GM_cell Ioutp Vinp Vinn Ioutn  gm=100u AV=50
+*.ipin Vinp
+*.ipin Vinn
+*.iopin Ioutn
+*.iopin Ioutp
+G1 Ioutn Ioutp Vinp Vinn {gm}
+R1 Ioutn Ioutp {AV/gm} m=1
+.ends
+
+.GLOBAL GND
+.end

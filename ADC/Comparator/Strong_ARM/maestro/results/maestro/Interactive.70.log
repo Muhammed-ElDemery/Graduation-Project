@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Feb 26 22:46:26 2026 
+Best design point: 1
+Design specs: 
+	SAR:Strong_ARM:1	corner	Nominal - 
+	delay		42.11p
+Design parameters: 
+	wireopt		19
+
+Interactive.70
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.70 completed. 
+Current time: Thu Feb 26 22:46:43 2026 

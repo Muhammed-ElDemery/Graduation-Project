@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Apr 21 13:34:12 2026 
+Best design point: 1
+Design specs: 
+	GP_lib:test_bench_OTA:1	corner	Nominal - 
+	sqrt(integ(pow(getData("/in" ?result "noise") 2) 0 200000000 " "))		inf
+	(getData("N3:gm" ?result "dcOp") / (getData("P2:gm" ?result "dcOp") + getData("P2:gds" ?result "dcOp") + getData("N3:gds" ?result "dcOp")))		2.307
+	Total_C_ID		Error	No
+	(getData("P3:gm" ?result "dcOp") / (getData("N5:gm" ?result "dcOp") + getData("N5:gds" ?result "dcOp") + getData("P3:gds" ?result "dcOp")))		2.032
+Design parameters: 
+	wireopt		19
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 1
+ExplorerRun.0 completed. 
+Current time: Tue Apr 21 13:34:50 2026 

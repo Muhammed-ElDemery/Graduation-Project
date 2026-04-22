@@ -1,0 +1,19 @@
+LC_ladder_series_first_lossy2
+L1 net4 net8 {L_1} 
+L2 net3 net4 {L_3} 
+C2 net4 net6 {C_2} 
+R1 OUT 0 {RL} 
+R2 IN net1 {RS} 
+V1 net1 0 {VIN}
+C3 net2 net7 {C_4} 
+L4 net5 0 {L_2} 
+L5 net9 0 {L_4} 
+L6 net10 net2 {L_5} 
+R3 net8 IN {L_1/QF} 
+R4 net2 net3 {L_3/QF} 
+R5 net5 net6 {L_2/QF} 
+R6 net6 net4 {QF/C_2} 
+R7 net7 net2 {QF/C_4} 
+R8 net9 net7 {L_4/QF} 
+R9 OUT net10 {L_5/QF} 
+.end

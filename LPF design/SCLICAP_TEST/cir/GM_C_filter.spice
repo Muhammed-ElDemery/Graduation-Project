@@ -1,0 +1,30 @@
+GM_C_filter.spice
+x1 net1 net5 net2 0 GM_cell     gm={gm_1} RO={RO1}
+x2 net1 0 net1 0 GM_cell     gm={gm_1} RO={RO1}
+x3 net4 net2 net3 0 GM_cell  gm={gm_1} RO={RO1}
+x4 OUT net3 OUT 0 GM_cell    gm={gm_1} RO={RO1}
+x5 net2 net1 net4 0 GM_cell  gm={gm_1} RO={RO1}
+x6 net3 net4 OUT 0 GM_cell   gm={gm_1} RO={RO1}
+C1 net1 0 {L_1} 
+C2 net4 net1 {L_2} 
+C3 OUT net4 {L_4} 
+C4 net4 0 {L_3} 
+C5 OUT 0 {L_5} 
+C6 net2 0 {C_2} 
+C7 net3 0 {C_4} 
+V1 net5 0 {VIN}
+**.ends
+
+* expanding   symbol:  GM_cell.sym # of pins=4
+** sym_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sym
+** sch_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sch
+.subckt GM_cell Ioutp Vinp Vinn Ioutn gm={gm} RO={RO}
+*.ipin Vinp
+*.ipin Vinn
+*.iopin Ioutn
+*.iopin Ioutp
+G1 Ioutn Ioutp Vinp Vinn {gm}
+R1 Ioutn Ioutp {RO} 
+.ends
+
+.end

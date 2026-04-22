@@ -1,0 +1,3 @@
+#set editor {nohup subl -w &}
+set editor "gedit"
+#set editor "xfce4-terminal nvim"

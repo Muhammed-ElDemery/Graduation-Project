@@ -1,0 +1,39 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Apr 15 22:58:30 2026 
+Best design point: 1
+Design specs: 
+	Graduation_project:DIFF_SAR_BPS:1	corner	C0 - 
+	v /net9; tran (V)		Error	No
+Design parameters: 
+	wireopt		19
+	FIN		0
+	FS		80M
+	Muln		1
+	Mulp		1
+	nfet		0
+	NFn		64
+	NFp		64
+	pfet		0
+	SW_POS		2
+	TCLK		1.042n
+	TRF		10p
+	VCM		400m
+	VDD		800m
+	Vin		0
+	TSTOP		15n
+	Vinn		267.2m
+	Vinp		532.8m
+	Vdiff_toggle		265.6m
+	Cu		30f
+	CB		30f
+	VID		265.6m
+	TR		10p
+	slvtnfet		0
+	slvtpfet		0
+
+Interactive.202
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.202 completed. 
+Current time: Wed Apr 15 22:59:01 2026 

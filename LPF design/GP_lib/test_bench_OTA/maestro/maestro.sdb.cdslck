@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      islam
+HostName                       berkeley
+ProcessIdentifier              2269
+ProcessCreationTime_UTC        1776688313
+ProcessCreationTime_Readable   Mon Apr 20 14:31:53 2026 EET
+AppIdentifier                  /EDA/Cadence/IC618/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/islam/Cadence/GP_lib/test_bench_OTA/maestro/maestro.sdb
+TimeEditLocked                 Mon Apr 20 14:48:24 2026 EET

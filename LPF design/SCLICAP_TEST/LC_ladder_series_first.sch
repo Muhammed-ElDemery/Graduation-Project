@@ -1,0 +1,121 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+F {}
+E {}
+N -190 160 -40 160 {lab=GND}
+N -310 -80 -190 -80 {lab=IN}
+N 390 -80 390 -60 {lab=OUT}
+N 390 60 390 120 {lab=GND}
+N 130 160 290 160 {lab=GND}
+N -310 160 -190 160 {lab=GND}
+N -310 150 -310 160 {lab=GND}
+N -310 -20 -310 -10 {lab=#net1}
+N 170 -80 170 -40 {lab=#net2}
+N 80 -80 90 -80 {lab=#net3}
+N 170 -80 250 -80 {lab=#net2}
+N -50 160 140 160 {lab=GND}
+N 390 0 390 60 {lab=GND}
+N 390 120 390 160 {lab=GND}
+N 290 160 390 160 {lab=GND}
+N -310 50 -310 150 {lab=GND}
+N -70 -80 20 -80 {lab=#net4}
+N 150 -80 170 -80 {lab=#net2}
+N -40 -80 -40 -50 {lab=#net4}
+N -40 70 -40 90 {lab=#net5}
+N -40 150 -40 160 {lab=GND}
+N -40 10 10 10 {lab=#net6}
+N 10 10 10 50 {lab=#net6}
+N 10 50 50 50 {lab=#net6}
+N 10 -10 50 -10 {lab=#net4}
+N 10 -60 10 -10 {lab=#net4}
+N -40 -60 10 -60 {lab=#net4}
+N 240 -10 260 -10 {lab=#net2}
+N 230 -80 240 -10 {lab=#net2}
+N 170 30 260 50 {lab=#net7}
+N 170 20 170 40 {lab=#net7}
+N 370 -80 390 -80 {lab=OUT}
+C {ind.sym} -100 -80 1 0 {name=L1
+m=1
+value=\{L_1\}
+footprint=1206
+device=inductor}
+C {ind.sym} 50 -80 1 0 {name=L2
+value=\{L_3\}
+footprint=1206
+device=inductor}
+C {capa.sym} -40 -20 0 0 {name=C2
+m=1
+value=\{C_2\}
+footprint=1206
+device="ceramic capacitor"}
+C {res.sym} 390 -30 0 0 {name=R1
+value=\{RL\}
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} -310 -50 0 0 {name=R2
+value=\{RS\}
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} -50 160 0 0 {name=l3 lab=GND}
+C {vsource.sym} -310 20 0 0 {name=V1 value=\{VIN\} savecurrent=false}
+C {lab_pin.sym} 390 -80 1 0 {name=p1 sig_type=std_logic lab=OUT}
+C {capa.sym} 170 -10 0 0 {name=C3
+m=1
+value=\{C_4\}
+footprint=1206
+device="ceramic capacitor"}
+C {lab_pin.sym} -260 -80 1 0 {name=p2 sig_type=std_logic lab=IN}
+C {ind.sym} -40 120 0 0 {name=L4
+m=1
+value=\{L_2\}
+footprint=1206
+device=inductor}
+C {ind.sym} 170 130 0 0 {name=L5
+m=1
+value=\{L_4\}
+footprint=1206
+device=inductor}
+C {ind.sym} 280 -80 1 0 {name=L6
+value=\{L_5\}
+footprint=1206
+device=inductor}
+C {res.sym} -160 -80 1 0 {name=R3
+value=\{L_1/Q\}
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 120 -80 1 0 {name=R4
+value=\{L_3/Q\}
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} -40 40 2 0 {name=R5
+value=\{L_2/Q\}
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 50 20 2 0 {name=R6
+value=\{Q/C_2\}
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 260 20 2 0 {name=R7
+value=\{Q/C_4\}
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 170 70 2 0 {name=R8
+value=\{L_4/Q\}
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 340 -80 1 0 {name=R9
+value=\{L_5/Q\}
+footprint=1206
+device=resistor
+m=1}

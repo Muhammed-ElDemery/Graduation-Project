@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Mar  1 04:13:22 2026 
+Best design point: 1
+Design specs: 
+	Graduation_project:TSPC_DFF_Cell:1	corner	Nominal - 
+	Delay LH		11.43p
+Design parameters: 
+	wireopt		19
+	Ton		5n
+	Ts		10n
+	VDD		800m
+	Muln		2
+	Mulp		2
+	NFn		64
+	NFp		100
+
+Interactive.17
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.17 completed. 
+Current time: Sun Mar  1 04:13:32 2026 

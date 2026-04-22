@@ -1,0 +1,3145 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="0">_default</corner>
+			<corner enabled="0">C0
+				<vars>
+					<var>temperature
+						<value>-40</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">design_wrapper_mmw.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+						<modelsection>"ss_pre"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="1">C1
+				<vars>
+					<var>temperature
+						<value>125</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">design_wrapper_mmw.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+						<modelsection>"ff_pre"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<vars>
+			<var>wireopt
+				<value>19</value>
+			</var>
+			<var>FIN
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>FS
+				<value>50M</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Muln
+				<value>1</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Mulp
+				<value>1</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>nfet
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>NFn
+				<value>64</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>NFp
+				<value>64</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>pfet
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>SW_POS
+				<value>2</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>TCLK
+				<value>(1/FS)/12</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>TRF
+				<value>10p</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VCM
+				<value>400m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDD
+				<value>800m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vin
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>TSTOP
+				<value>1.2*(1/FS)</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vinn
+				<value>VCM-0.5*Vdiff_toggle</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vinp
+				<value>VCM+0.5*Vdiff_toggle</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vdiff_toggle
+				<value>-VDD+(682*(1.6/1024))</value>
+			</var>
+			<var>Cu
+				<value>30f</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>CB
+				<value>Cu</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VID
+				<value>Vdiff_toggle</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>TR
+				<value>10p</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>slvtnfet
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>slvtpfet
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>DIFF_SAR_BPS</value>
+					</option>
+					<option>lib
+						<value>Graduation_project</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>Graduation_project:DIFF_SAR_BPS:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>DIFF_SAR_BPS</value>
+					</option>
+					<option>lib
+						<value>Graduation_project</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>COMPP
+						<evalType>point</evalType>
+					</output>
+					<output>COMPN
+						<evalType>point</evalType>
+					</output>
+					<output>Vin
+						<evalType>point</evalType>
+					</output>
+					<output>VDACP
+						<evalType>point</evalType>
+					</output>
+					<output>VDACN
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Append</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.196
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>150M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>25f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.196</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 22:51:07 2026</timestamp>
+			<uuid>{98da59a0-31dd-4643-bbcf-bced80793443}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.196.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.196.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_225107757</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.196</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.196</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.196.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.196.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.197
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>100M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>25f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.197</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 22:52:02 2026</timestamp>
+			<uuid>{5152ed94-a2bb-4197-8d13-1ff994ca5d20}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.197.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.197.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_225203049</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.197</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.197</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.197.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.197.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.198
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>100M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>25f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.198</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 22:53:35 2026</timestamp>
+			<uuid>{806e21c7-883e-4d05-b4b3-503fc44bc29c}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.198.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.198.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_225335495</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.198</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.198</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.198.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.198.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.199
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>100M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>25f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.199</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 22:55:00 2026</timestamp>
+			<uuid>{f6af6aa6-82d4-4316-8219-a88ac6f0839a}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.199.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.199.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_225500594</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.199</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.199</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.199.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.199.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.200
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>80M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>25f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.200</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 22:55:53 2026</timestamp>
+			<uuid>{db3de456-9cfd-4e16-816d-9359c8685349}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.200.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.200.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_225553608</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.200</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.200</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.200.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.200.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.201
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>80M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>30f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.201</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 22:56:58 2026</timestamp>
+			<uuid>{92fcbcf1-4f22-48ee-ae65-e4d43d3ee8ab}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.201.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.201.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_225658536</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.201</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.201</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.201.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.201.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.202
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>80M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>30f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.202</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 22:58:29 2026</timestamp>
+			<uuid>{2a81d584-ab5c-4dfe-aad4-1e0e6bd8ffa4}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.202.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.202.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_225829741</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.202</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.202</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.202.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.202.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.203
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>80M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>30f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.203</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 23:01:47 2026</timestamp>
+			<uuid>{001d8cef-c745-4b4f-b9cc-ee2fe25f8c15}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.203.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.203.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_230147875</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.203</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.203</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.203.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.203.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.204
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>30f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.204</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 23:03:00 2026</timestamp>
+			<uuid>{4281c37d-9827-4165-b8c3-c0c69043adef}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.204.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.204.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_230300336</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.204</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.204</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.204.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.204.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.205
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="0">C0
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ss_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">C1
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design_wrapper_mmw.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/islam/Cadence/PDK_22FDX-EXT_V1.0_3.0_-_DOCUMENTS_----_NOTE_-SYNOPSYS_CUSTOMCOMPILER-IPDK_IS_AVAILABLE._CONTACT_GF_FAE2021911T4576512/Models/Spectre/models/design_wrapper_mmw.lib.scs</modelfile>
+								<modelsection>"ff_pre"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>FIN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FS
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Muln
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Mulp
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFn
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NFp
+						<value>64</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SW_POS
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TCLK
+						<value>(1/FS)/12</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TRF
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vin
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TSTOP
+						<value>1.2*(1/FS)</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinn
+						<value>VCM-0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vinp
+						<value>VCM+0.5*Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vdiff_toggle
+						<value>-VDD+(682*(1.6/1024))</value>
+					</var>
+					<var>Cu
+						<value>30f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CB
+						<value>Cu</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VID
+						<value>Vdiff_toggle</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TR
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtnfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>slvtpfet
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Graduation_project:DIFF_SAR_BPS:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Graduation_project:DIFF_SAR_BPS:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Graduation_project:DIFF_SAR_BPS:1_none_Interactive.205</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>DIFF_SAR_BPS</value>
+							</option>
+							<option>lib
+								<value>Graduation_project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>COMPP
+								<evalType>point</evalType>
+							</output>
+							<output>COMPN
+								<evalType>point</evalType>
+							</output>
+							<output>Vin
+								<evalType>point</evalType>
+							</output>
+							<output>VDACP
+								<evalType>point</evalType>
+							</output>
+							<output>VDACN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 15 23:04:08 2026</timestamp>
+			<uuid>{f176a825-683a-4a87-a945-60c51927460c}</uuid>
+			<resultsname>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.205.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.205.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_230408570</localpsfdir>
+			<psfdir>/root/simulation/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.205</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.205</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Graduation_project/DIFF_SAR_BPS/adexl/results/data/Interactive.205.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.205.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

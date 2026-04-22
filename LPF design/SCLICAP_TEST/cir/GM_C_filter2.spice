@@ -1,0 +1,37 @@
+GM_C_filter2.spice
+x1 net1 net6 0 0 GM_cell gm={2*k_1*gm_1} AV={AV_1/2}
+x2 net1 0 net1 0 GM_cell gm={gm_1*k_s} AV={AV_1}
+x3 net2 net1 0 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+x4 net1 0 net2 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+x5 net3 net2 0 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+x6 net2 0 net3 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+C1 net2 0 {C_1} 
+C2 net3 0 {L_1} 
+x7 net4 net3 0 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+x8 net3 0 net4 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+C3 net4 0 {C_2} 
+x9 net5 net4 0 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+x10 net4 0 net5 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+C4 net5 0 {L_2} 
+x11 OUT net5 0 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+x12 net5 0 OUT 0 GM_cell gm={k_1*gm_1} AV={AV_1}
+C5 OUT 0 {C_5} 
+x13 OUT 0 OUT 0 GM_cell gm={k_l*gm_1} AV={AV_1}
+V1 net6 0 {VIN}
+C6 net4 net2 {C_3} 
+C7 OUT net4 {C_4} 
+**.ends
+
+* expanding   symbol:  GM_cell.sym # of pins=4
+** sym_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sym
+** sch_path: /home/abdo/material/forth_year/Graduation_Project/Filter/SCLICAP_TEST/GM_cell.sch
+.subckt GM_cell Ioutp Vinp Vinn Ioutn  gm=1 AV=50
+*.ipin Vinp
+*.ipin Vinn
+*.iopin Ioutn
+*.iopin Ioutp
+G1 Ioutn Ioutp Vinp Vinn {gm}
+R1 Ioutn Ioutp {AV/gm} 
+.ends
+
+.end

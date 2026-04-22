@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      root
+HostName                       berkeley
+ProcessIdentifier              3692
+ProcessCreationTime_UTC        1776252587
+ProcessCreationTime_Readable   Wed Apr 15 13:29:47 2026 EET
+AppIdentifier                  /EDA/Cadence/IC618/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/islam/Cadence/Graduation_project/Bottom_Plate_Switch/constraint/prop.cfg
+TimeEditLocked                 Wed Apr 15 14:18:08 2026 EET

@@ -1,0 +1,12 @@
+LC_ladder_series_first
+L1 net1 IN {L_1} 
+L2 net3 net1 {L_3} 
+C2 net1 net4 {C_2} 
+R1 OUT 0 {RL} 
+R2 IN net2 {RS} 
+V1 net2 0 {VIN}
+C3 net3 net5 {C_4} 
+L4 net4 0 {L_2} 
+L5 net5 0 {L_4} 
+L6 OUT net3 {L_5} 
+.end

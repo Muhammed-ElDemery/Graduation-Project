@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      root
+HostName                       berkeley
+ProcessIdentifier              3692
+ProcessCreationTime_UTC        1776252637
+ProcessCreationTime_Readable   Wed Apr 15 13:30:37 2026 EET
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/islam/Cadence/Graduation_project/Bottom_Plate_Switch/constraint/hierDesign.oa.cdslck
+TimeEditLocked                 Wed Apr 15 14:18:08 2026 EET
