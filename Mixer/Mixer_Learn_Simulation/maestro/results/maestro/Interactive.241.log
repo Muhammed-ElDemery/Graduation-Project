@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Apr 11 18:54:23 2026 
+Best design point: 1
+Design specs: 
+	Hazem_Lib:Mixer_Learn_Simulation:1	corner	Nominal - 
+	Z33 reOhm, 4G		17.87
+	Z33 imOhm, 4G		-1.562K
+Design parameters: 
+	MOS		"tt_pre"
+
+Interactive.241
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.241 completed. 
+Current time: Sat Apr 11 18:54:47 2026 

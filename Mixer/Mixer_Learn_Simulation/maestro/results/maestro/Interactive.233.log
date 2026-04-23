@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Apr  5 13:23:34 2026 
+Best design point: 11
+Design specs: 
+	Hazem_Lib:Mixer_Learn_Simulation:1	corner	fast - 
+	Output Referred IP3 Point		17.16	Yes
+	Output Referred IP2 Point		57.46	Yes
+	Hazem_Lib:Mixer_Learn_Simulation:1	corner	slow - 
+	Output Referred IP3 Point		17.54	Yes
+	Output Referred IP2 Point		58.69	Yes
+	Hazem_Lib:Mixer_Learn_Simulation:1	corner	Nominal - 
+	Output Referred IP3 Point		16.88	Yes
+	Output Referred IP2 Point		58.04	Yes
+Design parameters: 
+	MOS		"tt_pre"
+
+Interactive.233
+Number of points completed: 14
+Number of simulation errors: 0
+Interactive.233 completed. 
+Current time: Sun Apr  5 13:32:59 2026 

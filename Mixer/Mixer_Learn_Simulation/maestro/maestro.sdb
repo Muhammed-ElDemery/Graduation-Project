@@ -1,0 +1,3021 @@
+<?xml version="1.0"?>
+<setupdb version="6">maestro
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="0">fast
+				<vars>
+					<var>temperature
+						<value>-40</value>
+					</var>
+					<var>MOS
+						<value>"ff_pre"</value>
+					</var>
+				</vars>
+			</corner>
+			<corner enabled="0">slow
+				<vars>
+					<var>temperature
+						<value>85</value>
+					</var>
+					<var>MOS
+						<value>"ss_pre"</value>
+					</var>
+				</vars>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<vars>
+			<var enabled="0">wireopt
+				<value>19</value>
+				<dependentTests>
+					<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">MOS
+				<value>"tt_pre"</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">WF1
+				<value>700n:100n:900n</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">Mul1
+				<value>1</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">NF1
+				<value>16:8:32</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">Vb
+				<value>0.8</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Mixer_Learn_Simulation</value>
+					</option>
+					<option>lib
+						<value>Hazem_Lib</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var>lo_freq
+						<value>rf_freq-200M</value>
+					</var>
+					<var>NF1
+						<value>16</value>
+					</var>
+					<var>rf_freq
+						<value>4.4G</value>
+					</var>
+					<var>rf_Pin
+						<value>-10</value>
+					</var>
+					<var>WF1
+						<value>800n</value>
+					</var>
+					<var>MOS
+						<value></value>
+					</var>
+					<var>Mul1
+						<value>1</value>
+					</var>
+					<var>Vb
+						<value>0.8</value>
+					</var>
+				</vars>
+				<origoptions>
+					<option>cell
+						<value>Mixer_Learn_Simulation</value>
+					</option>
+					<option>lib
+						<value>Hazem_Lib</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>Input Referred IP3 Point
+						<evalType>point</evalType>
+					</output>
+					<output>Input Referred 1dB Compression Point
+						<evalType>point</evalType>
+					</output>
+					<output>Input Referred IP2 Point
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<disabledtests></disabledtests>
+		<checksasserts netlist="0">
+			<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+		</checksasserts>
+		<plottingoptions>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>plottingmode
+				<value>Append</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<exploreroptions>
+			<exploreroption>waveformtemplate
+				<value>(None)</value>
+			</exploreroption>
+		</exploreroptions>
+		<incrementalsimsetup>
+			<useincremental>0</useincremental>
+			<reusenetlist>0</reusenetlist>
+			<copyreferenceresults>1</copyreferenceresults>
+		</incrementalsimsetup>
+		<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+		<incrementalsimulationoptions>
+			<incrementalSimulation>0</incrementalSimulation>
+		</incrementalsimulationoptions>
+		<jobpolicyname>Maestro Default</jobpolicyname>
+		<specs>
+			<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred IP3 Point
+				<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+				<resname>Input Referred IP3 Point</resname>
+				<specType>gt</specType>
+				<min>15</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred IP2 Point
+				<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+				<resname>Input Referred IP2 Point</resname>
+				<specType>gt</specType>
+				<min>50</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred 1dB Compression Point
+				<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+				<resname>Input Referred 1dB Compression Point</resname>
+				<specType>gt</specType>
+				<min>5</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+		</specs>
+		<runoptions>
+			<mode>Global Optimization
+				<runoption>referencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>startingstateorpoint
+					<value>Starting State</value>
+				</runoption>
+				<runoption>startingstatename
+					<value>NONE</value>
+				</runoption>
+				<runoption>lazy
+					<value>1</value>
+				</runoption>
+				<runoption>tillsatisfied
+					<value>1</value>
+				</runoption>
+				<runoption>timelimit
+					<value></value>
+				</runoption>
+				<runoption>numpoints
+					<value></value>
+				</runoption>
+				<runoption>ptswithnoimprovement
+					<value></value>
+				</runoption>
+				<runoption>pointsAfterAllSpecsSatisfied
+					<value></value>
+				</runoption>
+			</mode>
+		</runoptions>
+		<distributeoptions></distributeoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ExplorerRun.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>30G</value>
+							</var>
+							<var>NF1
+								<value>24</value>
+							</var>
+							<var>rf_freq
+								<value>32G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>1u</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>Auto</value>
+					</plottingoption>
+					<plottingoption>autoplotmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>(None)</value>
+					</plottingoption>
+					<plottingoption>autoplotsignals
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>autoplotwaveexpr
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>autoplotscalarexpr
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>annotatedesignname
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>annotatesimdate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>annotatedesignvars
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>annotatetemperature
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>annotatescalaroutputs
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>annotatespecmarkers
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>directplotmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>directplotafter
+						<value>All Selections Are Made</value>
+					</plottingoption>
+					<plottingoption>histogramtype
+						<value>pass/fail</value>
+					</plottingoption>
+					<plottingoption>histogrambins
+						<value>10</value>
+					</plottingoption>
+					<plottingoption>showhistogramdensity
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>showhistogramdeviation
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>showhistogrampercentmarkers
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>histogramqqplot
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>showhistogrampoints
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>printafter
+						<value>Each Selection</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<runnabletests>
+					<test>Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</runnabletests>
+				<allsweepsenabled>1</allsweepsenabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Dec 19 19:24:31 2025</timestamp>
+			<uuid>{427cc2f7-6c50-46e5-b1e1-a82364bc5cbe}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_192431261</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/ExplorerRun.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/ExplorerRun.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/ExplorerRun.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.232
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.232</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>600M:600M:8.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Output Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Output Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Output Referred IP3 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Output Referred IP3 Point</resname>
+						<specType>gt</specType>
+						<min>15</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Output Referred IP2 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Output Referred IP2 Point</resname>
+						<specType>gt</specType>
+						<min>50</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 13:15:53 2026</timestamp>
+			<uuid>{0dc597d1-16e0-4678-9b3a-7bd47247704e}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.232.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.232.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_131553340</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.232</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.232</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.232.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.232.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.233
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.233</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>600M:600M:8.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Output Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Output Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Output Referred IP3 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Output Referred IP3 Point</resname>
+						<specType>gt</specType>
+						<min>15</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Output Referred IP2 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Output Referred IP2 Point</resname>
+						<specType>gt</specType>
+						<min>50</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 13:23:34 2026</timestamp>
+			<uuid>{078dfa73-3294-4628-b739-8e81d5d56269}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.233.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.233.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_132334256</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.233</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.233</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.233.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.233.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.234
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.234</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>600M:600M:8.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred IP3 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Input Referred IP3 Point</resname>
+						<specType>gt</specType>
+						<min>15</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred IP2 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Input Referred IP2 Point</resname>
+						<specType>gt</specType>
+						<min>50</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred 1dB Compression Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Input Referred 1dB Compression Point</resname>
+						<specType>gt</specType>
+						<min>5</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+				<waveglobalsetups>
+					<waveglobals>
+						<waveglobal>algorithm
+							<value>Asymmetrical</value>
+						</waveglobal>
+					</waveglobals>
+				</waveglobalsetups>
+			</checkpoint>
+			<timestamp>Apr 5 13:23:35 2026</timestamp>
+			<uuid>{f227099d-874b-4c3a-9345-a43fd249f10f}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.234.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.234.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_132335402</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.234</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.234</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.234.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.234.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.235
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.235</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>600M:600M:8.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs></specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 19:15:16 2026</timestamp>
+			<uuid>{dd9ebb74-b44c-4776-a291-3f5026f1e700}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.235.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.235.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_191516286</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.235</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.235</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.235.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.235.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.236
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.236</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>600M:600M:8.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs></specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 5 19:15:18 2026</timestamp>
+			<uuid>{e4b299d0-52f2-4af2-83d3-5bc494872886}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.236.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.236.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_191518683</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.236</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.236</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.236.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.236.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.237
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.237</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>4.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred IP3 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Input Referred IP3 Point</resname>
+						<specType>gt</specType>
+						<min>15</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred IP2 Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Input Referred IP2 Point</resname>
+						<specType>gt</specType>
+						<min>50</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Hazem_Lib:Mixer_Learn_Simulation:1.Input Referred 1dB Compression Point
+						<testname>Hazem_Lib:Mixer_Learn_Simulation:1</testname>
+						<resname>Input Referred 1dB Compression Point</resname>
+						<specType>gt</specType>
+						<min>5</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+				<waveglobalsetups>
+					<waveglobals>
+						<waveglobal>algorithm
+							<value>Asymmetrical</value>
+						</waveglobal>
+					</waveglobals>
+				</waveglobalsetups>
+			</checkpoint>
+			<timestamp>Apr 5 19:17:03 2026</timestamp>
+			<uuid>{24f51933-5a51-4c54-a12f-99c5dffdcc46}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.237.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.237.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_191703534</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.237</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.237</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.237.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.237.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.238
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.238</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>4.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs></specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 11 18:17:48 2026</timestamp>
+			<uuid>{192ab324-1148-4a42-b7b0-71313079bd7b}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.238.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.238.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_181748581</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.238</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.238</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.238.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.238.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.239
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.239</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>4.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs></specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 11 18:44:40 2026</timestamp>
+			<uuid>{665f82ea-632a-40fc-b8c9-7395687847e1}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.239.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.239.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_184440566</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.239</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.239</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.239.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.239.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.240
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.240</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>4.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs></specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 11 18:48:46 2026</timestamp>
+			<uuid>{7b94038f-14c0-48a6-8d72-cb260d888a72}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.240.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.240.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_184846362</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.240</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.240</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.240.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.240.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.241
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">fast
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">slow
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var enabled="0">wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WF1
+						<value>700n:100n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Mul1
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">NF1
+						<value>16:8:32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Vb
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">Hazem_Lib:Mixer_Learn_Simulation:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Hazem_Lib:Mixer_Learn_Simulation:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.241</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>wireopt
+								<value>19</value>
+							</var>
+							<var>lo_freq
+								<value>rf_freq-200M</value>
+							</var>
+							<var>NF1
+								<value>16</value>
+							</var>
+							<var>rf_freq
+								<value>4.4G</value>
+							</var>
+							<var>rf_Pin
+								<value>-10</value>
+							</var>
+							<var>WF1
+								<value>800n</value>
+							</var>
+							<var>MOS
+								<value></value>
+							</var>
+							<var>Mul1
+								<value>1</value>
+							</var>
+							<var>Vb
+								<value>0.8</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>Mixer_Learn_Simulation</value>
+							</option>
+							<option>lib
+								<value>Hazem_Lib</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred IP3 Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred 1dB Compression Point
+								<evalType>point</evalType>
+							</output>
+							<output>Input Referred IP2 Point
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<disabledtests></disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Hazem_Lib:Mixer_Learn_Simulation:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<specs></specs>
+				<runoptions>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Starting State</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 11 18:54:22 2026</timestamp>
+			<uuid>{5db4076f-3c05-41fb-8014-5cc0c94e3ef4}</uuid>
+			<resultsname>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.241.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.241.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_185422437</localpsfdir>
+			<psfdir>/root/simulation/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.241</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.241</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/Hazem_Lib/Mixer_Learn_Simulation/maestro/results/maestro/Interactive.241.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.241.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

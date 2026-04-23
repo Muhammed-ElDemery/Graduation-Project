@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Dec 19 19:24:31 2025 
+Best design point: 1
+Design specs: 
+	Hazem_Lib:Mixer_Learn_Simulation:1	corner	Nominal - 
+Design parameters: 
+	wireopt		19
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Fri Dec 19 19:24:39 2025 

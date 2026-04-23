@@ -1,0 +1,16 @@
+//Revision 5
+//NOTE
+//VXL Configuration
+//END_NOTE
+
+config GP_Mixer;
+design Hazem_Lib.GP_Mixer:schematic;
+liblist Hazem_Lib;
+
+viewlist physConfig, schematic, symbol, functional;
+
+constraintviewlist constraint;
+stoplist layout, abstract, functional;
+
+
+endconfig
