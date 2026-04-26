@@ -1,0 +1,21 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Apr 26 11:20:08 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+Design parameters: 
+	wireopt		19
+	Mul		6
+	L		4u
+	W		18u
+	LRes		800n
+	MOS		"tt_pre"
+
+Interactive.18
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.18 completed. 
+Current time: Sun Apr 26 11:20:37 2026 

@@ -1,0 +1,26 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Apr 25 16:02:50 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ss - 
+	S11 max		-8.098	No
+	S22 max		-9.506	Near
+	S23 max		-7.892	No
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ff - 
+	S11 max		-7.037	No
+	S22 max		-11.47	Yes
+	S23 max		-9.17	Near
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	Nominal - 
+	S11 max		-8.813	No
+	S22 max		-10.37	Yes
+	S23 max		-8.89	No
+Design parameters: 
+	wireopt		19
+	MOS		"tt_pre"
+
+Interactive.21
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.21 completed. 
+Current time: Sat Apr 25 16:03:09 2026 

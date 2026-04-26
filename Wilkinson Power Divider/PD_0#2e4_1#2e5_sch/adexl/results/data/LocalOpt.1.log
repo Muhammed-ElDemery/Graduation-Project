@@ -1,0 +1,323 @@
+Starting Local Optimization...
+
+Current time: Sun Apr 26 11:29:29 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-2.76	No
+	max S22		-5.981	No
+	max S23		-10.28	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-2.738	No
+	max S22		-10.89	Yes
+	max S23		-5.985	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-2.749	No
+	max S22		-7.822	No
+	max S23		-9.102	Near
+Design parameters: 
+	wireopt		19
+	L		10u
+	W		10u
+	LRes		800n
+	MOS		"tt_pre"
+
+Best design point: 3
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-2.829	No
+	max S22		-6.045	No
+	max S23		-10.27	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-2.784	No
+	max S22		-10.98	Yes
+	max S23		-6.006	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-2.806	No
+	max S22		-7.892	No
+	max S23		-9.142	Near
+Design parameters: 
+	wireopt		19
+	L		20u
+	W		10u
+	LRes		800n
+	MOS		"tt_pre"
+
+Best design point: 4
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-2.831	No
+	max S22		-6.047	No
+	max S23		-10.27	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-2.784	No
+	max S22		-10.98	Yes
+	max S23		-6.007	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-2.807	No
+	max S22		-7.894	No
+	max S23		-9.142	Near
+Design parameters: 
+	wireopt		19
+	L		10u
+	W		20u
+	LRes		800n
+	MOS		"tt_pre"
+
+Best design point: 6
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-5.743	No
+	max S22		-5.847	No
+	max S23		-9.254	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-4.327	No
+	max S22		-7.687	No
+	max S23		-10.19	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-4.964	No
+	max S22		-6.51	No
+	max S23		-9.719	Near
+Design parameters: 
+	wireopt		19
+	L		50u
+	W		50u
+	LRes		2.4u
+	MOS		"tt_pre"
+
+Best design point: 7
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-11.32	Yes
+	max S22		-7.295	No
+	max S23		-8.637	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-7.52	No
+	max S22		-8.232	No
+	max S23		-9.679	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-9.391	Near
+	max S22		-7.607	No
+	max S23		-9.116	Near
+Design parameters: 
+	wireopt		19
+	L		70u
+	W		70u
+	LRes		3.4u
+	MOS		"tt_pre"
+
+Best design point: 8
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-15.12	Yes
+	max S22		-8.027	No
+	max S23		-8.337	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-9.83	Near
+	max S22		-8.619	No
+	max S23		-9.404	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.36	Yes
+	max S22		-8.19	No
+	max S23		-8.822	No
+Design parameters: 
+	wireopt		19
+	L		80u
+	W		80u
+	LRes		3.9u
+	MOS		"tt_pre"
+
+Best design point: 11
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-15.12	Yes
+	max S22		-8.127	No
+	max S23		-8.381	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-9.83	Near
+	max S22		-8.808	No
+	max S23		-9.469	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.36	Yes
+	max S22		-8.319	No
+	max S23		-8.877	No
+Design parameters: 
+	wireopt		19
+	L		80u
+	W		80u
+	LRes		3.7u
+	MOS		"tt_pre"
+
+Best design point: 14
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-15.12	Yes
+	max S22		-8.18	No
+	max S23		-8.404	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-9.83	Near
+	max S22		-8.909	No
+	max S23		-9.502	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.36	Yes
+	max S22		-8.388	No
+	max S23		-8.906	No
+Design parameters: 
+	wireopt		19
+	L		80u
+	W		80u
+	LRes		3.6u
+	MOS		"tt_pre"
+
+Best design point: 17
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-15.12	Yes
+	max S22		-8.236	No
+	max S23		-8.428	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-9.83	Near
+	max S22		-9.009	Near
+	max S23		-9.537	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.36	Yes
+	max S22		-8.46	No
+	max S23		-8.936	No
+Design parameters: 
+	wireopt		19
+	L		80u
+	W		80u
+	LRes		3.5u
+	MOS		"tt_pre"
+
+Best design point: 18
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-10.54	Yes
+	max S22		-8.605	No
+	max S23		-8.259	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-11.09	Yes
+	max S22		-9.23	Near
+	max S23		-9.446	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-14.04	Yes
+	max S22		-8.779	No
+	max S23		-8.83	No
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		80u
+	LRes		3.6u
+	MOS		"tt_pre"
+
+Best design point: 39
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-10.54	Yes
+	max S22		-8.656	No
+	max S23		-8.305	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-11.09	Yes
+	max S22		-9.29	Near
+	max S23		-9.482	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-14.04	Yes
+	max S22		-8.846	No
+	max S23		-8.86	No
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		80u
+	LRes		3.5u
+	MOS		"tt_pre"
+
+Best design point: 43
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-10.54	Yes
+	max S22		-9.285	Near
+	max S23		-8.73	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-11.09	Yes
+	max S22		-10.32	Yes
+	max S23		-9.975	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-14.04	Yes
+	max S22		-9.641	Near
+	max S23		-9.339	Near
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		80u
+	LRes		2.3u
+	MOS		"tt_pre"
+
+Best design point: 44
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-10.54	Yes
+	max S22		-9.914	Near
+	max S23		-9.149	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-11.09	Yes
+	max S22		-11.57	Yes
+	max S23		-10.21	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-14.04	Yes
+	max S22		-10.52	Yes
+	max S23		-9.798	Near
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		80u
+	LRes		1.5u
+	MOS		"tt_pre"
+
+Best design point: 45
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-10.54	Yes
+	max S22		-10.53	Yes
+	max S23		-9.505	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-11.09	Yes
+	max S22		-12.62	Yes
+	max S23		-9.917	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-14.04	Yes
+	max S22		-11.39	Yes
+	max S23		-10.1	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		80u
+	LRes		1u
+	MOS		"tt_pre"
+
+Best design point: 48
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-10.54	Yes
+	max S22		-10.39	Yes
+	max S23		-9.427	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-11.09	Yes
+	max S22		-12.42	Yes
+	max S23		-10.04	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-14.04	Yes
+	max S22		-11.19	Yes
+	max S23		-10.04	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		80u
+	LRes		1.1u
+	MOS		"tt_pre"
+
+LocalOpt.1 stopped because ADE GXL cannot find a better design point.
+Number of points completed: 44
+Number of simulation errors: 0
+LocalOpt.1 completed. 
+Current time: Sun Apr 26 11:41:54 2026 

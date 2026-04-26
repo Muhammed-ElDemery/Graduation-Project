@@ -1,0 +1,75 @@
+Starting Local Optimization...
+
+Current time: Sun Apr 26 12:32:56 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-5.537	No
+	max S22		-6.301	No
+	max S23		-8.589	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-13.97	Yes
+	max S22		-12.9	Yes
+	max S23		-10.04	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-9.33	Near
+	max S22		-11.98	Yes
+	max S23		-10.04	Yes
+Design parameters: 
+	wireopt		19
+	L		60u
+	W		75u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		450n
+	Mul		2
+
+Best design point: 3
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-10.25	Yes
+	max S22		-9.75	Near
+	max S23		-9.814	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-6.821	No
+	max S22		-11.79	Yes
+	max S23		-9.629	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-8.509	No
+	max S22		-10.58	Yes
+	max S23		-10.21	Yes
+Design parameters: 
+	wireopt		19
+	L		30u
+	W		75u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		450n
+	Mul		2
+
+Best design point: 4
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.37	Yes
+	max S22		-10.52	Yes
+	max S23		-9.624	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.25	Yes
+	max S22		-12.35	Yes
+	max S23		-9.995	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.94	Yes
+	max S22		-11.27	Yes
+	max S23		-10.12	Yes
+Design parameters: 
+	wireopt		19
+	L		30u
+	W		75u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		450n
+	Mul		3
+
+Received stop signal from user. 
+LocalOpt.4 completed. 
+Current time: Sun Apr 26 12:35:15 2026 

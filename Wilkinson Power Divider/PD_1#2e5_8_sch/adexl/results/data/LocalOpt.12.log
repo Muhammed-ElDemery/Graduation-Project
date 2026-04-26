@@ -1,0 +1,74 @@
+Starting Local Optimization...
+
+Current time: Sat Apr 25 16:50:50 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ss - 
+	S11 max		-10.02	Yes
+	S22 max		-9.329	Near
+	S23 max		-8.117	No
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ff - 
+	S11 max		-10.73	Yes
+	S22 max		-10.68	Yes
+	S23 max		-8.817	No
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	Nominal - 
+	S11 max		-13.58	Yes
+	S22 max		-9.918	Near
+	S23 max		-8.58	No
+Design parameters: 
+	wireopt		19
+	MOS		"tt_pre"
+	L		30u
+	W		40u
+	Lr		1.5u
+	Wr		650n
+
+Best design point: 4
+Design specs: 
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ss - 
+	S11 max		-9.958	Near
+	S22 max		-9.835	Near
+	S23 max		-8.411	No
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ff - 
+	S11 max		-10.72	Yes
+	S22 max		-10.96	Yes
+	S23 max		-8.377	No
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	Nominal - 
+	S11 max		-13.58	Yes
+	S22 max		-10.51	Yes
+	S23 max		-8.783	No
+Design parameters: 
+	wireopt		19
+	MOS		"tt_pre"
+	L		30u
+	W		40u
+	Lr		1u
+	Wr		650n
+
+Best design point: 12
+Design specs: 
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ss - 
+	S11 max		-9.933	Near
+	S22 max		-10.04	Yes
+	S23 max		-8.517	No
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	ff - 
+	S11 max		-10.72	Yes
+	S22 max		-10.94	Yes
+	S23 max		-7.991	No
+	GP_PowerDivider:PD_1.5_8_sch:1	corner	Nominal - 
+	S11 max		-13.58	Yes
+	S22 max		-10.68	Yes
+	S23 max		-8.809	No
+Design parameters: 
+	wireopt		19
+	MOS		"tt_pre"
+	L		30u
+	W		40u
+	Lr		1u
+	Wr		700n
+
+LocalOpt.12 stopped because ADE GXL cannot find a better design point.
+Number of points completed: 18
+Number of simulation errors: 0
+LocalOpt.12 completed. 
+Current time: Sat Apr 25 16:53:16 2026 

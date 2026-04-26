@@ -1,0 +1,184 @@
+Starting Local Optimization...
+
+Current time: Sun Apr 26 11:50:47 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.37	Yes
+	max S23		-9.542	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.51	Yes
+	max S23		-9.907	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.25	Yes
+	max S23		-10.11	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1u
+	MOS		"tt_pre"
+	WRes		360n
+
+Best design point: 7
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.3	Yes
+	max S23		-9.504	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.41	Yes
+	max S23		-9.975	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.15	Yes
+	max S23		-10.09	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1.05u
+	MOS		"tt_pre"
+	WRes		360n
+
+Best design point: 11
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.23	Yes
+	max S23		-9.467	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.3	Yes
+	max S23		-10.03	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.05	Yes
+	max S23		-10.06	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1.1u
+	MOS		"tt_pre"
+	WRes		360n
+
+Best design point: 26
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.3	Yes
+	max S23		-9.505	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.36	Yes
+	max S23		-10	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.12	Yes
+	max S23		-10.08	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1.1u
+	MOS		"tt_pre"
+	WRes		370n
+
+Best design point: 31
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.3	Yes
+	max S23		-9.505	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.22	Yes
+	max S23		-10.07	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.06	Yes
+	max S23		-10.07	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1.25u
+	MOS		"tt_pre"
+	WRes		400n
+
+Best design point: 41
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.36	Yes
+	max S23		-9.54	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.31	Yes
+	max S23		-10.03	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.15	Yes
+	max S23		-10.09	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1.2u
+	MOS		"tt_pre"
+	WRes		400n
+
+Best design point: 51
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.48	Yes
+	max S23		-9.6	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.32	Yes
+	max S23		-10.02	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.23	Yes
+	max S23		-10.11	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		440n
+
+Best design point: 52
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.07	Yes
+	max S22		-10.54	Yes
+	max S23		-9.629	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.37	Yes
+	max S22		-12.36	Yes
+	max S23		-10	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-13.1	Yes
+	max S22		-11.29	Yes
+	max S23		-10.12	Yes
+Design parameters: 
+	wireopt		19
+	L		90u
+	W		75u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		450n
+
+LocalOpt.3 stopped because ADE GXL cannot find a better design point.
+Number of points completed: 65
+Number of simulation errors: 0
+LocalOpt.3 completed. 
+Current time: Sun Apr 26 12:06:46 2026 

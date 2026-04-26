@@ -1,0 +1,2649 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">ss
+				<vars>
+					<var>temperature
+						<value>85</value>
+					</var>
+					<var>MOS
+						<value>"ss_pre"</value>
+					</var>
+				</vars>
+			</corner>
+			<corner enabled="1">ff
+				<vars>
+					<var>temperature
+						<value>-40</value>
+					</var>
+					<var>MOS
+						<value>"ff_pre"</value>
+					</var>
+				</vars>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<vars>
+			<var>wireopt
+				<value>19</value>
+			</var>
+			<var enabled="1">MOS
+				<value>"tt_pre"</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">L
+				<value>25u:1u:35u</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">W
+				<value>25u:1u:35u</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">Lr
+				<value>1u:0.1u:2u</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">Wr
+				<value>550n:10n:750n</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>PD_1.5_8_sch</value>
+					</option>
+					<option>lib
+						<value>GP_PowerDivider</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>GP_PowerDivider:PD_1.5_8_sch:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>PD_1.5_8_sch</value>
+					</option>
+					<option>lib
+						<value>GP_PowerDivider</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>ymax(db(spm('sp 1 1)))
+						<evalType>point</evalType>
+					</output>
+					<output>S22 max
+						<evalType>point</evalType>
+					</output>
+					<output>S23 max
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Append</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<allcornersenabled>1</allcornersenabled>
+		<specs>
+			<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+				<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+				<resname>S11 max</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>-10</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+				<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+				<resname>S22 max</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>-10</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+				<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+				<resname>S23 max</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>-10</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+		</specs>
+		<runoptions>
+			<mode>Local Optimization
+				<runoption>effort
+					<value>hookeJeeves</value>
+				</runoption>
+				<runoption>lazy
+					<value>1</value>
+				</runoption>
+				<runoption>tillsatisfied
+					<value>1</value>
+				</runoption>
+				<runoption>startingstateorpoint
+					<value>Reference Point</value>
+				</runoption>
+				<runoption>startingstatename
+					<value>NONE</value>
+				</runoption>
+				<runoption>timelimit
+					<value></value>
+				</runoption>
+				<runoption>numpoints
+					<value></value>
+				</runoption>
+			</mode>
+		</runoptions>
+		<startingpoint>
+			<vars>
+				<var>L
+					<value>30u</value>
+				</var>
+				<var>W
+					<value>40u</value>
+				</var>
+				<var>Lr
+					<value>1.5u</value>
+				</var>
+				<var>Wr
+					<value>650n</value>
+				</var>
+			</vars>
+		</startingpoint>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.20
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L
+						<value>20u:1u:50u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>30u:1u:50u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lr
+						<value>1u:0.1u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Wr
+						<value>600n:10n:700n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_Interactive.20</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>hookeJeeves</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>28u</value>
+						</var>
+						<var>W
+							<value>38u</value>
+						</var>
+						<var>Lr
+							<value>1.7u</value>
+						</var>
+						<var>Wr
+							<value>640n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 15:37:19 2026</timestamp>
+			<uuid>{1ee733ee-e031-4793-a2b4-bc13a63376ac}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.20.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.20.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_153719395</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.20</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.20</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.20.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.20.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.21
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L
+						<value>20u:1u:50u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>30u:1u:50u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lr
+						<value>1u:0.1u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Wr
+						<value>600n:10n:700n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_Interactive.21</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>hookeJeeves</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>28u</value>
+						</var>
+						<var>W
+							<value>38u</value>
+						</var>
+						<var>Lr
+							<value>1.7u</value>
+						</var>
+						<var>Wr
+							<value>640n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 16:02:49 2026</timestamp>
+			<uuid>{246d9ebd-3244-4ca2-8048-4e6f8616db6a}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.21.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_160249461</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.21</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.21</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.21.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L
+						<value>20u:1u:50u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">W
+						<value>30u:1u:50u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Lr
+						<value>1u:0.1u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Wr
+						<value>600n:10n:700n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_LocalOpt.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>hookeJeeves</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>28u</value>
+						</var>
+						<var>W
+							<value>38u</value>
+						</var>
+						<var>Lr
+							<value>1.7u</value>
+						</var>
+						<var>Wr
+							<value>640n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 16:04:19 2026</timestamp>
+			<uuid>{39239e9b-e9fc-4e25-984d-9d6803702e3c}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_160419903</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.9</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.9.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>28u</value>
+					</var>
+					<var>W
+						<value>38u</value>
+					</var>
+					<var>Lr
+						<value>1.7u</value>
+					</var>
+					<var>Wr
+						<value>640n</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L
+						<value>20u:10u:80u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">W
+						<value>30u:10u:100u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Lr
+						<value>1u:0.5u:5u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Wr
+						<value>400n:50n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_LocalOpt.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>hookeJeeves</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>28u</value>
+						</var>
+						<var>W
+							<value>38u</value>
+						</var>
+						<var>Lr
+							<value>1.7u</value>
+						</var>
+						<var>Wr
+							<value>640n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 16:06:23 2026</timestamp>
+			<uuid>{bbedc5df-486f-4e8c-b9d3-384304370dd5}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_160623326</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.10</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.10.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>28u</value>
+					</var>
+					<var>W
+						<value>38u</value>
+					</var>
+					<var>Lr
+						<value>1.7u</value>
+					</var>
+					<var>Wr
+						<value>640n</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L
+						<value>20u:10u:80u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">W
+						<value>30u:10u:100u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Lr
+						<value>1u:0.5u:5u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Wr
+						<value>400n:50n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_LocalOpt.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>conjugateGradient</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>28u</value>
+						</var>
+						<var>W
+							<value>38u</value>
+						</var>
+						<var>Lr
+							<value>1.7u</value>
+						</var>
+						<var>Wr
+							<value>640n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 16:12:24 2026</timestamp>
+			<uuid>{3f3dd0b7-a196-43d4-a7e2-35ff8f48a80c}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_161224699</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.11</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.11.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>28u</value>
+					</var>
+					<var>W
+						<value>38u</value>
+					</var>
+					<var>Lr
+						<value>1.7u</value>
+					</var>
+					<var>Wr
+						<value>640n</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.12
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L
+						<value>20u:10u:80u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">W
+						<value>30u:10u:100u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Lr
+						<value>1u:0.5u:5u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Wr
+						<value>400n:50n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_LocalOpt.12</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>conjugateGradient</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>30u</value>
+						</var>
+						<var>W
+							<value>40u</value>
+						</var>
+						<var>Lr
+							<value>1.5u</value>
+						</var>
+						<var>Wr
+							<value>650n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 16:50:48 2026</timestamp>
+			<uuid>{ccf00cbf-4726-4ef1-ad2a-797d9c43f13d}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.12.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.12.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_165048924</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.12</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.12</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.12.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.12.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>28u</value>
+					</var>
+					<var>W
+						<value>38u</value>
+					</var>
+					<var>Lr
+						<value>1.7u</value>
+					</var>
+					<var>Wr
+						<value>640n</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.13
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L
+						<value>20u:10u:80u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">W
+						<value>30u:10u:100u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Lr
+						<value>1u:0.5u:5u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Wr
+						<value>400n:50n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_LocalOpt.13</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>conjugateGradient</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>30u</value>
+						</var>
+						<var>W
+							<value>40u</value>
+						</var>
+						<var>Lr
+							<value>1.5u</value>
+						</var>
+						<var>Wr
+							<value>650n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 17:03:33 2026</timestamp>
+			<uuid>{3b6798fa-3b1c-4f62-b7a2-2797a742a48a}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.13.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.13.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_170333634</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.13</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.13</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.13.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.13.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>28u</value>
+					</var>
+					<var>W
+						<value>38u</value>
+					</var>
+					<var>Lr
+						<value>1.7u</value>
+					</var>
+					<var>Wr
+						<value>640n</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.14
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L
+						<value>20u:10u:80u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">W
+						<value>30u:10u:100u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Lr
+						<value>1u:0.5u:5u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Wr
+						<value>400n:50n:900n</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_LocalOpt.14</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>hookeJeeves</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>30u</value>
+						</var>
+						<var>W
+							<value>40u</value>
+						</var>
+						<var>Lr
+							<value>1.5u</value>
+						</var>
+						<var>Wr
+							<value>650n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 25 17:12:27 2026</timestamp>
+			<uuid>{46fb0df7-09ea-4ade-99f4-051ecd01e6b6}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.14.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.14.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_171227819</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.14</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/LocalOpt.14</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/LocalOpt.14.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.14.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>28u</value>
+					</var>
+					<var>W
+						<value>38u</value>
+					</var>
+					<var>Lr
+						<value>1.7u</value>
+					</var>
+					<var>Wr
+						<value>640n</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.22
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L
+						<value>25u:1u:35u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>25u:1u:35u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lr
+						<value>1u:0.1u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Wr
+						<value>550n:10n:750n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_Interactive.22</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>hookeJeeves</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>30u</value>
+						</var>
+						<var>W
+							<value>40u</value>
+						</var>
+						<var>Lr
+							<value>1.5u</value>
+						</var>
+						<var>Wr
+							<value>650n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 26 10:05:44 2026</timestamp>
+			<uuid>{b014a11f-092e-4ed4-b845-667813a41672}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.22.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_100544207</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.22</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.22</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.22.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.23
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L
+						<value>25u:1u:35u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>25u:1u:35u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lr
+						<value>1u:0.1u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Wr
+						<value>550n:10n:750n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:PD_1.5_8_sch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:PD_1.5_8_sch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:PD_1.5_8_sch:1_none_Interactive.23</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PD_1.5_8_sch</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(db(spm('sp 1 1)))
+								<evalType>point</evalType>
+							</output>
+							<output>S22 max
+								<evalType>point</evalType>
+							</output>
+							<output>S23 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>1</allcornersenabled>
+				<specs>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S11 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S11 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S22 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S22 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>GP_PowerDivider:PD_1.5_8_sch:1.S23 max
+						<testname>GP_PowerDivider:PD_1.5_8_sch:1</testname>
+						<resname>S23 max</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-10</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>hookeJeeves</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<vars>
+						<var>L
+							<value>30u</value>
+						</var>
+						<var>W
+							<value>40u</value>
+						</var>
+						<var>Lr
+							<value>1.5u</value>
+						</var>
+						<var>Wr
+							<value>650n</value>
+						</var>
+					</vars>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 26 11:17:04 2026</timestamp>
+			<uuid>{e732d7f0-72d7-4008-bf28-90c811299098}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.23.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_111704640</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.23</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/PD_1.5_8_sch/adexl/results/data/Interactive.23</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/PD_1#2e5_8_sch/adexl/results/data/Interactive.23.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

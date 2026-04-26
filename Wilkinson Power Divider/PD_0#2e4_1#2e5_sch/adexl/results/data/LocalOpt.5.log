@@ -1,0 +1,100 @@
+Starting Local Optimization...
+
+Current time: Sun Apr 26 12:37:39 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.37	Yes
+	max S22		-10.52	Yes
+	max S23		-9.624	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.25	Yes
+	max S22		-12.35	Yes
+	max S23		-9.995	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.94	Yes
+	max S22		-11.27	Yes
+	max S23		-10.12	Yes
+Design parameters: 
+	wireopt		19
+	L		30u
+	W		75u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		450n
+	Mul		3
+
+Best design point: 2
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-14.01	Yes
+	max S22		-10.49	Yes
+	max S23		-9.631	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.12	Yes
+	max S22		-12.33	Yes
+	max S23		-9.993	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.75	Yes
+	max S22		-11.25	Yes
+	max S23		-10.12	Yes
+Design parameters: 
+	wireopt		19
+	L		30u
+	W		74u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		450n
+	Mul		3
+
+Best design point: 4
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-13.37	Yes
+	max S22		-10.46	Yes
+	max S23		-9.595	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.25	Yes
+	max S22		-12.31	Yes
+	max S23		-10.02	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.94	Yes
+	max S22		-11.21	Yes
+	max S23		-10.1	Yes
+Design parameters: 
+	wireopt		19
+	L		30u
+	W		75u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		440n
+	Mul		3
+
+Best design point: 16
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-14.01	Yes
+	max S22		-10.43	Yes
+	max S23		-9.602	Near
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-10.12	Yes
+	max S22		-12.29	Yes
+	max S23		-10.02	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-12.75	Yes
+	max S22		-11.19	Yes
+	max S23		-10.11	Yes
+Design parameters: 
+	wireopt		19
+	L		30u
+	W		74u
+	LRes		1.3u
+	MOS		"tt_pre"
+	WRes		440n
+	Mul		3
+
+LocalOpt.5 stopped because ADE GXL cannot find a better design point.
+Number of points completed: 31
+Number of simulation errors: 0
+LocalOpt.5 completed. 
+Current time: Sun Apr 26 12:42:22 2026 

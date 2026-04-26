@@ -1,0 +1,27 @@
+Starting Local Optimization...
+
+Current time: Sun Apr 26 11:28:34 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	SS - 
+	max S11		-2.76	No
+	max S22		-5.981	No
+	max S23		-10.28	Yes
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	ff - 
+	max S11		-2.738	No
+	max S22		-10.89	Yes
+	max S23		-5.985	No
+	GP_PowerDivider:PD_0.4_1.5_sch:1	corner	Nominal - 
+	max S11		-2.749	No
+	max S22		-7.822	No
+	max S23		-9.102	Near
+Design parameters: 
+	wireopt		19
+	L		10u
+	W		10u
+	LRes		800n
+	MOS		"tt_pre"
+
+Received stop signal from user. 
+LocalOpt.0 completed. 
+Current time: Sun Apr 26 11:29:20 2026 
