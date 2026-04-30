@@ -1,0 +1,32 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Apr 30 11:48:00 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:DPDT_TestBench:1	corner	ss - 
+	S31 min		-64.12
+	S32 min		-741.7m
+	Isolation		-41.96
+	GP_PowerDivider:DPDT_TestBench:1	corner	ff - 
+	S31 min		-67.93
+	S32 min		-497.5m
+	Isolation		-42.7
+	GP_PowerDivider:DPDT_TestBench:1	corner	Nominal - 
+	S31 min		-67.04
+	S32 min		-612.4m
+	Isolation		-42.3
+Design parameters: 
+	wireopt		19
+	f1		4G
+	NF		40
+	pin		-10
+	Vc		0
+	Vc_bar		1.8
+	WF		2u
+	MOS		"tt_pre"
+
+Interactive.3
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.3 completed. 
+Current time: Thu Apr 30 11:48:14 2026 

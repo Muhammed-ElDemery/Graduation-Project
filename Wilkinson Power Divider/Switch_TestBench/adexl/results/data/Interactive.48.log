@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Apr 30 11:01:03 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:Switch_TestBench:1	corner	Nominal - 
+	OP("/I14/N0" "region")		0
+	IP1dB		Error	No
+Design parameters: 
+	wireopt		19
+	NF		32
+	Vc		0
+	WF		4u
+	MOS		"tt_pre"
+
+Interactive.48
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.48 completed. 
+Current time: Thu Apr 30 11:01:15 2026 

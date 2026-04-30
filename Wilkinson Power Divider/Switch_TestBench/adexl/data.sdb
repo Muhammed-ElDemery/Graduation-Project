@@ -1,0 +1,1887 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">ss
+				<vars>
+					<var>temperature
+						<value>85</value>
+					</var>
+					<var>MOS
+						<value>"ss_pre"</value>
+					</var>
+				</vars>
+			</corner>
+			<corner enabled="1">ff
+				<vars>
+					<var>temperature
+						<value>-40</value>
+					</var>
+					<var>MOS
+						<value>"ff_pre"</value>
+					</var>
+				</vars>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<vars>
+			<var>wireopt
+				<value>19</value>
+			</var>
+			<var enabled="1">NF
+				<value>64</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">Vc
+				<value>1.32</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">WF
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>MOS
+				<value>"tt_pre"</value>
+				<dependentTests>
+					<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">f1
+				<value>4.2G</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">Pin
+				<value>-10</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Switch_TestBench</value>
+					</option>
+					<option>lib
+						<value>GP_PowerDivider</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>GP_PowerDivider:Switch_TestBench:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>Switch_TestBench</value>
+					</option>
+					<option>lib
+						<value>GP_PowerDivider</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>S11 max
+						<evalType>point</evalType>
+					</output>
+					<output>S21 max
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+		<specs>
+			<spec>GP_PowerDivider:Switch_TestBench:1.S11 max
+				<testname>GP_PowerDivider:Switch_TestBench:1</testname>
+				<resname>S11 max</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>-10</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>GP_PowerDivider:Switch_TestBench:1.S21 max
+				<testname>GP_PowerDivider:Switch_TestBench:1</testname>
+				<resname>S21 max</resname>
+				<specType>gt</specType>
+				<min>-0.5</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+		</specs>
+		<allvarsdisabled>0</allvarsdisabled>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.48
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>4u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.48</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:01:03 2026</timestamp>
+			<uuid>{39e1d184-566a-403e-b397-d1384d63bd5e}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.48.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.48.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_110103307</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.48</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.48</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.48.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.48.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.49
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>8:8:64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.49</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:03:12 2026</timestamp>
+			<uuid>{0494d430-d096-40fd-bc05-efc523dfdd8f}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.49.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.49.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_110312935</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.49</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.49</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.49.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.49.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>NF
+						<value>1</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.50
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>8:8:64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.50</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:03:22 2026</timestamp>
+			<uuid>{b8f2e024-161e-4b4d-b050-e0a12dea15cf}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.50.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.50.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_110322152</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.50</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.50</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.50.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.50.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>NF
+						<value>1</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.51
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>8:8:64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.51</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:03:41 2026</timestamp>
+			<uuid>{13cd368c-ed79-4449-88a1-1e3e3e632e12}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.51.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.51.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_110341359</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.51</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.51</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.51.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.51.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>NF
+						<value>1</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.52
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.52</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:06:01 2026</timestamp>
+			<uuid>{f530da5c-3989-4ad4-b5a3-c2a5b069e12d}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.52.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.52.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_110601447</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.52</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.52</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.52.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.52.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.53
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>8:8:64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.53</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:08:22 2026</timestamp>
+			<uuid>{eb32c63b-a3b7-4705-933e-02267e5ca31a}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.53.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.53.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_110822734</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.53</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.53</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.53.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.53.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>NF
+						<value>1</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.54
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="0">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.54</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:10:47 2026</timestamp>
+			<uuid>{39333a89-b50b-440a-8d17-1c6a72551ac6}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.54.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.54.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_111047686</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.54</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.54</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.54.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.54.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.55
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.55</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:12:00 2026</timestamp>
+			<uuid>{f158208e-8ddb-4eb0-8bf4-f3cdb4fe2c06}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.55.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.55.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_111200375</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.55</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.55</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.55.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.55.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.56
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>1.32</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.56</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:57:26 2026</timestamp>
+			<uuid>{1665f3ad-4d44-48d2-89de-598a1750dbdc}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.56.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.56.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_115726524</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.56</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.56</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.56.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.56.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.57
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ss
+						<vars>
+							<var>temperature
+								<value>85</value>
+							</var>
+							<var>MOS
+								<value>"ss_pre"</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">ff
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+							<var>MOS
+								<value>"ff_pre"</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+					</var>
+					<var enabled="1">NF
+						<value>64</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Vc
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">WF
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MOS
+						<value>"tt_pre"</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">f1
+						<value>4.2G</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Pin
+						<value>-10</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">GP_PowerDivider:Switch_TestBench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">GP_PowerDivider:Switch_TestBench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>GP_PowerDivider:Switch_TestBench:1_none_Interactive.57</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Switch_TestBench</value>
+							</option>
+							<option>lib
+								<value>GP_PowerDivider</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>S11 max
+								<evalType>point</evalType>
+							</output>
+							<output>S21 max
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs></specs>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 30 11:59:05 2026</timestamp>
+			<uuid>{7f1bc88d-9ece-4d6d-8c95-cff72844355d}</uuid>
+			<resultsname>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.57.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.57.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_root_115905777</localpsfdir>
+			<psfdir>/root/simulation/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.57</psfdir>
+			<simdir>$AXL_PROJECT_DIR/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.57</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/islam/Cadence/GP_PowerDivider/Switch_TestBench/adexl/results/data/Interactive.57.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.57.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

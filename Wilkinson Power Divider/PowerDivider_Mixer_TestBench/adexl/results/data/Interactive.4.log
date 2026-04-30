@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Apr 30 15:33:06 2026 
+Best design point: 1
+Design specs: 
+	GP_PowerDivider:PowerDivider_Mixer_TestBench:1	corner	Nominal - 
+Design parameters: 
+	wireopt		19
+	Vc		0
+	Vcb		1.32
+
+Interactive.4
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.4 completed. 
+Current time: Thu Apr 30 15:33:09 2026 
