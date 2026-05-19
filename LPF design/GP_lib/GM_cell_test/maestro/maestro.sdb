@@ -66,7 +66,7 @@
 						<value>16</value>
 					</var>
 					<var>VBP
-						<value>1.076</value>
+						<value>0.58</value>
 					</var>
 					<var>VID
 						<value>0</value>
@@ -102,7 +102,7 @@
 						<value>0.001</value>
 					</var>
 					<var>LN2
-						<value>200n</value>
+						<value>200n*1.5</value>
 					</var>
 					<var>LP2
 						<value>100n</value>
@@ -111,7 +111,7 @@
 						<value>20n</value>
 					</var>
 					<var>NF_N2
-						<value>16</value>
+						<value>16*2</value>
 					</var>
 					<var>NF_P2
 						<value>8</value>
@@ -123,7 +123,7 @@
 						<value>0.8</value>
 					</var>
 					<var>WN2
-						<value>45u</value>
+						<value>45u*1.5</value>
 					</var>
 					<var>WP2
 						<value>24u</value>
@@ -131,8 +131,56 @@
 					<var>WP_CASC
 						<value>40u</value>
 					</var>
-					<var>Rdegen
-						<value>8k</value>
+					<var>LN3_1
+						<value>30n</value>
+					</var>
+					<var>LN3_2
+						<value>150n</value>
+					</var>
+					<var>LP3_1
+						<value>30n</value>
+					</var>
+					<var>LP3_2
+						<value>700n</value>
+					</var>
+					<var>NF_N_3_1
+						<value>1</value>
+					</var>
+					<var>NF_N_3_2
+						<value>4</value>
+					</var>
+					<var>NF_P_3_1
+						<value>14</value>
+					</var>
+					<var>NF_P_3_2
+						<value>32</value>
+					</var>
+					<var>WN3_1
+						<value>2u*FACTOR</value>
+					</var>
+					<var>WN3_2
+						<value>5.88u*0.75*FACTOR</value>
+					</var>
+					<var>WP3_1
+						<value>28u*FACTOR</value>
+					</var>
+					<var>WP3_2
+						<value>71.75u*FACTOR</value>
+					</var>
+					<var>ISS3_1
+						<value>1.2m*FACTOR</value>
+					</var>
+					<var>Rdgen
+						<value>500</value>
+					</var>
+					<var>Rdgen_Q
+						<value>Rdgen/3</value>
+					</var>
+					<var>WN3_2_P
+						<value>WN3_2/9*FACTOR</value>
+					</var>
+					<var>FACTOR
+						<value>2</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -288,16 +336,16 @@
 								<value>16</value>
 							</var>
 							<var>VBP
-								<value>1.076</value>
+								<value>0.58</value>
 							</var>
 							<var>VID
 								<value>0</value>
 							</var>
 							<var>VINCM
-								<value>0.65</value>
+								<value>0.7</value>
 							</var>
 							<var>VOCM
-								<value>0.65</value>
+								<value>0.7</value>
 							</var>
 							<var>WN
 								<value>5.1u*8</value>
@@ -324,7 +372,7 @@
 								<value>0.001</value>
 							</var>
 							<var>LN2
-								<value>200n</value>
+								<value>200n*1.5</value>
 							</var>
 							<var>LP2
 								<value>100n</value>
@@ -333,7 +381,7 @@
 								<value>20n</value>
 							</var>
 							<var>NF_N2
-								<value>16</value>
+								<value>16*2</value>
 							</var>
 							<var>NF_P2
 								<value>8</value>
@@ -345,7 +393,7 @@
 								<value>0.8</value>
 							</var>
 							<var>WN2
-								<value>45u</value>
+								<value>45u*1.5</value>
 							</var>
 							<var>WP2
 								<value>24u</value>
@@ -353,8 +401,56 @@
 							<var>WP_CASC
 								<value>40u</value>
 							</var>
-							<var>Rdegen
-								<value>8k</value>
+							<var>LN3_1
+								<value>30n</value>
+							</var>
+							<var>LN3_2
+								<value>150n</value>
+							</var>
+							<var>LP3_1
+								<value>30n</value>
+							</var>
+							<var>LP3_2
+								<value>700n</value>
+							</var>
+							<var>NF_N_3_1
+								<value>1</value>
+							</var>
+							<var>NF_N_3_2
+								<value>4</value>
+							</var>
+							<var>NF_P_3_1
+								<value>14</value>
+							</var>
+							<var>NF_P_3_2
+								<value>32</value>
+							</var>
+							<var>WN3_1
+								<value>2u*FACTOR</value>
+							</var>
+							<var>WN3_2
+								<value>5.88u*0.75*FACTOR</value>
+							</var>
+							<var>WP3_1
+								<value>28u*FACTOR</value>
+							</var>
+							<var>WP3_2
+								<value>71.75u*FACTOR</value>
+							</var>
+							<var>ISS3_1
+								<value>1.2m*FACTOR</value>
+							</var>
+							<var>Rdgen
+								<value>500</value>
+							</var>
+							<var>Rdgen_Q
+								<value>Rdgen/3</value>
+							</var>
+							<var>WN3_2_P
+								<value>WN3_2/9*FACTOR</value>
+							</var>
+							<var>FACTOR
+								<value>2</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -495,8 +591,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Apr 19 21:59:33 2026</timestamp>
-			<uuid>{1ee9a727-ce3a-4945-a584-7d5bc41ba181}</uuid>
+			<timestamp>Apr 23 00:21:10 2026</timestamp>
+			<uuid>{75c62cf3-89be-449d-af6c-6a69fbbd0fdf}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/GM_cell_test/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -504,7 +600,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_215933476</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_002110794</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/GM_cell_test/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/GM_cell_test/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>

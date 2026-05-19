@@ -1,4 +1,4 @@
-//Revision 6
+//Revision 8
 //NOTE
 // Default template for spectre
 // Note:
@@ -14,7 +14,7 @@ viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice, dspf;
 stoplist spectre;
 
 
-cell GP_lib.GM_cell_behav binding :schematic_actual;
+cell GP_lib.GM_cell_behav binding :schematic_3;
 
 
 endconfig

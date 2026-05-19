@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<statedb ICVersion="IC6.1.8-64b.500.7" modifiedTime="04/20/2026 16:19:11" version="5">ExplorerRun.0
+<statedb ICVersion="IC6.1.8-64b.500.7" modifiedTime="04/21/2026 14:52:44" version="5">ExplorerRun.0
 	<Test Name="GP_lib:gm_ID_TB:1">
 		<component Name="adeInfo" Type="skillTable">adeinfo
 			<field Name="descriptiontext" Type="string">"None"</field>
@@ -24,7 +24,7 @@
 						<field Name="separatenoise" Type="string">""</field>
 					</partition>
 					<partition Name="fields">
-						<field Name="enable" Type="list">(t)</field>
+						<field Name="enable" Type="skillDpl"></field>
 						<field Name="sweep" Type="string">"Frequency"</field>
 						<field Name="freq" Type="string">""</field>
 						<field Name="dev" Type="string">""</field>
@@ -75,17 +75,17 @@
 						<field Name="incrType" Type="string">"Automatic"</field>
 						<field Name="span" Type="string">""</field>
 						<field Name="center" Type="string">""</field>
-						<field Name="stop" Type="string">"0.8"</field>
-						<field Name="start" Type="string">"0.2"</field>
+						<field Name="stop" Type="string">"1u"</field>
+						<field Name="start" Type="string">"700n"</field>
 						<field Name="sweepChange" Type="list">nil</field>
 						<field Name="rangeType" Type="string">"Start-Stop"</field>
-						<field Name="param" Type="string">""</field>
-						<field Name="designVar" Type="string">"VGS"</field>
+						<field Name="param" Type="string">"LP"</field>
+						<field Name="designVar" Type="string">"LP"</field>
 						<field Name="modelParam" Type="string">""</field>
 						<field Name="mod" Type="string">""</field>
 						<field Name="deviceParam" Type="string">""</field>
 						<field Name="dev" Type="string">""</field>
-						<field Name="sweep" Type="string">""</field>
+						<field Name="sweep" Type="string">"Design Variable"</field>
 						<field Name="hysteresis" Type="list">nil</field>
 						<field Name="saveOppoint" Type="symbol">t</field>
 						<field Name="enable" Type="list">(t)</field>
@@ -1217,7 +1217,7 @@
 						<field Name="uniqueName" Type="string">"W_id_N1"</field>
 					</field>
 					<field Name="outputList_25" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="list">nil</field>
+						<field Name="name" Type="string">"gm_id_N2"</field>
 						<field Name="expression" Type="list">(getData("N2:gm" ?result "dc") / getData("N2:id" ?result "dc"))</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
@@ -1249,7 +1249,7 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"(getData(\"N2:gm\" ?result \"dc\") / getData(\"N2:id\" ?result \"dc\"))"</field>
+						<field Name="uniqueName" Type="string">"gm_id_N2"</field>
 					</field>
 					<field Name="outputList_26" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="list">nil</field>
@@ -2024,12 +2024,12 @@
 				</field>
 				<field Name="saveComponent_3" Type="defstruct">sevVariableStruct
 					<field Name="name" Type="string">"LN"</field>
-					<field Name="expression" Type="string">"200n"</field>
+					<field Name="expression" Type="string">"250n"</field>
 					<field Name="index" Type="fixnum">4</field>
 				</field>
 				<field Name="saveComponent_4" Type="defstruct">sevVariableStruct
 					<field Name="name" Type="string">"LP"</field>
-					<field Name="expression" Type="string">"100n"</field>
+					<field Name="expression" Type="string">"700n"</field>
 					<field Name="index" Type="fixnum">5</field>
 				</field>
 				<field Name="saveComponent_5" Type="defstruct">sevVariableStruct
@@ -2049,7 +2049,7 @@
 				</field>
 				<field Name="saveComponent_8" Type="defstruct">sevVariableStruct
 					<field Name="name" Type="string">"VGS"</field>
-					<field Name="expression" Type="string">"0.513"</field>
+					<field Name="expression" Type="string">"0.55"</field>
 					<field Name="index" Type="fixnum">9</field>
 				</field>
 				<field Name="saveComponent_9" Type="defstruct">sevVariableStruct

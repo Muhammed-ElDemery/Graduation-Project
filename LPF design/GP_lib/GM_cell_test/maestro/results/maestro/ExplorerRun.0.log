@@ -1,16 +1,16 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Sun Apr 19 21:59:34 2026 
+Current time: Thu Apr 23 00:21:12 2026 
 Best design point: 1
 Design specs: 
 	GP_lib:GM_cell_test:1	corner	Nominal - 
-	Noise		145.9u
-	DC_gain_linear		210.5
-	PM		90.29
-	UGF		477.5K
+	Noise		186.8u
+	DC_gain_linear		220.1
+	PM		90.28
+	UGF		98.41K
 	GM		Error	No
-	OIP3		2.087
-	v (/VOUTP /VOUTN); dc (V)		19.98f
+	OIP3		4.369
+	v (/VOUTP /VOUTN); dc (V)		-15.43f
 Design parameters: 
 	wireopt		19
 
@@ -18,4 +18,4 @@ ExplorerRun.0
 Number of points completed: 1
 Number of simulation errors: 1
 ExplorerRun.0 completed. 
-Current time: Sun Apr 19 22:00:27 2026 
+Current time: Thu Apr 23 00:21:52 2026 

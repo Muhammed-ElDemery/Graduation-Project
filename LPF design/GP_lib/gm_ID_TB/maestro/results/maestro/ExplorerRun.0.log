@@ -1,49 +1,17 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Mon Apr 20 16:19:13 2026 
+Current time: Tue Apr 21 14:52:46 2026 
 Best design point: 1
 Design specs: 
 	GP_lib:gm_ID_TB:1	corner	Nominal - 
-	gm_id_P0		Error	No
-	gm_id_P1		Error	No
-	((- getData("P2:gm" ?result "dc")) / getData("P2:id" ?result "dc"))		Error	No
-	gm_id_N0		Error	No
-	gm_id_N1		Error	No
-	(getData("N2:gm" ?result "dc") / getData("N2:id" ?result "dc"))		Error	No
-	IIP3_N0		Error	No
-	IIP3_N2		Error	No
-	IIP3_P2		Error	No
-	IIP3_N1		Error	No
-	IIP3_P0		Error	No
-	gain_N2		Error	No
-	gain_N1		Error	No
-	gain_N0		Error	No
-	gain_P0		Error	No
-	gain_P1		Error	No
-	gain_P2		Error	No
-	cgg_gm_N2		Error	No
-	cgg_gm_N0		Error	No
-	cdd_gm_N0		Error	No
-	cdd_gm_P0		Error	No
-	(getData("P2:cdd" ?result "dc") / getData("P2:gm" ?result "dc"))		Error	No
-	(getData("N2:cdd" ?result "dc") / getData("N2:gm" ?result "dc"))		Error	No
-	gds_id_N0		Error	No
-	gds_id_P0		Error	No
-	gds_id_P2		Error	No
-	W_id_N0		Error	No
-	(pv("N2" "w" ?result "instance") / getData("N2:id" ?result "dc"))		Error	No
-	W_id_P0		Error	No
-	(pv("P2" "w" ?result "instance") / getData("P2:id" ?result "dc"))		Error	No
-	W_id_P1		Error	No
-	W_id_N1		Error	No
-	vinn_N2		252.5u
-	vinn_P0		949.5u
-	sqrt(integ((pv("P2" "total" ?result "noise") / pow(getData("P2:gm" ?result "dcOp") 2)) 0 200000000 " "))		851.3u
+	vinn_N2		Error	No
+	vinn_P0		Error	No
+	sqrt(integ((pv("P2" "total" ?result "noise") / pow(getData("P2:gm" ?result "dcOp") 2)) 0 200000000 " "))		Error	No
 Design parameters: 
 	wireopt		19
 
 ExplorerRun.0
-Number of points completed: 5
-Number of simulation errors: 160
+Number of points completed: 1
+Number of simulation errors: 3
 ExplorerRun.0 completed. 
-Current time: Mon Apr 20 16:20:01 2026 
+Current time: Tue Apr 21 14:53:15 2026 

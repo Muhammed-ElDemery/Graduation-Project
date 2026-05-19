@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Apr 25 16:56:48 2026 
+Best design point: 1
+Design specs: 
+	GP_lib:filter_input_stage_testing:1	corner	Nominal - 
+	phaseMargin((vfreq('ac "/VO1P") - vfreq('ac "/VO1N")))		-141.7
+Design parameters: 
+	wireopt		19
+
+ExplorerRun.0
+Number of points completed: 2
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Sat Apr 25 16:57:50 2026 
