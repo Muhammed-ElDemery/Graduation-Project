@@ -1,20 +1,18 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Tue May 19 14:49:51 2026 
+Current time: Thu May 21 16:25:47 2026 
 Best design point: 1
 Design specs: 
 	GP_lib:filter_test:1	corner	Nominal - 
-	Noise_up_to_200M		Error	No
-	((1.5 * value(db20(v("/VOUT" ?result "hb_mt_fi")) 100000000)) - (value(db20(v("/VOUT" ?result "hb_mt_fi")) 90000000) * 0.5))		Error	No
-	ipnCurves		Error	No
-	Output Referred IP3 Point		Error	No
-	v /VOUT; hb_mt dB20(V)		Error	No
-	Noise_full_Band		Error	No
+	Noise_up_to_200M		87.05u	Yes
+	((1.5 * value(db20(v("/VOUT" ?result "hb_mt_fi")) 100000000)) - (value(db20(v("/VOUT" ?result "hb_mt_fi")) 90000000) * 0.5))		3.361
+	1st Order freq		100M
+	Noise_full_Band		115.3u
 Design parameters: 
 	wireopt		19
 
 ExplorerRun.0
 Number of points completed: 1
-Number of simulation errors: 6
+Number of simulation errors: 0
 ExplorerRun.0 completed. 
-Current time: Tue May 19 14:50:27 2026 
+Current time: Thu May 21 16:25:56 2026 

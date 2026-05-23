@@ -1,10 +1,11 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Tue May 19 21:23:50 2026 
+Current time: Thu May 21 16:22:09 2026 
 Best design point: 1
 Design specs: 
 	GP_lib:GM_cell_input_tb:1	corner	Nominal - 
-	sqrt(integ((VNIN("/home/islam/simulation/GP_lib/GM_cell_input_tb/maestro/results/maestro/ExplorerRun.0/1/GP_lib:GM_cell_input_tb:1")**2) 0 1000000000 " "))		40.9u
+	sqrt(integ((VNIN("/home/islam/simulation/GP_lib/GM_cell_input_tb/maestro/results/maestro/ExplorerRun.0/1/GP_lib:GM_cell_input_tb:1")**2) 0 1000000000 " "))		143.1u
+	(value(db((vh('hb "/VOUTP") - vh('hb "/VOUTN"))) 100000000) - value(db((vh('hb "/VOUTP") - vh('hb "/VOUTN"))) 300000000))		153.1
 Design parameters: 
 	wireopt		19
 
@@ -12,4 +13,4 @@ ExplorerRun.0
 Number of points completed: 1
 Number of simulation errors: 0
 ExplorerRun.0 completed. 
-Current time: Tue May 19 21:24:24 2026 
+Current time: Thu May 21 16:22:25 2026 

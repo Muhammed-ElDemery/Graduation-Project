@@ -32,21 +32,6 @@
 					<var>wireopt
 						<value>19</value>
 					</var>
-					<var>ISS
-						<value>1.65m</value>
-					</var>
-					<var>LN
-						<value>500n</value>
-					</var>
-					<var>LP
-						<value>100n</value>
-					</var>
-					<var>NF_N
-						<value>20</value>
-					</var>
-					<var>NF_P
-						<value>20</value>
-					</var>
 					<var>VGSP
 						<value>0.5</value>
 					</var>
@@ -56,32 +41,41 @@
 					<var>VOCM
 						<value>0.7</value>
 					</var>
-					<var>WN
-						<value>20u</value>
-					</var>
-					<var>WP
-						<value>20u</value>
-					</var>
 					<var>ISS_input
-						<value>1.65m</value>
+						<value>1.65m*2</value>
 					</var>
 					<var>LN_input
-						<value>100n</value>
+						<value>500n</value>
 					</var>
 					<var>LP_input
-						<value>100n</value>
+						<value>500n</value>
 					</var>
 					<var>NF_N_input
-						<value>20*5</value>
+						<value>20*5*2</value>
 					</var>
 					<var>NF_P_input
 						<value>20*5</value>
 					</var>
 					<var>WN_input
-						<value>80u*5</value>
+						<value>80u*5*0.7*2</value>
 					</var>
 					<var>WP_input
 						<value>80u</value>
+					</var>
+					<var>frq
+						<value>100M</value>
+					</var>
+					<var>VPK
+						<value>10u</value>
+					</var>
+					<var>K
+						<value>2</value>
+					</var>
+					<var>GM
+						<value>12.9m</value>
+					</var>
+					<var>Rdegen_input
+						<value>38</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -191,21 +185,6 @@
 							<var>wireopt
 								<value>19</value>
 							</var>
-							<var>ISS
-								<value>1.65m</value>
-							</var>
-							<var>LN
-								<value>500n</value>
-							</var>
-							<var>LP
-								<value>100n</value>
-							</var>
-							<var>NF_N
-								<value>20</value>
-							</var>
-							<var>NF_P
-								<value>20</value>
-							</var>
 							<var>VGSP
 								<value>0.5</value>
 							</var>
@@ -215,32 +194,41 @@
 							<var>VOCM
 								<value>0.7</value>
 							</var>
-							<var>WN
-								<value>20u</value>
-							</var>
-							<var>WP
-								<value>20u</value>
-							</var>
 							<var>ISS_input
-								<value>1.65m</value>
+								<value>1.65m*2</value>
 							</var>
 							<var>LN_input
-								<value>100n</value>
+								<value>500n</value>
 							</var>
 							<var>LP_input
-								<value>100n</value>
+								<value>500n</value>
 							</var>
 							<var>NF_N_input
-								<value>20*5</value>
+								<value>20*5*2</value>
 							</var>
 							<var>NF_P_input
 								<value>20*5</value>
 							</var>
 							<var>WN_input
-								<value>80u*5</value>
+								<value>80u*5*0.7*2</value>
 							</var>
 							<var>WP_input
 								<value>80u</value>
+							</var>
+							<var>frq
+								<value>100M</value>
+							</var>
+							<var>VPK
+								<value>10u</value>
+							</var>
+							<var>K
+								<value>2</value>
+							</var>
+							<var>GM
+								<value>12.9m</value>
+							</var>
+							<var>Rdegen_input
+								<value>38</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -373,8 +361,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>May 19 21:23:48 2026</timestamp>
-			<uuid>{a89bcf3c-c3c3-410d-9e3f-c3160f66b338}</uuid>
+			<timestamp>May 21 16:22:08 2026</timestamp>
+			<uuid>{7dadee21-1c19-4980-b341-0c406eb5e473}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/GM_cell_input_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -382,7 +370,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_212348852</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_162208629</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/GM_cell_input_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/GM_cell_input_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>

@@ -49,19 +49,19 @@
 						<value>19</value>
 					</var>
 					<var>C_1
-						<value>2*GM*6.635e-10-C_par-2*CD_ADDED</value>
+						<value>2*GM*7.829e-10-C_par-2*CD_ADDED</value>
 					</var>
 					<var>C_2
-						<value>2*GM*9.054e-10-C_par-2*CD_ADDED</value>
+						<value>2*GM*11.096e-10-C_par-2*CD_ADDED</value>
 					</var>
 					<var>C_3
-						<value>2*GM*2.1e-10</value>
+						<value>2*GM*2.92e-10</value>
 					</var>
 					<var>C_4
-						<value>2*GM*7.062e-10</value>
+						<value>2*GM*5.465e-10</value>
 					</var>
 					<var>C_5
-						<value>2*GM*4.169e-10-C_par-2*CD_ADDED</value>
+						<value>2*GM*3.938e-10-C_par-2*CD_ADDED</value>
 					</var>
 					<var>ISS
 						<value>200u*FACTOR</value>
@@ -70,10 +70,10 @@
 						<value>1m*FACTOR*R</value>
 					</var>
 					<var>L_1
-						<value>2*GM*6.317e-10-C_par-2*CD_ADDED</value>
+						<value>2*GM*4.922e-10-C_par-2*CD_ADDED</value>
 					</var>
 					<var>L_2
-						<value>2*GM*3.615e-10-C_par-2*CD_ADDED</value>
+						<value>2*GM*5.048e-10-C_par-2*CD_ADDED</value>
 					</var>
 					<var>LN
 						<value>200n</value>
@@ -145,7 +145,7 @@
 						<value>227*1/R</value>
 					</var>
 					<var>C_par
-						<value>16.2f*FACTOR</value>
+						<value>30f*FACTOR</value>
 					</var>
 					<var>C_stab
 						<value>0</value>
@@ -214,16 +214,64 @@
 						<value>24u/8*FACTOR</value>
 					</var>
 					<var>WP_CASC
-						<value>40u/8*FACTOR</value>
+						<value>40u/8*FACTOR*K3</value>
 					</var>
 					<var>Rdgen
-						<value>500</value>
+						<value>0</value>
 					</var>
 					<var>Rdgen_Q
 						<value>Rdgen/3</value>
 					</var>
 					<var>CD_ADDED
 						<value>0</value>
+					</var>
+					<var>ISS_input
+						<value>1.65m*K</value>
+					</var>
+					<var>LN_input
+						<value>500n*K2</value>
+					</var>
+					<var>LP_input
+						<value>500n</value>
+					</var>
+					<var>NF_N_input
+						<value>100*K</value>
+					</var>
+					<var>NF_P_input
+						<value>30</value>
+					</var>
+					<var>WN_input
+						<value>280u*K*K2</value>
+					</var>
+					<var>WP_input
+						<value>80u</value>
+					</var>
+					<var>ISS_input2
+						<value>ISS_input*2</value>
+					</var>
+					<var>NF_N_input2
+						<value>NF_N_input*2</value>
+					</var>
+					<var>NF_P_input2
+						<value>NF_P_input*2</value>
+					</var>
+					<var>WN_input2
+						<value>WN_input*2</value>
+					</var>
+					<var>WP_input2
+						<value>WP_input*2</value>
+					</var>
+					<var>Rdegen_input
+						<value>(K-1)/(K*12.9m)</value>
+					</var>
+					<var>K
+						<value>2</value>
+					</var>
+					<var>K2
+						<value>0.3</value>
+					</var>
+					<var>K3
+						<value>2.5</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -349,19 +397,19 @@
 								<value>19</value>
 							</var>
 							<var>C_1
-								<value>2*GM*6.635e-10-C_par-2*CD_ADDED</value>
+								<value>2*GM*7.829e-10-C_par-2*CD_ADDED</value>
 							</var>
 							<var>C_2
-								<value>2*GM*9.054e-10-C_par-2*CD_ADDED</value>
+								<value>2*GM*11.096e-10-C_par-2*CD_ADDED</value>
 							</var>
 							<var>C_3
-								<value>2*GM*2.1e-10</value>
+								<value>2*GM*2.92e-10</value>
 							</var>
 							<var>C_4
-								<value>2*GM*7.062e-10</value>
+								<value>2*GM*5.465e-10</value>
 							</var>
 							<var>C_5
-								<value>2*GM*4.169e-10-C_par-2*CD_ADDED</value>
+								<value>2*GM*3.938e-10-C_par-2*CD_ADDED</value>
 							</var>
 							<var>ISS
 								<value>200u*FACTOR</value>
@@ -370,10 +418,10 @@
 								<value>1m*FACTOR*R</value>
 							</var>
 							<var>L_1
-								<value>2*GM*6.317e-10-C_par-2*CD_ADDED</value>
+								<value>2*GM*4.922e-10-C_par-2*CD_ADDED</value>
 							</var>
 							<var>L_2
-								<value>2*GM*3.615e-10-C_par-2*CD_ADDED</value>
+								<value>2*GM*5.048e-10-C_par-2*CD_ADDED</value>
 							</var>
 							<var>LN
 								<value>200n</value>
@@ -445,7 +493,7 @@
 								<value>227*1/R</value>
 							</var>
 							<var>C_par
-								<value>16.2f*FACTOR</value>
+								<value>30f*FACTOR</value>
 							</var>
 							<var>C_stab
 								<value>0</value>
@@ -514,16 +562,64 @@
 								<value>24u/8*FACTOR</value>
 							</var>
 							<var>WP_CASC
-								<value>40u/8*FACTOR</value>
+								<value>40u/8*FACTOR*K3</value>
 							</var>
 							<var>Rdgen
-								<value>500</value>
+								<value>0</value>
 							</var>
 							<var>Rdgen_Q
 								<value>Rdgen/3</value>
 							</var>
 							<var>CD_ADDED
 								<value>0</value>
+							</var>
+							<var>ISS_input
+								<value>1.65m*K</value>
+							</var>
+							<var>LN_input
+								<value>500n*K2</value>
+							</var>
+							<var>LP_input
+								<value>500n</value>
+							</var>
+							<var>NF_N_input
+								<value>100*K</value>
+							</var>
+							<var>NF_P_input
+								<value>30</value>
+							</var>
+							<var>WN_input
+								<value>280u*K*K2</value>
+							</var>
+							<var>WP_input
+								<value>80u</value>
+							</var>
+							<var>ISS_input2
+								<value>ISS_input*2</value>
+							</var>
+							<var>NF_N_input2
+								<value>NF_N_input*2</value>
+							</var>
+							<var>NF_P_input2
+								<value>NF_P_input*2</value>
+							</var>
+							<var>WN_input2
+								<value>WN_input*2</value>
+							</var>
+							<var>WP_input2
+								<value>WP_input*2</value>
+							</var>
+							<var>Rdegen_input
+								<value>(K-1)/(K*12.9m)</value>
+							</var>
+							<var>K
+								<value>2</value>
+							</var>
+							<var>K2
+								<value>0.3</value>
+							</var>
+							<var>K3
+								<value>2.5</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -651,8 +747,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>May 19 14:49:49 2026</timestamp>
-			<uuid>{154e5c41-f2f3-4860-a8a0-35feb5b7c840}</uuid>
+			<timestamp>May 21 16:25:46 2026</timestamp>
+			<uuid>{ce5610f4-1433-40c1-aca6-3479bf7305b0}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/filter_test/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -660,7 +756,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_144949200</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_162546533</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/filter_test/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/filter_test/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
