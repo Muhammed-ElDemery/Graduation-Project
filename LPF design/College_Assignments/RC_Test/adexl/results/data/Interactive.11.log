@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon May 29 12:09:46 2023 
+Best design point: 1
+Design specs: 
+	College_Assignments:RC_Test:1	corner	Nominal - 
+Design parameters: 
+	wireopt		19
+	C		1p
+	R		1K
+
+Interactive.11
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.11 completed. 
+Current time: Mon May 29 12:10:13 2023 
