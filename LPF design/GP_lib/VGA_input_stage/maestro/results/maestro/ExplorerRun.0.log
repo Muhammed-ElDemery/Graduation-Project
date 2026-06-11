@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Jun 11 17:46:01 2026 
+Best design point: 1
+Design specs: 
+	GP_lib:VGA_input_stage:1	corner	Nominal - 
+	VINN_density		Error	No
+	gm_ID_N		Error	No
+	gm_ID_P		Error	No
+	GAIN		Error	No
+	Linearity		Error	No
+	v (/OUTP /OUTN); ac dB20(V)		Error	No
+	Output Referred IP3 Point		8.616
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 6
+ExplorerRun.0 completed. 
+Current time: Thu Jun 11 17:46:09 2026 

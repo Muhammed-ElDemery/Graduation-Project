@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Apr 21 14:52:46 2026 
+Best design point: 1
+Design specs: 
+	GP_lib:gm_ID_TB:1	corner	Nominal - 
+	vinn_N2		Error	No
+	vinn_P0		Error	No
+	sqrt(integ((pv("P2" "total" ?result "noise") / pow(getData("P2:gm" ?result "dcOp") 2)) 0 200000000 " "))		Error	No
+Design parameters: 
+	wireopt		19
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 3
+ExplorerRun.0 completed. 
+Current time: Tue Apr 21 14:53:15 2026 
