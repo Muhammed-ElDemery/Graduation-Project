@@ -33,37 +33,37 @@
 						<value>19</value>
 					</var>
 					<var>LN
-						<value>400n</value>
+						<value>200n</value>
 					</var>
 					<var>LP
-						<value>400n</value>
+						<value>150n</value>
 					</var>
 					<var>NF_N
-						<value>20</value>
+						<value>20*2*FACTOR</value>
 					</var>
 					<var>NF_P
-						<value>10</value>
+						<value>10*2*FACTOR</value>
 					</var>
 					<var>NF_P2
-						<value>10</value>
+						<value>10*2*FACTOR</value>
 					</var>
 					<var>VBP
-						<value>0.6</value>
+						<value>600m</value>
 					</var>
 					<var>VGS
 						<value>478m</value>
 					</var>
 					<var>WN
-						<value>160u*FACTOR</value>
+						<value>140u*FACTOR</value>
 					</var>
 					<var>WP
-						<value>5u*4*2*FACTOR</value>
+						<value>16u*FACTOR</value>
 					</var>
 					<var>WP2
-						<value>10u*4*1.5*FACTOR</value>
+						<value>24.4u*FACTOR</value>
 					</var>
 					<var>ISS
-						<value>1741u*FACTOR</value>
+						<value>2240u*FACTOR</value>
 					</var>
 					<var>LS
 						<value>400n</value>
@@ -72,13 +72,13 @@
 						<value>40</value>
 					</var>
 					<var>WS
-						<value>320u*FACTOR</value>
+						<value>320u*2*FACTOR</value>
 					</var>
 					<var>VINCM
 						<value>800m</value>
 					</var>
 					<var>FACTOR
-						<value>1</value>
+						<value>3</value>
 					</var>
 					<var>VID
 						<value>0</value>
@@ -196,37 +196,37 @@
 								<value>19</value>
 							</var>
 							<var>LN
-								<value>400n</value>
+								<value>200n</value>
 							</var>
 							<var>LP
-								<value>400n</value>
+								<value>150n</value>
 							</var>
 							<var>NF_N
-								<value>20</value>
+								<value>20*2*FACTOR</value>
 							</var>
 							<var>NF_P
-								<value>10</value>
+								<value>10*2*FACTOR</value>
 							</var>
 							<var>NF_P2
-								<value>10</value>
+								<value>10*2*FACTOR</value>
 							</var>
 							<var>VBP
-								<value>0.6</value>
+								<value>600m</value>
 							</var>
 							<var>VGS
 								<value>478m</value>
 							</var>
 							<var>WN
-								<value>160u*FACTOR</value>
+								<value>140u*FACTOR</value>
 							</var>
 							<var>WP
-								<value>5u*4*2*FACTOR</value>
+								<value>16u*FACTOR</value>
 							</var>
 							<var>WP2
-								<value>10u*4*1.5*FACTOR</value>
+								<value>24.4u*FACTOR</value>
 							</var>
 							<var>ISS
-								<value>1741u*FACTOR</value>
+								<value>2240u*FACTOR</value>
 							</var>
 							<var>LS
 								<value>400n</value>
@@ -235,13 +235,13 @@
 								<value>40</value>
 							</var>
 							<var>WS
-								<value>320u*FACTOR</value>
+								<value>320u*2*FACTOR</value>
 							</var>
 							<var>VINCM
 								<value>800m</value>
 							</var>
 							<var>FACTOR
-								<value>1</value>
+								<value>3</value>
 							</var>
 							<var>VID
 								<value>0</value>
@@ -379,8 +379,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Jun 11 17:46:01 2026</timestamp>
-			<uuid>{f5de3e57-f8e3-4485-bac6-05b07f7bd5fc}</uuid>
+			<timestamp>Jun 14 00:21:21 2026</timestamp>
+			<uuid>{9a99e576-5f39-4a1f-a842-0b9160702773}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -388,7 +388,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_174601020</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_002121007</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
