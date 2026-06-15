@@ -4,9 +4,25 @@
 		<corners>
 			<corner enabled="1">_default</corner>
 		</corners>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<vars>
+			<var>wireopt
+				<value>19</value>
+				<dependentTests>
+					<dependentTest omitted="0">GP_lib:VGA_PGA_stage:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>GP_lib:VGA_PGA_stage:1
+			<test enabled="1">GP_lib:VGA_PGA_stage:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -15,14 +31,14 @@
 					<option>lib
 						<value>GP_lib</value>
 					</option>
-					<option>path
-						<value>$AXL_SETUPDB_DIR</value>
-					</option>
 					<option>sim
 						<value>spectre</value>
 					</option>
 					<option>view
-						<value>schematic</value>
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
 					</option>
 					<option>state
 						<value>active</value>
@@ -32,44 +48,92 @@
 					<var>wireopt
 						<value>19</value>
 					</var>
-					<var>C_first_stage
-						<value>4.2965e-12 * gm2</value>
-					</var>
-					<var>C_second_stage
-						<value>1.1675e-12*gm2</value>
-					</var>
-					<var>C_Z
-						<value>0.2p,0.448p</value>
-					</var>
-					<var>CGD1
-						<value>0</value>
-					</var>
-					<var>CGD2
-						<value>0</value>
-					</var>
 					<var>CL
 						<value>1p</value>
 					</var>
-					<var>gm1
-						<value>4.5m</value>
+					<var>GM_CM
+						<value>100m</value>
 					</var>
-					<var>gm2
-						<value>20m</value>
+					<var>LIP_IN
+						<value>100n</value>
+					</var>
+					<var>LN_in2
+						<value>100n</value>
+					</var>
+					<var>LN_LOAD1
+						<value>100n</value>
+					</var>
+					<var>LP_load2
+						<value>300n</value>
+					</var>
+					<var>LP_source
+						<value>300n</value>
+					</var>
+					<var>NF_in2
+						<value>20*2</value>
+					</var>
+					<var>NF_N_LOAD1
+						<value>5*2</value>
+					</var>
+					<var>NF_P_IN
+						<value>20*2</value>
+					</var>
+					<var>NF_P_load2
+						<value>100*2</value>
+					</var>
+					<var>NF_P_source
+						<value>30*2</value>
 					</var>
 					<var>R_1
 						<value>1k</value>
 					</var>
 					<var>R_2
-						<value>5.3k,2.37k</value>
+						<value>8.91k,1.58k</value>
 					</var>
-					<var>R_Z
-						<value>0</value>
+					<var>WP_IN
+						<value>37.5u*2</value>
 					</var>
-					<var>ro1
-						<value>50/gm1</value>
+					<var>WN_LOAD1
+						<value>5.6u*2</value>
 					</var>
-					<var>ro2
-						<value>103/gm2</value>
+					<var>WP_load2
+						<value>309u*2.5</value>
+					</var>
+					<var>WN_in2
+						<value>39.4u*2.5</value>
+					</var>
+					<var>WP_source
+						<value>WP_load2*0.286</value>
+					</var>
+					<var>L_source
+						<value>LP_source</value>
+					</var>
+					<var>VGS_VBN
+						<value>0.5</value>
+					</var>
+					<var>VINCM
+						<value>0.5</value>
+					</var>
+					<var>VOCM
+						<value>0.8</value>
+					</var>
+					<var>WS
+						<value>309u/16</value>
+					</var>
+					<var>NF_S
+						<value>20</value>
+					</var>
+					<var>IBias
+						<value>162u/2</value>
+					</var>
+					<var>CC
+						<value>200f,800f</value>
+					</var>
+					<var>Rz
+						<value>75</value>
+					</var>
+					<var>frq
+						<value>100M</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -79,26 +143,16 @@
 					<option>lib
 						<value>GP_lib</value>
 					</option>
-					<option>path
-						<value>$AXL_SETUPDB_DIR/test_states</value>
-					</option>
 					<option>sim
 						<value>spectre</value>
 					</option>
 					<option>view
-						<value>schematic</value>
+						<value>config</value>
 					</option>
 				</origoptions>
 			</test>
 		</tests>
-		<extensions>
-			<extension>Parasitics
-				<callback>_parSetupDBExtensionCB</callback>
-				<iconvalue></iconvalue>
-				<icontype></icontype>
-			</extension>
-		</extensions>
-		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<disabledtests></disabledtests>
 		<checksasserts netlist="0">
 			<test netlist="0" netlistscope="all">GP_lib:VGA_PGA_stage:1</test>
 		</checksasserts>
@@ -143,9 +197,25 @@
 				<corners>
 					<corner enabled="1">_default</corner>
 				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_lib:VGA_PGA_stage:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>GP_lib:VGA_PGA_stage:1
+					<test enabled="1">GP_lib:VGA_PGA_stage:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -154,14 +224,14 @@
 							<option>lib
 								<value>GP_lib</value>
 							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
 							<option>sim
 								<value>spectre</value>
 							</option>
 							<option>view
-								<value>schematic</value>
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
 								<value>ExplorerRun.0</value>
@@ -171,44 +241,92 @@
 							<var>wireopt
 								<value>19</value>
 							</var>
-							<var>C_first_stage
-								<value>4.2965e-12 * gm2</value>
-							</var>
-							<var>C_second_stage
-								<value>1.1675e-12*gm2</value>
-							</var>
-							<var>C_Z
-								<value>0.2p,0.448p</value>
-							</var>
-							<var>CGD1
-								<value>0</value>
-							</var>
-							<var>CGD2
-								<value>0</value>
-							</var>
 							<var>CL
 								<value>1p</value>
 							</var>
-							<var>gm1
-								<value>4.5m</value>
+							<var>GM_CM
+								<value>100m</value>
 							</var>
-							<var>gm2
-								<value>20m</value>
+							<var>LIP_IN
+								<value>100n</value>
+							</var>
+							<var>LN_in2
+								<value>100n</value>
+							</var>
+							<var>LN_LOAD1
+								<value>100n</value>
+							</var>
+							<var>LP_load2
+								<value>300n</value>
+							</var>
+							<var>LP_source
+								<value>300n</value>
+							</var>
+							<var>NF_in2
+								<value>20*2</value>
+							</var>
+							<var>NF_N_LOAD1
+								<value>5*2</value>
+							</var>
+							<var>NF_P_IN
+								<value>20*2</value>
+							</var>
+							<var>NF_P_load2
+								<value>100*2</value>
+							</var>
+							<var>NF_P_source
+								<value>30*2</value>
 							</var>
 							<var>R_1
 								<value>1k</value>
 							</var>
 							<var>R_2
-								<value>5.3k,2.37k</value>
+								<value>8.91k,1.58k</value>
 							</var>
-							<var>R_Z
-								<value>0</value>
+							<var>WP_IN
+								<value>37.5u*2</value>
 							</var>
-							<var>ro1
-								<value>50/gm1</value>
+							<var>WN_LOAD1
+								<value>5.6u*2</value>
 							</var>
-							<var>ro2
-								<value>103/gm2</value>
+							<var>WP_load2
+								<value>309u*2.5</value>
+							</var>
+							<var>WN_in2
+								<value>39.4u*2.5</value>
+							</var>
+							<var>WP_source
+								<value>WP_load2*0.286</value>
+							</var>
+							<var>L_source
+								<value>LP_source</value>
+							</var>
+							<var>VGS_VBN
+								<value>0.5</value>
+							</var>
+							<var>VINCM
+								<value>0.5</value>
+							</var>
+							<var>VOCM
+								<value>0.8</value>
+							</var>
+							<var>WS
+								<value>309u/16</value>
+							</var>
+							<var>NF_S
+								<value>20</value>
+							</var>
+							<var>IBias
+								<value>162u/2</value>
+							</var>
+							<var>CC
+								<value>200f,800f</value>
+							</var>
+							<var>Rz
+								<value>75</value>
+							</var>
+							<var>frq
+								<value>100M</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -218,26 +336,16 @@
 							<option>lib
 								<value>GP_lib</value>
 							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
 							<option>sim
 								<value>spectre</value>
 							</option>
 							<option>view
-								<value>schematic</value>
+								<value>config</value>
 							</option>
 						</origoptions>
 					</test>
 				</tests>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<disabledtests></disabledtests>
 				<checksasserts netlist="0">
 					<test netlist="0" netlistscope="all">GP_lib:VGA_PGA_stage:1</test>
 				</checksasserts>
@@ -329,13 +437,11 @@
 				<runnabletests>
 					<test>GP_lib:VGA_PGA_stage:1</test>
 				</runnabletests>
-				<disabledtests></disabledtests>
-				<vars></vars>
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Jun 14 21:30:18 2026</timestamp>
-			<uuid>{2159a35b-677c-4a40-bfcd-141c2253c398}</uuid>
+			<timestamp>Jun 15 22:17:42 2026</timestamp>
+			<uuid>{f6915886-2224-4113-b8cd-fe17826ec274}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -343,7 +449,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_213018268</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_221742270</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
