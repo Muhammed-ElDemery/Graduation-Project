@@ -76,19 +76,13 @@
 						<value>5*2</value>
 					</var>
 					<var>NF_P_IN
-						<value>20*2</value>
+						<value>20*2*2</value>
 					</var>
 					<var>NF_P_load2
 						<value>100*2</value>
 					</var>
 					<var>NF_P_source
 						<value>30*2</value>
-					</var>
-					<var>R_1
-						<value>1k*0.1</value>
-					</var>
-					<var>R_2
-						<value>8.9k*0.1</value>
 					</var>
 					<var>WP_IN
 						<value>37.5u*2*2</value>
@@ -109,13 +103,13 @@
 						<value>LP_source</value>
 					</var>
 					<var>VGS_VBN
-						<value>536m</value>
+						<value>534m</value>
 					</var>
 					<var>VINCM
-						<value>0.5</value>
+						<value>0.86</value>
 					</var>
 					<var>VOCM
-						<value>0.4</value>
+						<value>0.5</value>
 					</var>
 					<var>WS
 						<value>309u/16</value>
@@ -127,10 +121,10 @@
 						<value>162u/2</value>
 					</var>
 					<var>CC
-						<value>0.3p</value>
+						<value>465f</value>
 					</var>
 					<var>Rz
-						<value>75</value>
+						<value>14</value>
 					</var>
 					<var>frq
 						<value>100M</value>
@@ -142,16 +136,100 @@
 						<value>300n</value>
 					</var>
 					<var>NF_CM
-						<value>10</value>
-					</var>
-					<var>NF_S_CM
 						<value>10*2</value>
 					</var>
+					<var>NF_S_CM
+						<value>10*4</value>
+					</var>
 					<var>WP_CM
-						<value>5.5u</value>
+						<value>5.5u*2</value>
 					</var>
 					<var>WS_CM
-						<value>12.7u*2</value>
+						<value>12.7u*4</value>
+					</var>
+					<var>C_FBK
+						<value>0.26526e-9*R_2*0</value>
+					</var>
+					<var>VCASCP
+						<value>0.424</value>
+					</var>
+					<var>CC_DAC_0
+						<value>295f</value>
+					</var>
+					<var>CC_DAC_1
+						<value>339f</value>
+					</var>
+					<var>CC_DAC_2
+						<value>389f</value>
+					</var>
+					<var>CC_DAC_3
+						<value>446f</value>
+					</var>
+					<var>CC_DAC_4
+						<value>509f</value>
+					</var>
+					<var>CC_DAC_5
+						<value>579f</value>
+					</var>
+					<var>CC_DAC_6
+						<value>659f</value>
+					</var>
+					<var>CC_DAC_7
+						<value>748f</value>
+					</var>
+					<var>CC_DAC_8
+						<value>848f</value>
+					</var>
+					<var>CC_DAC_9
+						<value>960f</value>
+					</var>
+					<var>CC_DAC_10
+						<value>1086f</value>
+					</var>
+					<var>CC_DAC_11
+						<value>1227f</value>
+					</var>
+					<var>CC_DAC_12
+						<value>1386f</value>
+					</var>
+					<var>CC_DAC_13
+						<value>1564f</value>
+					</var>
+					<var>CC_DAC_14
+						<value>1763f</value>
+					</var>
+					<var>CC_DAC_15
+						<value>1987f</value>
+					</var>
+					<var>L_DAC
+						<value>100n</value>
+					</var>
+					<var>RZ_DAC
+						<value>10</value>
+					</var>
+					<var>STATE_NOW
+						<value>1:16</value>
+					</var>
+					<var>W_DAC
+						<value>21u</value>
+					</var>
+					<var>NF_DAC
+						<value>20</value>
+					</var>
+					<var>DIVIDOR
+						<value>0.1</value>
+					</var>
+					<var>L_RES_DAC
+						<value>20n</value>
+					</var>
+					<var>NF_RES_DAC
+						<value>20</value>
+					</var>
+					<var>W_RES_DAC
+						<value>21u</value>
+					</var>
+					<var>R_one
+						<value>1k*DIVIDOR</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -287,19 +365,13 @@
 								<value>5*2</value>
 							</var>
 							<var>NF_P_IN
-								<value>20*2</value>
+								<value>20*2*2</value>
 							</var>
 							<var>NF_P_load2
 								<value>100*2</value>
 							</var>
 							<var>NF_P_source
 								<value>30*2</value>
-							</var>
-							<var>R_1
-								<value>1k*0.1</value>
-							</var>
-							<var>R_2
-								<value>8.9k*0.1</value>
 							</var>
 							<var>WP_IN
 								<value>37.5u*2*2</value>
@@ -320,13 +392,13 @@
 								<value>LP_source</value>
 							</var>
 							<var>VGS_VBN
-								<value>536m</value>
+								<value>534m</value>
 							</var>
 							<var>VINCM
-								<value>0.5</value>
+								<value>0.86</value>
 							</var>
 							<var>VOCM
-								<value>0.4</value>
+								<value>0.5</value>
 							</var>
 							<var>WS
 								<value>309u/16</value>
@@ -338,10 +410,10 @@
 								<value>162u/2</value>
 							</var>
 							<var>CC
-								<value>0.3p</value>
+								<value>465f</value>
 							</var>
 							<var>Rz
-								<value>75</value>
+								<value>14</value>
 							</var>
 							<var>frq
 								<value>100M</value>
@@ -353,16 +425,100 @@
 								<value>300n</value>
 							</var>
 							<var>NF_CM
-								<value>10</value>
-							</var>
-							<var>NF_S_CM
 								<value>10*2</value>
 							</var>
+							<var>NF_S_CM
+								<value>10*4</value>
+							</var>
 							<var>WP_CM
-								<value>5.5u</value>
+								<value>5.5u*2</value>
 							</var>
 							<var>WS_CM
-								<value>12.7u*2</value>
+								<value>12.7u*4</value>
+							</var>
+							<var>C_FBK
+								<value>0.26526e-9*R_2*0</value>
+							</var>
+							<var>VCASCP
+								<value>0.424</value>
+							</var>
+							<var>CC_DAC_0
+								<value>295f</value>
+							</var>
+							<var>CC_DAC_1
+								<value>339f</value>
+							</var>
+							<var>CC_DAC_2
+								<value>389f</value>
+							</var>
+							<var>CC_DAC_3
+								<value>446f</value>
+							</var>
+							<var>CC_DAC_4
+								<value>509f</value>
+							</var>
+							<var>CC_DAC_5
+								<value>579f</value>
+							</var>
+							<var>CC_DAC_6
+								<value>659f</value>
+							</var>
+							<var>CC_DAC_7
+								<value>748f</value>
+							</var>
+							<var>CC_DAC_8
+								<value>848f</value>
+							</var>
+							<var>CC_DAC_9
+								<value>960f</value>
+							</var>
+							<var>CC_DAC_10
+								<value>1086f</value>
+							</var>
+							<var>CC_DAC_11
+								<value>1227f</value>
+							</var>
+							<var>CC_DAC_12
+								<value>1386f</value>
+							</var>
+							<var>CC_DAC_13
+								<value>1564f</value>
+							</var>
+							<var>CC_DAC_14
+								<value>1763f</value>
+							</var>
+							<var>CC_DAC_15
+								<value>1987f</value>
+							</var>
+							<var>L_DAC
+								<value>100n</value>
+							</var>
+							<var>RZ_DAC
+								<value>10</value>
+							</var>
+							<var>STATE_NOW
+								<value>1:16</value>
+							</var>
+							<var>W_DAC
+								<value>21u</value>
+							</var>
+							<var>NF_DAC
+								<value>20</value>
+							</var>
+							<var>DIVIDOR
+								<value>0.1</value>
+							</var>
+							<var>L_RES_DAC
+								<value>20n</value>
+							</var>
+							<var>NF_RES_DAC
+								<value>20</value>
+							</var>
+							<var>W_RES_DAC
+								<value>21u</value>
+							</var>
+							<var>R_one
+								<value>1k*DIVIDOR</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -476,8 +632,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Jun 17 01:08:54 2026</timestamp>
-			<uuid>{32fc5daa-58a2-4172-94af-6a8a914aa3b6}</uuid>
+			<timestamp>Jun 17 22:41:17 2026</timestamp>
+			<uuid>{49d1054c-a21d-4c66-92d0-c67465b31111}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -485,7 +641,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_010854178</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_224117578</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>

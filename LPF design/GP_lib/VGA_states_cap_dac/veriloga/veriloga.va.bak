@@ -1,0 +1,29 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module one_hot_decoder(out);
+    // Defines a 16-bit output bus
+    output [0:15] out;
+    electrical [0:15] out;
+
+    // PARAMETERS: Change or sweep 'active_state' in ADE
+    parameter integer active_state = 1 from [1:16]; 
+    
+    parameter real vhigh = 0.8;  // Your VDD voltage
+    parameter real vlow  = 0.0;  // Your VSS / Ground voltage
+    parameter real trise = 1n;   // Rise time of the switch signal
+    parameter real tfall = 1n;   // Fall time of the switch signal
+
+    genvar i;
+
+    analog begin
+        for (i = 0; i < 16; i = i + 1) begin
+            // If the current index matches the active state (1-indexed to 0-indexed conversion)
+            if (i == (active_state - 1)) begin
+                V(out[i]) <+ transition(vhigh, 0, trise, tfall);
+            end else begin
+                V(out[i]) <+ transition(vlow, 0, trise, tfall);
+            end
+        end
+    end
+endmodule
