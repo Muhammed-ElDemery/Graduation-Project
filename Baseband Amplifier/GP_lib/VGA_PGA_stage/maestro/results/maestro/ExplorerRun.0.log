@@ -1,22 +1,24 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Mon Jun 15 22:17:43 2026 
+Current time: Wed Jun 17 01:08:55 2026 
 Best design point: 1
 Design specs: 
 	GP_lib:VGA_PGA_stage:1	corner	Nominal - 
-	Phase Margin		66.97
-	DC_gain		18.94
-	BW		634.8M
-	integ((getData("in" ?result "noise")**2) 0 600000000 " ")		30.98n
-	Noise_density_600M		7.185n
-	Output Referred IP3 Point		Error	No
-	DC_loop_gain		43.8
-	Noise_density_total		13.34n
+	Phase Margin		Error	No
+	v (/VOP /VON); ac dB20(V)		Error	No
+	DC_gain		Error	No
+	BW		Error	No
+	input noise; V**2 / Hz		Error	No
+	integ((getData("in" ?result "noise")**2) 0 600000000 " ")		Error	No
+	Noise_density_600M		Error	No
+	Output Referred IP3 Point		26.59
+	DC_loop_gain		Error	No
+	Noise_density_total		Error	No
 Design parameters: 
 	wireopt		19
 
 ExplorerRun.0
-Number of points completed: 4
-Number of simulation errors: 4
+Number of points completed: 1
+Number of simulation errors: 9
 ExplorerRun.0 completed. 
-Current time: Mon Jun 15 22:18:13 2026 
+Current time: Wed Jun 17 01:10:02 2026 

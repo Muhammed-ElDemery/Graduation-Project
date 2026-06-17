@@ -52,7 +52,7 @@
 						<value>1p</value>
 					</var>
 					<var>GM_CM
-						<value>100m</value>
+						<value>400u</value>
 					</var>
 					<var>LIP_IN
 						<value>100n</value>
@@ -61,7 +61,7 @@
 						<value>100n</value>
 					</var>
 					<var>LN_LOAD1
-						<value>100n</value>
+						<value>100n*2</value>
 					</var>
 					<var>LP_load2
 						<value>300n</value>
@@ -85,22 +85,22 @@
 						<value>30*2</value>
 					</var>
 					<var>R_1
-						<value>1k</value>
+						<value>1k*0.1</value>
 					</var>
 					<var>R_2
-						<value>8.91k,1.58k</value>
+						<value>8.9k*0.1</value>
 					</var>
 					<var>WP_IN
-						<value>37.5u*2</value>
+						<value>37.5u*2*2</value>
 					</var>
 					<var>WN_LOAD1
-						<value>5.6u*2</value>
+						<value>5.6u*2*2*2</value>
 					</var>
 					<var>WP_load2
-						<value>309u*2.5</value>
+						<value>309u*2.5*2</value>
 					</var>
 					<var>WN_in2
-						<value>39.4u*2.5</value>
+						<value>39.4u*2.5*2</value>
 					</var>
 					<var>WP_source
 						<value>WP_load2*0.286</value>
@@ -109,13 +109,13 @@
 						<value>LP_source</value>
 					</var>
 					<var>VGS_VBN
-						<value>0.5</value>
+						<value>536m</value>
 					</var>
 					<var>VINCM
 						<value>0.5</value>
 					</var>
 					<var>VOCM
-						<value>0.8</value>
+						<value>0.4</value>
 					</var>
 					<var>WS
 						<value>309u/16</value>
@@ -127,13 +127,31 @@
 						<value>162u/2</value>
 					</var>
 					<var>CC
-						<value>200f,800f</value>
+						<value>0.3p</value>
 					</var>
 					<var>Rz
 						<value>75</value>
 					</var>
 					<var>frq
 						<value>100M</value>
+					</var>
+					<var>LP_CM
+						<value>100n</value>
+					</var>
+					<var>LS_CM
+						<value>300n</value>
+					</var>
+					<var>NF_CM
+						<value>10</value>
+					</var>
+					<var>NF_S_CM
+						<value>10*2</value>
+					</var>
+					<var>WP_CM
+						<value>5.5u</value>
+					</var>
+					<var>WS_CM
+						<value>12.7u*2</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -245,7 +263,7 @@
 								<value>1p</value>
 							</var>
 							<var>GM_CM
-								<value>100m</value>
+								<value>400u</value>
 							</var>
 							<var>LIP_IN
 								<value>100n</value>
@@ -254,7 +272,7 @@
 								<value>100n</value>
 							</var>
 							<var>LN_LOAD1
-								<value>100n</value>
+								<value>100n*2</value>
 							</var>
 							<var>LP_load2
 								<value>300n</value>
@@ -278,22 +296,22 @@
 								<value>30*2</value>
 							</var>
 							<var>R_1
-								<value>1k</value>
+								<value>1k*0.1</value>
 							</var>
 							<var>R_2
-								<value>8.91k,1.58k</value>
+								<value>8.9k*0.1</value>
 							</var>
 							<var>WP_IN
-								<value>37.5u*2</value>
+								<value>37.5u*2*2</value>
 							</var>
 							<var>WN_LOAD1
-								<value>5.6u*2</value>
+								<value>5.6u*2*2*2</value>
 							</var>
 							<var>WP_load2
-								<value>309u*2.5</value>
+								<value>309u*2.5*2</value>
 							</var>
 							<var>WN_in2
-								<value>39.4u*2.5</value>
+								<value>39.4u*2.5*2</value>
 							</var>
 							<var>WP_source
 								<value>WP_load2*0.286</value>
@@ -302,13 +320,13 @@
 								<value>LP_source</value>
 							</var>
 							<var>VGS_VBN
-								<value>0.5</value>
+								<value>536m</value>
 							</var>
 							<var>VINCM
 								<value>0.5</value>
 							</var>
 							<var>VOCM
-								<value>0.8</value>
+								<value>0.4</value>
 							</var>
 							<var>WS
 								<value>309u/16</value>
@@ -320,13 +338,31 @@
 								<value>162u/2</value>
 							</var>
 							<var>CC
-								<value>200f,800f</value>
+								<value>0.3p</value>
 							</var>
 							<var>Rz
 								<value>75</value>
 							</var>
 							<var>frq
 								<value>100M</value>
+							</var>
+							<var>LP_CM
+								<value>100n</value>
+							</var>
+							<var>LS_CM
+								<value>300n</value>
+							</var>
+							<var>NF_CM
+								<value>10</value>
+							</var>
+							<var>NF_S_CM
+								<value>10*2</value>
+							</var>
+							<var>WP_CM
+								<value>5.5u</value>
+							</var>
+							<var>WS_CM
+								<value>12.7u*2</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -440,8 +476,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Jun 15 22:17:42 2026</timestamp>
-			<uuid>{f6915886-2224-4113-b8cd-fe17826ec274}</uuid>
+			<timestamp>Jun 17 01:08:54 2026</timestamp>
+			<uuid>{32fc5daa-58a2-4172-94af-6a8a914aa3b6}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -449,7 +485,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_221742270</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_010854178</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
