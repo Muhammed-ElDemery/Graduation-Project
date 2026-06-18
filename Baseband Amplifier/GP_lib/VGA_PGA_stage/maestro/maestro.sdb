@@ -103,7 +103,7 @@
 						<value>LP_source</value>
 					</var>
 					<var>VGS_VBN
-						<value>534m</value>
+						<value>537m</value>
 					</var>
 					<var>VINCM
 						<value>0.86</value>
@@ -208,7 +208,7 @@
 						<value>10</value>
 					</var>
 					<var>STATE_NOW
-						<value>1:16</value>
+						<value>14</value>
 					</var>
 					<var>W_DAC
 						<value>21u</value>
@@ -392,7 +392,7 @@
 								<value>LP_source</value>
 							</var>
 							<var>VGS_VBN
-								<value>534m</value>
+								<value>537m</value>
 							</var>
 							<var>VINCM
 								<value>0.86</value>
@@ -497,7 +497,7 @@
 								<value>10</value>
 							</var>
 							<var>STATE_NOW
-								<value>1:16</value>
+								<value>14</value>
 							</var>
 							<var>W_DAC
 								<value>21u</value>
@@ -632,8 +632,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Jun 17 22:41:17 2026</timestamp>
-			<uuid>{49d1054c-a21d-4c66-92d0-c67465b31111}</uuid>
+			<timestamp>Jun 18 17:30:21 2026</timestamp>
+			<uuid>{f239296d-ba54-48cd-8eb3-f4af5d705342}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -641,7 +641,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_224117578</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_173021262</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/VGA_PGA_stage/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>

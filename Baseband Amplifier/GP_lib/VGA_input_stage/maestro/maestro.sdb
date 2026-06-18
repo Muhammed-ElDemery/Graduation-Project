@@ -36,10 +36,10 @@
 						<value>200n</value>
 					</var>
 					<var>LP
-						<value>150n</value>
+						<value>300n</value>
 					</var>
 					<var>NF_N
-						<value>20*2*FACTOR</value>
+						<value>10*2*FACTOR</value>
 					</var>
 					<var>NF_P
 						<value>10*2*FACTOR</value>
@@ -54,10 +54,10 @@
 						<value>478m</value>
 					</var>
 					<var>WN
-						<value>140u*FACTOR</value>
+						<value>140u*FACTOR/multi</value>
 					</var>
 					<var>WP
-						<value>16u*FACTOR</value>
+						<value>150u</value>
 					</var>
 					<var>WP2
 						<value>24.4u*FACTOR</value>
@@ -89,6 +89,33 @@
 					<var>VAMP
 						<value>0.1m</value>
 					</var>
+					<var>multi
+						<value>2</value>
+					</var>
+					<var>RLOAD
+						<value>100+RFBK</value>
+					</var>
+					<var>RS
+						<value>20</value>
+					</var>
+					<var>NF_LOAD
+						<value>20</value>
+					</var>
+					<var>VOCM
+						<value>0.5</value>
+					</var>
+					<var>WN_LOAD
+						<value>13u*5/4*2</value>
+					</var>
+					<var>RFBK
+						<value>150</value>
+					</var>
+					<var>LP2
+						<value>150n</value>
+					</var>
+					<var>LN2
+						<value>400n</value>
+					</var>
 				</vars>
 				<origoptions>
 					<option>cell
@@ -107,6 +134,11 @@
 						<value>schematic</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>ipnCurves
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<extensions>
@@ -160,6 +192,14 @@
 			<copyreferenceresults>1</copyreferenceresults>
 		</incrementalsimsetup>
 		<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+		<vars>
+			<var>wireopt
+				<value>19</value>
+				<dependentTests>
+					<dependentTest omitted="0">GP_lib:VGA_input_stage:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
 	</active>
 	<history>History
 		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
@@ -199,10 +239,10 @@
 								<value>200n</value>
 							</var>
 							<var>LP
-								<value>150n</value>
+								<value>300n</value>
 							</var>
 							<var>NF_N
-								<value>20*2*FACTOR</value>
+								<value>10*2*FACTOR</value>
 							</var>
 							<var>NF_P
 								<value>10*2*FACTOR</value>
@@ -217,10 +257,10 @@
 								<value>478m</value>
 							</var>
 							<var>WN
-								<value>140u*FACTOR</value>
+								<value>140u*FACTOR/multi</value>
 							</var>
 							<var>WP
-								<value>16u*FACTOR</value>
+								<value>150u</value>
 							</var>
 							<var>WP2
 								<value>24.4u*FACTOR</value>
@@ -252,6 +292,33 @@
 							<var>VAMP
 								<value>0.1m</value>
 							</var>
+							<var>multi
+								<value>2</value>
+							</var>
+							<var>RLOAD
+								<value>100+RFBK</value>
+							</var>
+							<var>RS
+								<value>20</value>
+							</var>
+							<var>NF_LOAD
+								<value>20</value>
+							</var>
+							<var>VOCM
+								<value>0.5</value>
+							</var>
+							<var>WN_LOAD
+								<value>13u*5/4*2</value>
+							</var>
+							<var>RFBK
+								<value>150</value>
+							</var>
+							<var>LP2
+								<value>150n</value>
+							</var>
+							<var>LN2
+								<value>400n</value>
+							</var>
 						</vars>
 						<origoptions>
 							<option>cell
@@ -270,6 +337,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ipnCurves
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<extensions>
@@ -371,16 +443,23 @@
 					<copyreferenceresults>1</copyreferenceresults>
 				</incrementalsimsetup>
 				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<vars>
+					<var>wireopt
+						<value>19</value>
+						<dependentTests>
+							<dependentTest omitted="0">GP_lib:VGA_input_stage:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
 				<runnabletests>
 					<test>GP_lib:VGA_input_stage:1</test>
 				</runnabletests>
 				<disabledtests></disabledtests>
-				<vars></vars>
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Jun 14 00:21:21 2026</timestamp>
-			<uuid>{9a99e576-5f39-4a1f-a842-0b9160702773}</uuid>
+			<timestamp>Jun 18 23:48:27 2026</timestamp>
+			<uuid>{acd6a73e-024b-4f12-bbe5-d0e5ec3d4a16}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -388,7 +467,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_002121007</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_234827919</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
