@@ -1,17 +1,20 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Thu Jun 18 23:48:28 2026 
+Current time: Fri Jun 19 01:50:42 2026 
 Best design point: 1
 Design specs: 
 	GP_lib:VGA_input_stage:1	corner	Nominal - 
-	VINN_density		893.2p
+	VINN_density		Error	No
+	v (/OUTP /OUTN); ac dB20(V)		Error	No
 	ipnCurves		Error	No
 	Output Referred IP3 Point		Error	No
+	v (/OUTP2 /OUTN2); ac dB20(V)		Error	No
+	(db((vfreq('ac "/OUTP2") - vfreq('ac "/OUTN2"))) - db((vfreq('ac "/VINP") - vfreq('ac "/VINN"))))		Error	No
 Design parameters: 
 	wireopt		19
 
 ExplorerRun.0
 Number of points completed: 1
-Number of simulation errors: 2
+Number of simulation errors: 6
 ExplorerRun.0 completed. 
-Current time: Thu Jun 18 23:48:37 2026 
+Current time: Fri Jun 19 01:51:19 2026 

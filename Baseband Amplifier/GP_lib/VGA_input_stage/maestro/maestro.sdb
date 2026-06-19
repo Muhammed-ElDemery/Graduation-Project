@@ -36,7 +36,7 @@
 						<value>200n</value>
 					</var>
 					<var>LP
-						<value>300n</value>
+						<value>150n</value>
 					</var>
 					<var>NF_N
 						<value>10*2*FACTOR</value>
@@ -57,7 +57,7 @@
 						<value>140u*FACTOR/multi</value>
 					</var>
 					<var>WP
-						<value>150u</value>
+						<value>16u*FACTOR</value>
 					</var>
 					<var>WP2
 						<value>24.4u*FACTOR</value>
@@ -66,13 +66,13 @@
 						<value>2240u*FACTOR</value>
 					</var>
 					<var>LS
-						<value>400n</value>
+						<value>200n</value>
 					</var>
 					<var>NF_S
 						<value>40</value>
 					</var>
 					<var>WS
-						<value>320u*2*FACTOR</value>
+						<value>320u*2*FACTOR*0.5</value>
 					</var>
 					<var>VINCM
 						<value>800m</value>
@@ -107,14 +107,20 @@
 					<var>WN_LOAD
 						<value>13u*5/4*2</value>
 					</var>
-					<var>RFBK
-						<value>150</value>
-					</var>
 					<var>LP2
 						<value>150n</value>
 					</var>
 					<var>LN2
 						<value>400n</value>
+					</var>
+					<var>Rdegen
+						<value>0</value>
+					</var>
+					<var>RFBK
+						<value>890</value>
+					</var>
+					<var>R_feedback
+						<value>20k</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -239,7 +245,7 @@
 								<value>200n</value>
 							</var>
 							<var>LP
-								<value>300n</value>
+								<value>150n</value>
 							</var>
 							<var>NF_N
 								<value>10*2*FACTOR</value>
@@ -260,7 +266,7 @@
 								<value>140u*FACTOR/multi</value>
 							</var>
 							<var>WP
-								<value>150u</value>
+								<value>16u*FACTOR</value>
 							</var>
 							<var>WP2
 								<value>24.4u*FACTOR</value>
@@ -269,13 +275,13 @@
 								<value>2240u*FACTOR</value>
 							</var>
 							<var>LS
-								<value>400n</value>
+								<value>200n</value>
 							</var>
 							<var>NF_S
 								<value>40</value>
 							</var>
 							<var>WS
-								<value>320u*2*FACTOR</value>
+								<value>320u*2*FACTOR*0.5</value>
 							</var>
 							<var>VINCM
 								<value>800m</value>
@@ -310,14 +316,20 @@
 							<var>WN_LOAD
 								<value>13u*5/4*2</value>
 							</var>
-							<var>RFBK
-								<value>150</value>
-							</var>
 							<var>LP2
 								<value>150n</value>
 							</var>
 							<var>LN2
 								<value>400n</value>
+							</var>
+							<var>Rdegen
+								<value>0</value>
+							</var>
+							<var>RFBK
+								<value>890</value>
+							</var>
+							<var>R_feedback
+								<value>20k</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -458,8 +470,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Jun 18 23:48:27 2026</timestamp>
-			<uuid>{acd6a73e-024b-4f12-bbe5-d0e5ec3d4a16}</uuid>
+			<timestamp>Jun 19 01:50:40 2026</timestamp>
+			<uuid>{b2098a12-8bf3-4214-bf70-4748a59f1630}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -467,7 +479,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_234827919</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_015040772</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/VGA_input_stage/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
