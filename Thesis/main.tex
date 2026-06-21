@@ -1,0 +1,66 @@
+\documentclass[12pt, a4paper, twoside]{report}
+
+% --- Core Packages ---
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry} % Required margins 
+\usepackage{mathptmx} % Times New Roman equivalent 
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{tocloft}
+\usepackage[export]{adjustbox}
+
+
+% --- Advanced Bibliography Handling ---
+% Uses biber backend to natively support multiple separate .bib files
+\usepackage[backend=biber, style=ieee, sorting=none]{biblatex}
+
+% --- Global Image Paths ---
+% Tells LaTeX to search these specific subfolders for images automatically
+\graphicspath{{chapter1/images/}{chapter2/images/}{chapter3/images/}}
+
+% --- Formatting Configurations ---
+\onehalfspacing % 1.5 Line spacing 
+
+% Heading Font Sizes (16pt Chapter, 14pt Section, 13pt Subsection) 
+\titleformat{\chapter}[display]
+  {\normalfont\fontsize{16}{19}\bfseries\centering}{\chaptertitlename\ \thechapter}{10pt}{}
+\titleformat{\section}
+  {\normalfont\fontsize{14}{17}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{13}{16}\bfseries}{\thesubsection}{1em}{}
+
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\pagestyle{plain} % Centered bottom page numbers 
+
+% --- Load Independent Team Reference Files ---
+\addbibresource{chapter1/refs.bib}
+\addbibresource{chapter2/refs.bib}
+\addbibresource{chapter3/refs.bib} % Uncomment as teams add folders
+
+\begin{document}
+
+% ==========================================
+% FRONTMATTER (Roman Numerals) 
+% ==========================================
+\pagenumbering{roman}
+\input{frontmatter.tex}
+
+
+% ==========================================
+% MAIN BODY (Arabic Numerals) 
+% ==========================================
+\clearpage
+\pagenumbering{arabic}
+
+% Dynamically pull chapters from independent folders
+\input{chapter1/chapter1.tex}
+\input{chapter2/chapter2.tex}
+\input{chpater3/chapter3.tex}
+
+% ==========================================
+% UNIFIED REFERENCES
+% ==========================================
+\clearpage
+\printbibliography[heading=bibintoc, title={References}]
+
+\end{document}
