@@ -66,16 +66,16 @@
 						<value>16</value>
 					</var>
 					<var>VBP
-						<value>0.58</value>
+						<value>1.6</value>
 					</var>
 					<var>VID
 						<value>0</value>
 					</var>
 					<var>VINCM
-						<value>0.7</value>
+						<value>0.8</value>
 					</var>
 					<var>VOCM
-						<value>0.7</value>
+						<value>0.8</value>
 					</var>
 					<var>WN
 						<value>5.1u*8</value>
@@ -336,16 +336,16 @@
 								<value>16</value>
 							</var>
 							<var>VBP
-								<value>0.58</value>
+								<value>1.6</value>
 							</var>
 							<var>VID
 								<value>0</value>
 							</var>
 							<var>VINCM
-								<value>0.7</value>
+								<value>0.8</value>
 							</var>
 							<var>VOCM
-								<value>0.7</value>
+								<value>0.8</value>
 							</var>
 							<var>WN
 								<value>5.1u*8</value>
@@ -591,8 +591,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Apr 23 00:21:10 2026</timestamp>
-			<uuid>{75c62cf3-89be-449d-af6c-6a69fbbd0fdf}</uuid>
+			<timestamp>Jun 26 17:49:04 2026</timestamp>
+			<uuid>{878c95d3-067a-4ff5-9ecc-8adecb3d5319}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/GM_cell_test/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -600,7 +600,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_002110794</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_174904022</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/GM_cell_test/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/GM_cell_test/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>

@@ -1,0 +1,37 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Jun 22 17:59:05 2026 
+Best design point: 1
+Design specs: 
+	GP_lib:VGA_full_tb:1	corner	FF_cold - 
+	Vnin		553.8p
+	BW		1.185G
+	Phase Margin		59.4
+	ipnCurves		Error	No
+	Output Referred IP3 Point		Error	No
+	v (/VOP /VON); hb_mt dB20(V)		Error	No
+	value(db((vfreq('ac "/VOP") - vfreq('ac "/VON"))) 1)		38.97
+	GP_lib:VGA_full_tb:1	corner	SS_hot - 
+	Vnin		553.8p
+	BW		474.8M
+	Phase Margin		71.99
+	ipnCurves		Error	No
+	Output Referred IP3 Point		Error	No
+	v (/VOP /VON); hb_mt dB20(V)		Error	No
+	value(db((vfreq('ac "/VOP") - vfreq('ac "/VON"))) 1)		38.76
+	GP_lib:VGA_full_tb:1	corner	Nominal - 
+	Vnin		553.8p
+	BW		773.9M
+	Phase Margin		66.07
+	ipnCurves		Error	No
+	Output Referred IP3 Point		Error	No
+	v (/VOP /VON); hb_mt dB20(V)		Error	No
+	value(db((vfreq('ac "/VOP") - vfreq('ac "/VON"))) 1)		38.98
+Design parameters: 
+	wireopt		19
+
+Interactive.1
+Number of points completed: 1
+Number of simulation errors: 9
+Interactive.1 completed. 
+Current time: Mon Jun 22 17:59:28 2026 

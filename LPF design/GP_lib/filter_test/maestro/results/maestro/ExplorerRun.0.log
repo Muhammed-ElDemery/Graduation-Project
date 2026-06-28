@@ -1,19 +1,24 @@
-Starting Single Run, Sweeps and Corners...
+Starting Monte Carlo Sampling...
 
-Current time: Sat May 23 23:54:17 2026 
-Best design point: 1
-Design specs: 
-	GP_lib:filter_test:1	corner	Nominal - 
-	Noise_up_to_200M		87.05u	Yes
-	((1.5 * value(db20(v("/VOUT" ?result "hb_mt_fi")) 100000000)) - (value(db20(v("/VOUT" ?result "hb_mt_fi")) 90000000) * 0.5))		3.361
-	Noise_full_Band		115.3u
-	Output Referred IP3 Point		10.35
-	Input Referred IP3 Point		14
-Design parameters: 
-	wireopt		19
+Current time: Sun Jun 28 22:49:35 2026 
+
+Variation: All
+Sampling Method: Random
+Seed: 12345
 
 ExplorerRun.0
-Number of points completed: 1
+Number of points completed: 25
 Number of simulation errors: 0
 ExplorerRun.0 completed. 
-Current time: Sat May 23 23:54:29 2026 
+Current time: Sun Jun 28 22:55:39 2026 
+Monte Carlo Sampling yield summary:
+Number of spec values are in this yield data: 1
+GP_lib:filter_test:1	Nominal - 
+	Output Referred IP2 Point:	Yield	100%
+		Min -56.422	Max 74.1297	Mean 36.9753	Number of errors 0
+
+GP_lib:filter_test:1
+	Overall Yield	100%	Number of points passed	25	Total number of points	25
+
+Estimated yield = 100% (25/25), 0 errors
+Estimated yield (No opregions) = 100% (25/25)

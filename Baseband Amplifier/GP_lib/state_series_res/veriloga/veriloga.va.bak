@@ -1,0 +1,30 @@
+// VerilogA for GP_lib, state_series_res, veriloga
+`include "constants.vams"
+`include "disciplines.vams"
+
+module state_series_res(out);
+    // Defines a 16-bit output bus
+    output [0:9] out;
+    electrical [0:9] out;
+
+    // PARAMETERS: Change or sweep 'active_state' in ADE
+    parameter integer active_state = 1 from [1:16]; 
+    
+    parameter real vhigh = 1.2;  // Your VDD voltage
+    parameter real vlow  = 0.0;  // Your VSS / Ground voltage
+    parameter real trise = 1n;   // Rise time of the switch signal
+    parameter real tfall = 1n;   // Fall time of the switch signal
+
+    genvar i;
+
+    analog begin
+        for (i = 0; i < 10 ;i = i + 1) begin
+            // If the current index matches the active state (1-indexed to 0-indexed conversion)
+            if (i < (active_state - 1)) begin
+                V(out[i]) <+ transition(vhigh, 0, trise, tfall);
+            end else begin
+                V(out[i]) <+ transition(vlow, 0, trise, tfall);
+            end
+        end
+    end
+endmodule

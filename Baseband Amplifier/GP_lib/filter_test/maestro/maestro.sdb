@@ -11,7 +11,7 @@
 				<icontype></icontype>
 			</extension>
 		</extensions>
-		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<currentmode>Monte Carlo Sampling</currentmode>
 		<vars>
 			<var>wireopt
 				<value>19</value>
@@ -103,7 +103,7 @@
 						<value>1.076</value>
 					</var>
 					<var>VOCM
-						<value>0.7</value>
+						<value>0.8</value>
 					</var>
 					<var>WN
 						<value>5.1u*FACTOR</value>
@@ -118,10 +118,10 @@
 						<value>3u*FACTOR*R*2</value>
 					</var>
 					<var>GM
-						<value>1.98*GM2*0.5*FACTOR</value>
+						<value>1.65*GM2*0.5*FACTOR*2</value>
 					</var>
 					<var>VINCM
-						<value>0.7</value>
+						<value>0.8</value>
 					</var>
 					<var>AV
 						<value>257</value>
@@ -136,7 +136,7 @@
 						<value>1.92f</value>
 					</var>
 					<var>GM2
-						<value>0.6219m</value>
+						<value>0.7839m</value>
 					</var>
 					<var>GM_first_stage
 						<value>8.976m*R</value>
@@ -172,7 +172,7 @@
 						<value>1m</value>
 					</var>
 					<var>frq
-						<value>100M</value>
+						<value>200M</value>
 					</var>
 					<var>LN1_CASC
 						<value>20n</value>
@@ -276,6 +276,36 @@
 					<var>F2
 						<value>1</value>
 					</var>
+					<var>C_comp
+						<value>300f</value>
+					</var>
+					<var>IBias_LNA
+						<value>420u</value>
+					</var>
+					<var>L_RES_DAC
+						<value>20n</value>
+					</var>
+					<var>LNA_NF_P2
+						<value>100</value>
+					</var>
+					<var>LNA_WP2
+						<value>73.2u</value>
+					</var>
+					<var>NF_RES_DAC
+						<value>60</value>
+					</var>
+					<var>R_feedback
+						<value>1.57k</value>
+					</var>
+					<var>STATE_LNA
+						<value>1</value>
+					</var>
+					<var>VGS_VBP
+						<value>600m</value>
+					</var>
+					<var>W_RES_DAC
+						<value>60u</value>
+					</var>
 				</vars>
 				<origoptions>
 					<option>cell
@@ -348,6 +378,85 @@
 				<tol></tol>
 			</spec>
 		</specs>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>mcnumpoints
+					<value>25</value>
+				</runoption>
+				<runoption>mcYieldTarget
+					<value>99.865</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>samplingmode
+					<value>random</value>
+				</runoption>
+				<runoption>yeyistostart
+					<value>3.0</value>
+				</runoption>
+				<runoption>dumpParamMode
+					<value>yes</value>
+				</runoption>
+				<runoption>mcYieldAlphaLimit
+					<value>0.05</value>
+				</runoption>
+				<runoption>reliabilitymode
+					<value>singlestress</value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value>1</value>
+				</runoption>
+				<runoption>mcSigmaTarget
+					<value>3</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value>12345</value>
+				</runoption>
+				<runoption>sssnumpoints
+					<value>7000</value>
+				</runoption>
+				<runoption>yeexpectedyield
+					<value>3</value>
+				</runoption>
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>wcdinitialpoints
+					<value>200</value>
+				</runoption>
+				<runoption>yeiterations
+					<value>10</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>0</value>
+				</runoption>
+				<runoption>yeusehistorymc
+					<value>0</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>1</value>
+				</runoption>
+				<runoption>yeuseautomcsamples
+					<value>1</value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>yecreatecorners
+					<value>0</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>1</value>
+				</runoption>
+				<runoption>haveyeyieldtostart
+					<value>1</value>
+				</runoption>
+				<runoption>yeusevarreduction
+					<value>1</value>
+				</runoption>
+			</mode>
+		</runoptions>
 	</active>
 	<history>History
 		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
@@ -362,7 +471,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<vars>
 					<var>wireopt
 						<value>19</value>
@@ -454,7 +563,7 @@
 								<value>1.076</value>
 							</var>
 							<var>VOCM
-								<value>0.7</value>
+								<value>0.8</value>
 							</var>
 							<var>WN
 								<value>5.1u*FACTOR</value>
@@ -469,10 +578,10 @@
 								<value>3u*FACTOR*R*2</value>
 							</var>
 							<var>GM
-								<value>1.98*GM2*0.5*FACTOR</value>
+								<value>1.65*GM2*0.5*FACTOR*2</value>
 							</var>
 							<var>VINCM
-								<value>0.7</value>
+								<value>0.8</value>
 							</var>
 							<var>AV
 								<value>257</value>
@@ -487,7 +596,7 @@
 								<value>1.92f</value>
 							</var>
 							<var>GM2
-								<value>0.6219m</value>
+								<value>0.7839m</value>
 							</var>
 							<var>GM_first_stage
 								<value>8.976m*R</value>
@@ -523,7 +632,7 @@
 								<value>1m</value>
 							</var>
 							<var>frq
-								<value>100M</value>
+								<value>200M</value>
 							</var>
 							<var>LN1_CASC
 								<value>20n</value>
@@ -626,6 +735,36 @@
 							</var>
 							<var>F2
 								<value>1</value>
+							</var>
+							<var>C_comp
+								<value>300f</value>
+							</var>
+							<var>IBias_LNA
+								<value>420u</value>
+							</var>
+							<var>L_RES_DAC
+								<value>20n</value>
+							</var>
+							<var>LNA_NF_P2
+								<value>100</value>
+							</var>
+							<var>LNA_WP2
+								<value>73.2u</value>
+							</var>
+							<var>NF_RES_DAC
+								<value>60</value>
+							</var>
+							<var>R_feedback
+								<value>1.57k</value>
+							</var>
+							<var>STATE_LNA
+								<value>1</value>
+							</var>
+							<var>VGS_VBP
+								<value>600m</value>
+							</var>
+							<var>W_RES_DAC
+								<value>60u</value>
 							</var>
 						</vars>
 						<origoptions>
@@ -736,25 +875,94 @@
 					<copyreferenceresults>1</copyreferenceresults>
 				</incrementalsimsetup>
 				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
-				<specs>
-					<spec>GP_lib:filter_test:1.Noise_up_to_200M
-						<testname>GP_lib:filter_test:1</testname>
-						<resname>Noise_up_to_200M</resname>
-						<specType>lt</specType>
-						<min></min>
-						<max>99.2u</max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
+				<specs></specs>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcnumpoints
+							<value>25</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.865</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>yeyistostart
+							<value>3.0</value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>reliabilitymode
+							<value>singlestress</value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value>1</value>
+						</runoption>
+						<runoption>mcSigmaTarget
+							<value>3</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value>12345</value>
+						</runoption>
+						<runoption>sssnumpoints
+							<value>7000</value>
+						</runoption>
+						<runoption>yeexpectedyield
+							<value>3</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>wcdinitialpoints
+							<value>200</value>
+						</runoption>
+						<runoption>yeiterations
+							<value>10</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>yeusehistorymc
+							<value>0</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>yeuseautomcsamples
+							<value>1</value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>yecreatecorners
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>haveyeyieldtostart
+							<value>1</value>
+						</runoption>
+						<runoption>yeusevarreduction
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<runnabletests>
 					<test>GP_lib:filter_test:1</test>
 				</runnabletests>
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>May 23 23:54:17 2026</timestamp>
-			<uuid>{c32c504d-9c0d-4c09-b5f6-e4bc0b6388c2}</uuid>
+			<timestamp>Jun 28 22:49:34 2026</timestamp>
+			<uuid>{1156d612-d9d5-4e76-ab25-3aa918c30efc}</uuid>
 			<resultsname>/home/islam/Cadence/GP_lib/filter_test/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -762,7 +970,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_islam_235417101</localpsfdir>
+			<localpsfdir>/tmp/berkeley_islam_224934555</localpsfdir>
 			<psfdir>/home/islam/simulation/GP_lib/filter_test/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/GP_lib/filter_test/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>

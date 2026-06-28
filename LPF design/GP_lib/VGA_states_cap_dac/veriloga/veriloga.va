@@ -7,7 +7,7 @@ module one_hot_decoder(out);
     electrical [0:15] out;
 
     // PARAMETERS: Change or sweep 'active_state' in ADE
-    parameter integer active_state = 1 from [1:16]; 
+    parameter integer active_state = 1 from [-16:16]; 
     
     parameter real vhigh = 1.2;  // Your VDD voltage
     parameter real vlow  = 0.0;  // Your VSS / Ground voltage

@@ -1,0 +1,19 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Jun 28 22:14:02 2026 
+Best design point: 1
+Design specs: 
+	GP_lib:VGA_full_tb:1	corner	Nominal - 
+	Vnin		860.5p
+	BW		677.2M
+	Phase Margin		61.15
+	ipnCurves		Error	No
+	Output Referred IP3 Point		Error	No
+	v (/VOP /VON); hb_mt dB20(V)		Error	No
+	value(db((vfreq('ac "/VOP") - vfreq('ac "/VON"))) 1)		37.43
+Design parameters: 
+	wireopt		19
+
+Received stop signal from user. 
+ExplorerRun.0 completed. 
+Current time: Sun Jun 28 22:14:40 2026 
