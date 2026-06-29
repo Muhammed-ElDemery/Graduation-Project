@@ -9,6 +9,9 @@
 \usepackage{tocloft}
 \usepackage[export]{adjustbox}
 
+\usepackage{booktabs} %Added By badawy
+\usepackage{tabularx} %Added By badawy
+
 
 % --- Advanced Bibliography Handling ---
 % Uses biber backend to natively support multiple separate .bib files
@@ -16,7 +19,7 @@
 
 % --- Global Image Paths ---
 % Tells LaTeX to search these specific subfolders for images automatically
-\graphicspath{{chapter1/images/}{chapter2/images/}{chapter3/images/}}
+\graphicspath{{chapter1/images/}{Lineup/images/}{chapter3/images/}{FILTER/images}{VGA/images/}}
 
 % --- Formatting Configurations ---
 \onehalfspacing % 1.5 Line spacing 
@@ -34,8 +37,10 @@
 
 % --- Load Independent Team Reference Files ---
 \addbibresource{chapter1/refs.bib}
-\addbibresource{chapter2/refs.bib}
-\addbibresource{chapter3/refs.bib} % Uncomment as teams add folders
+\addbibresource{Lineup/refs.bib}
+\addbibresource{FILTER/refs.bib}
+\addbibresource{VGA/refs.bib}
+%\addbibresource{chapter3/refs.bib} % Uncomment as teams add folders
 
 \begin{document}
 
@@ -54,8 +59,11 @@
 
 % Dynamically pull chapters from independent folders
 \input{chapter1/chapter1.tex}
-\input{chapter2/chapter2.tex}
+\input{Lineup/Lineup.tex}
 \input{chpater3/chapter3.tex}
+\input{FILTER/filter.tex}
+\input{VGA/VGA.tex}
+
 
 % ==========================================
 % UNIFIED REFERENCES
