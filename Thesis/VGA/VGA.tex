@@ -4,7 +4,7 @@
 \section{Introduction}%
 \label{sec:Introduction}
 Baseband VGA main function is to give the ADC the required input
-power inorder to get the required SNR and not to saturate the 
+power in order to get the required SNR and not to saturate the 
 ADC, the baseband VGA in this system is digitally controlled 
 with 1dB step and control range of 15dB , here is the specification
 table~\ref{tab:VGA_specs} 
@@ -16,7 +16,7 @@ table~\ref{tab:VGA_specs}
 
     \begin{tabular}{|c|c|}
         \hline
-        \textbf{Paramter} & \textbf{Value} \\ \hline
+        \textbf{Parameter} & \textbf{Value} \\ \hline
         Maximum Gain  & 39dB  \\ \hline
         NF at maximum gain & 3dB \\ \hline
         OIP3 & 25dBm \\ \hline
@@ -32,8 +32,8 @@ table~\ref{tab:VGA_specs}
 Here are key performance metrics are discussed and how it affects
 the overall system lineup
 \subsubsection{Max gain}%
-Maximum gain affects the sensitivity of the reciever , VGA should
-output suffecient voltage swing to ADC.
+Maximum gain affects the sensitivity of the receiver , VGA should
+output sufficient voltage swing to ADC.
 \subsubsection{Control Range}%
 \label{ssub:Control Range}
 Control Range affects the maximum input power the system can handle
@@ -41,9 +41,9 @@ Control Range affects the maximum input power the system can handle
 \subsubsection{Gain Error}%
 \label{ssub:Gain Error}
 Gain Error has two important metrics one is the DNL (Differential
-Non-linearty) and the other is INL (Internal Non-linearity),
+Non-linearity) and the other is INL (Internal Non-linearity),
 the first describe how much the step varies from ideal required
-step (in our case 1dB) and the latter is how much the step vaires
+step (in our case 1dB) and the latter is how much the step varies
 from its ideal value, DNL and INL equation are shown below.
 \begin{equation}
     DNL = \frac{G(i+1)-G(i)}{\Delta G_{req.}}
@@ -59,7 +59,7 @@ required step
 \label{ssub:Input referred noise}
 Noise requirements for VGA usually not very important but since
 the chain before it is very lossy noise due to VGA should be 
-suffeciently low.
+sufficiently low.
 
 \subsubsection{Linearity}%
 Non-linear distortion caused by inter-modulation products and 
@@ -70,8 +70,8 @@ required OIP3 = 25 dBm
 \subsection{Types of VGAs}%
 \subsubsection{Amp-Att Vs Att-Amp}%
 \label{ssub:Amp-Att Vs Att-Amp}
-VGAs can fall into two main catagories one is Amplifier-Attenuator
-and the other is Atteruator-Amplifier.\\
+VGAs can fall into two main categories one is Amplifier-Attenuator
+and the other is Attenuator-Amplifier.\\
 Amplifier-Attenuator provide constant noise figure across the 
 states and constant IIP3 while OIP3 decreases dB-by-dB.\\
 On the other hand Attenuator-Amplifier provide constant OIP3
@@ -129,21 +129,21 @@ performance but poor NF ( Figure~\ref{fig:VGA_closed_loop.png})
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\linewidth]{images/VGA_closed_loop.png}
-  \caption{Resisitive feedback VGA}
+  \caption{Resistive feedback VGA}
   \label{fig:VGA_closed_loop.png}
 \end{figure}
 
 \section{Design Procedure}%
 \label{sec:Design Procedure}
 Given the requirements of both low NF and high linearity , there
-is no single stage that can do both specailly for high gain 
+is no single stage that can do both specially for high gain 
 39dB , so VGA is divided into two parts: one which is LNA and 
 the other is a resistive feedback Opamp which has good linearity 
 but low noise figure.
 
 It's required for the LNA stage to have noise figure of 2dB , 
-Gain of 20dB and OIP3 = 15dBm, Gain variablity will be chosen
-to maximize total OIP3 , this is achived later by varing the LNA 
+Gain of 20dB and OIP3 = 15dBm, Gain variability will be chosen
+to maximize total OIP3 , this is achieved later by varying the LNA 
 stage by 10 dB and the rest 5 dB for the resistive feedback OPamp
 
 For the resistive feedback Opamp stage OIP3 $\geq 27dBm$ , 
@@ -156,10 +156,10 @@ gain.
 To get a very low noise figure open-loop architecture has to 
 be used but this gives low linearity , architecture in 
 Figure~\ref{fig:LNA_literature_architecture.png} is used as the 
-base for the LNA architecture but achiving gain = 10 dB with 
+base for the LNA architecture but achieving gain = 10 dB with 
 good linearity is hard for this architecture, so adding another
 current mirror stage to get amplification almost has no effect 
-on linearity , this can achives the required 15dBm OIP3.
+on linearity , this can achieves the required 15dBm OIP3.
 
 \begin{figure}[htbp]
   \centering
@@ -169,9 +169,9 @@ on linearity , this can achives the required 15dBm OIP3.
 \end{figure}
 
 Another Modification is needed which to drive a low impedance 
-resistive feedback Amplifier , so the ouptut stage of the LNA
+resistive feedback Amplifier , so the output stage of the LNA
 better to be low impedance.\\
-Lastly, adding gain variablity  to the LNA , current feedback 
+Lastly, adding gain variability  to the LNA , current feedback 
 is chosen \cite{low_distorion_current_feedback} because
 degeneration resistive would be difficult
 (very low resistive degeneration ) and load current control could
@@ -184,7 +184,7 @@ Final LNA architecture is shown in Figure~\ref{fig:images-VGA_LNA_stage-eps}
     \label{fig:images-VGA_LNA_stage-eps}
 \end{figure}
 
-\subsubsection{Resisitive feedback Opamp}%
+\subsubsection{Resistive feedback Opamp}%
 \label{ssub:Resisitive feedback Opamp}
 For this stage that has very high linearity, it should be 
 a resistive feedback with wide swing Opamp \cite{resistive_feedback_VGA},
@@ -210,9 +210,9 @@ good PM across all states.
     \label{fig:VGA_Opamp_miller-eps}
 \end{figure}
 
-\subsubsection{Resisitive and Capacitive DACs}%
+\subsubsection{Resistive and Capacitive DACs}%
 \label{ssub:Resisitive and Capacitive DACs}
-Resisitive and Capacitive DACs switches are thin oxid mos switches
+Resistive and Capacitive DACs switches are thin oxide mos switches
 to reduce parasitics , but since OP voltage levels are different
 we cannot use VDD and 0 to drive these switches, for 
 miller compensation Capacitive DACs , Common mode voltage 
@@ -220,11 +220,11 @@ is around 0.5V , we cannot use VDD to the NMOS thin gate oxide
 so instead we drive it with 1.2V , for the LNA resistive feedback
 we used PMOS instead since VOCM is greater than 0.8V with VON = 0.4
 and VOFF = 1.6 and for the resistive feedback for second stage 
-VON =1.6V and VOFF=0V with nmos switchs (Figure~\ref{fig:VGA_DAC-eps})
+VON =1.6V and VOFF=0V with nmos switches (Figure~\ref{fig:VGA_DAC-eps})
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.8\textwidth]{VGA_DAC.eps}
-    \caption{VGA DACs variablity}
+    \caption{VGA DACs variability}
     \label{fig:VGA_DAC-eps}
 \end{figure}
 
@@ -235,7 +235,7 @@ VON =1.6V and VOFF=0V with nmos switchs (Figure~\ref{fig:VGA_DAC-eps})
 Simulation of full VGA is presented , input referred noise
 at max gain = 24$\mu V$ which is equivalent to 2.7 dB, results
 Figure~\ref{fig:DNL_across_states.png} shows a very small DNL
-$\leq 0.1dB$ which is expeceted from schematic results, BW apears
+$\leq 0.1dB$ which is expected from schematic results, BW appears
 to be constant around 625MHz Figure~\ref{fig:BW_across_state.png},
 also minimum phase margin  is 64 deg. , AC results summary is 
 shown in Table~\ref{tab:VGA_AC_results}
@@ -243,7 +243,7 @@ shown in Table~\ref{tab:VGA_AC_results}
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=1\linewidth]{images/AC_magnitude_plot_Vs_state.png}
-  \caption{Small singal gain vs frequency across states}
+  \caption{Small signal gain vs frequency across states}
   \label{fig:AC_magnitude_plot_Vs_state.png}
 \end{figure}
 
@@ -279,7 +279,7 @@ shown in Table~\ref{tab:VGA_AC_results}
     \caption{AC typical results summary}
     \label{tab:VGA_AC_results}
     \begin{tabular}{c|c}
-        \textbf{Paramter} & \textbf{Value}  \\
+        \textbf{Parameter} & \textbf{Value}  \\
          \toprule
         BW minimum & 625 MHz \\
         Max Gain & 39 dB \\
@@ -296,10 +296,10 @@ shown in Table~\ref{tab:VGA_AC_results}
 Two tone test with frequency 200MHz and 210MHz 
 (worst case linearity) with 1mV amplitude, results are shown 
 here in Figure~\ref{fig:OIP3_Vs_states_200MH.png} , this  variation
-in OIP3 is due to gain variablity since both LNA and resistive
+in OIP3 is due to gain variability since both LNA and resistive
 feedback stage acts as Amplifier-Attenuator architecture (meaning)
-constant IIP3 or more accurately Amplifier-Attenuator-Ampliefier
-Architecure, here is a comparison in 
+constant IIP3 or more accurately Amplifier-Attenuator-Amplifier
+Architecture, here is a comparison in 
 Figure~\ref{fig:Dummy_Amp_att_arch_compared.png}
 
 \begin{figure}[htbp]
@@ -318,7 +318,7 @@ Figure~\ref{fig:Dummy_Amp_att_arch_compared.png}
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=1\linewidth]{images/Dummy_Amp_att_arch_compared.png}
-  \caption{Dummy Amplifier-Attenuator-Ampliefier Vs real OIP3}
+  \caption{Dummy Amplifier-Attenuator-Amplifier Vs real OIP3}
   \label{fig:Dummy_Amp_att_arch_compared.png}
 \end{figure}
 
@@ -372,7 +372,7 @@ fast cold corner.
 \clearpage
 
 \section{Summary}%
-The final VGA acts as Amplifier-Attenuator-Ampliefier architecture,
+The final VGA acts as Amplifier-Attenuator-Amplifier architecture,
 which explains why linearity degrades with the states , here
 is the achieved specifications
 \begin{table}[htpb]
@@ -381,7 +381,7 @@ is the achieved specifications
     \label{tab:VGA_achieved_specs}
 
     \begin{tabular}{l c c c c}
-        \textbf{Paramter} & \textbf{Specification}  &
+        \textbf{Parameter} & \textbf{Specification}  &
         \textbf{Fast Cold corner}&\textbf{Typical}  &\textbf{Slow
         Hot corner} \\
         \toprule

@@ -1,7 +1,7 @@
 \chapter{Baseband Filter}%
 \section{Filter Specifications}%
 Baseband filter is the first block after the mixer and it's 
-main poprpuse is to reject the in-band blocker at 300MHz, a 
+main purpose is to reject the in-band blocker at 300MHz, a 
 second mode should be added to the filter in-order to work 
 for DPD (600MHz),
 Here are the specifications shown in 
@@ -12,7 +12,7 @@ Table~\ref{tab:filter_specs}
     \label{tab:filter_specs}
     \begin{tabular}{|c|c|}
         \hline
-        Paramter& Value  \\ \hline
+        Parameter& Value  \\ \hline
         Bandwidth (0.5dB) & 250MHz \\ \hline
         Rejection at (300MHz) & 30dB \\ \hline
         Gain & 0dB \\ \hline
@@ -28,7 +28,7 @@ Table~\ref{tab:filter_specs}
 
 \subsection{Performance Metrics for baseband filters}%
 \subsubsection{Rejection}%
-It's clear that the most imporntant metric of a filter is 
+It's clear that the most important metric of a filter is 
 how much rejection it provide to the unwanted signal.
 \subsubsection{Pass-band Bandwidth}%
 Bandwidth of the filter is also very important metric, it should 
@@ -37,7 +37,7 @@ reduce noise and power.
 \subsubsection{Group delay of the filter}%
 Group delay (eq~\ref{eq:group_delay})  is the measure of linearity
 of the phase response , a constant group delay indicates a linear
-phase response , meaning oall the signal components has the 
+phase response , meaning all the signal components has the 
 same delay \cite{Saari2012} ,in our case it's not very critical since group delay variation can be compensated in digital domain.
 \begin{equation}
     GD = \frac{d\phi}{dt}
@@ -62,20 +62,20 @@ referred noise is given by eq~\ref{eq:noise_figure_input_noise}
 
 \subsubsection{Linearity}%
 Non-linear distortion caused by inter-modulation products and 
-compression is very critical in our system specailly for this 
+compression is very critical in our system specially for this 
 filter since this is where the blocker should be filtered, 
 for our system required OIP3 = 16dBm.
 
 \subsection{Types of Filters}%
 \subsubsection{Passive and Active filters}%
-Filters can be catogrized into two main catagories: Passive filters
+Filters can be categorized into two main categories: Passive filters
 and Active filters.
 
 Passive filters are very linear (since it's passive) and
 consumes no power but offers 
 no gain and very large at low frequencies.\\
 On the other hand, active filters are more suitable for 
-low frequencies , but  have power consumption, the impelemented 
+low frequencies , but  have power consumption, the implemented 
 filter in this system is an active filter
 
 \subsubsection{Filter Approximations}%
@@ -93,7 +93,7 @@ in rad/s.
     |H(j\omega)|^2 = \frac{1}{1+(\frac{\omega}{\omega_c})^{2n}}
     \label{eq:butterworth_TF}
 \end{equation}
-\subsubsection{Cheybeshave filter}%
+\subsubsection{Chebyshev filter}%
 Chebyshev filters gives a better roll off in the cost of pass-band
 ripples and Group delay variation.
 \subsubsection{Bessel filter}%
@@ -105,29 +105,29 @@ Elliptic filter gives the steepest roll-off (stop-band rejection)
 but offers a very bad group delay variations, also Elliptic
 approximation has transmission zeros in its transfer function.
 
-\subsubsection{Active filters Impelementations}%
-There are mainly to approaches for impelementing active filters:
+\subsubsection{Active filters Implementations}%
+There are mainly to approaches for implementing active filters:
 using Bi-quad sections or LC-ladder simulation.\\
-For the Bi-quad sections impelementations are sallen-key ,
+For the Bi-quad sections implementations are sallen-key ,
 Multiple-feedback , etc. these sections are suitable for low 
 quality poles and low order filters because it has high components
 sensitivity. \\
 On the other hand LC-ladder simulation offers low components 
 sensitivity, there are two types of LC-ladder simulation one
 is called leap-frog which is based on integrators and the other
-is based on gyrators that simulate that transfer charactristics of
+is based on gyrators that simulate that transfer characteristics of
 inductors.
 
 \subsubsection{OPamp-RC Vs GM-C filters}%
 OPamp-RC technique is based on OPamps with RC feedback , this 
-technique is usaully linear (because of feedback) and its noise
+technique is usually linear (because of feedback) and its noise
 performance determined by the resistance , but since it depends
 on feedback it's not very good at high frequencies because of 
 stability.
 
 GM-C technique is based on OTA rather than full OPamp also it's 
 an open-loop technique this means it can work for higher frequency
-(no stability consedrations) , but it has a poor linearity.
+(no stability consecrations) , but it has a poor linearity.
 \cite{Saari2012_ch3}
 
 \section{Design Methodology}%
@@ -140,7 +140,7 @@ filter approximation is chosen, Magnitude response of this
 filter is shown at Figure~\ref{fig:Filter_Response_first} , this
 is the original elliptic filter response  , the highest quality
 factor of the poles is 8.9 , this is important since we will need
-in filter impelementation.
+in filter implementation.
 \begin{table}[htpb]
     \centering
     \caption{Filter Approximations order}
@@ -163,7 +163,7 @@ in filter impelementation.
 \end{figure}
 
 This filter approximation is changed later  to compensate losses
-and non-idealities of the actual impelementation , the final 
+and non-idealities of the actual implementation , the final 
 filter approximation compared with original one in pole-zero map
 is shown in Figure~\ref{fig:final_approx_Vs_orignal}, note that
 maximum pole quality factor is 6.2
@@ -177,14 +177,14 @@ maximum pole quality factor is 6.2
 \end{figure}
 \clearpage
 
-\subsection{Impelementation technique}%
+\subsection{Implementation technique}%
 \label{sub:Impelementation technique}
-After we chose filter approximation , a suitable impelementation
+After we chose filter approximation , a suitable implementation
 technique is required ,as discussed in Literature since we are 
-at baseband passive LC-ladder impelementation  is not possible 
-becuse of large inductor values 
+at baseband passive LC-ladder implementation  is not possible 
+because of large inductor values 
 Figure~\ref{fig:passive_LC_Ladder_filter} , instead active 
-impelementation is used Particalurly GM-C filter , because 
+implementation is used Particularly GM-C filter , because 
 of large bandwidth , also LC-Ladder simulation is used because of
 high quality factor of poles (Q $\geq$ 4) , Leap-frog is chosen,
 a simple (single-ended version) schematic for the filter is shown
@@ -193,7 +193,7 @@ in Figure~\ref{fig:GM_C_filter_simple_schem}.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\linewidth]{images/passive_LC_Ladder_filter.png}
-  \caption{Passive LC ladder impelementation (Large inductors)}
+  \caption{Passive LC ladder implementation (Large inductors)}
   \label{fig:passive_LC_Ladder_filter}
 \end{figure}
 
@@ -206,24 +206,24 @@ in Figure~\ref{fig:GM_C_filter_simple_schem}.
 \end{figure}
 
 After choosing filter topology , required specifications for the 
-GM-cell is specified using losses mapping technique discribed 
-in \cite{Losses_mapping}, actually this technique benifit is 
+GM-cell is specified using losses mapping technique described 
+in \cite{Losses_mapping}, actually this technique benefit is 
 very limited due to infinite quality factor of zeros, required
-internisic gain of GM cell $\approx$ 200 , and integrated input-referred noise for the filter $\leq 99 \mu V$ RMS from 
+intrinsic gain of GM cell $\approx$ 200 , and integrated input-referred noise for the filter $\leq 99 \mu V$ RMS from 
 equation~\ref{eq:noise_figure_input_noise}.
 
-\subsection{GM-Cell Impelementation}%
+\subsection{GM-Cell Implementation}%
 \label{sub:GM-Cell Impelementation}
 It's required to design a GM cell with low noise and high linearity
 and AV $\approx$ 200 , because of high linearity , a large swing
-output stage is required but non-dominant poles degrade quility
+output stage is required but non-dominant poles degrade quality
 of the integrator
 \subsubsection{Linearization technique}%
 \label{ssub:Linearization technique}
 First Linearization technique used is at filter level described
 in \cite{linearization_techinque_filter} , the idea is described
 be equation~\ref{eq:linearization_techinque} , this technique makes
-differentail swing smaller for the input pairs which make third 
+differential swing smaller for the input pairs which make third 
 order non-linearity better at the cost of common-mode swing.
 \begin{equation}
     GM(V_1^+ - V_1^-) - GM(V_3^+ - V_3^-)  = GM(V_1^+ - V_3^+) -
@@ -232,8 +232,8 @@ order non-linearity better at the cost of common-mode swing.
 \end{equation}
 
 Second Linearization technique used is a simple resistive
-degeneration  which degeades noise figure a little but improves 
-linearity for input pairs descirbed by equation~\ref{eq:HD3_res_degen} \cite{resistive_degeneration} , where $N = gm\ RS$
+degeneration  which degrades noise figure a little but improves 
+linearity for input pairs described by equation~\ref{eq:HD3_res_degen} \cite{resistive_degeneration} , where $N = gm\ RS$
 
 \begin{equation}
     HD_3 = \frac{1}{32} \left[ \frac{v_{id}}{(1+N)(V_{dsat})} 
@@ -262,7 +262,7 @@ First simulation of GM-cell alone , paramters are shown in Table~\ref{tab:gm_cel
 
     \begin{tabular}{|c|c|}
         \hline
-        Paramter &  Value \\ \hline
+        Parameter &  Value \\ \hline
         DC gain (linear) & 170.5  \\ \hline
         Integrated input referred noise (up to 200MHz)
                          & 46.7 $\mu V$ \\ \hline
@@ -288,7 +288,7 @@ Figure~\ref{fig:group_delay}.
 \end{figure}
 
 Integrated input referred noise up to 200MHz = 90.5$\mu V$ ,but 
-full band 114.5$\mu V$ , suumary of AC results shown in 
+full band 114.5$\mu V$ , summary of AC results shown in 
 Table~\ref{tab:filter_AC_summary}.
 \begin{table}[htpb]
     \centering
@@ -297,7 +297,7 @@ Table~\ref{tab:filter_AC_summary}.
 
     \begin{tabular}{|c|c|}
         \hline
-        Paramter& Value \\ \hline
+        Parameter& Value \\ \hline
         DC gain & -0.6 dB \\ \hline
         BW & 250 MHz  \\ \hline
         Rejection at 300MHz & -30 dB \\ \hline
@@ -308,7 +308,7 @@ Table~\ref{tab:filter_AC_summary}.
 
 \subsection{HB simulation}%
 \label{sub:HB simulation}
-For HB simulation two tones with 1mV peak amplitude is seperated by
+For HB simulation two tones with 1mV peak amplitude is separated by
 10MHz are used.
 
 As shown in Figure~\ref{fig:filter_oip3_vs_freq}, OIP3 varies very much with frequency , this is for two reasons ,
@@ -360,7 +360,7 @@ frequency, layout of the filter is missing.
     \label{tab:filter_specs_achieved}
     \begin{tabular}{l c c}
         \toprule
-    \textbf{Paramter} & \textbf{Specifications} & 
+    \textbf{Parameter} & \textbf{Specifications} & 
     \textbf{Achieved} \\ \hline
     Gain & 0 dB & -0.6 dB \\ \hline
     BW & 250 MHz &  250 MHz \\ \hline

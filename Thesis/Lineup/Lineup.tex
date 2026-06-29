@@ -1,11 +1,11 @@
-\chapter{System Level Analyis}%
+\chapter{System Level Analysis}%
 \section{Original Lineup}%
 \subsection{Overview}%
 
-Here is the system requirements, it's a Macro-cell basestation 
-reciever  with multi-standards , RF frequency Band from 400MHz 
-to 8GHz  with RF Bandwidth of 400MHz , the reciever is a
-direct conversion reciever with intended Baseband Bandwidth  of 
+Here is the system requirements, it's a Macro-cell base station 
+receiver  with multi-standards , RF frequency Band from 400MHz 
+to 8GHz  with RF Bandwidth of 400MHz , the receiver is a
+direct conversion receiver with intended Baseband Bandwidth  of 
 200MHz , but due to Digital pre-distortion bandwidth is increased
 to 600MHz,here is the original Lineup specifications shown in Figure~\ref{fig:orignal_lineup} , 
 Table~\ref{tab:original_specs} and Table~\ref{tab:original_ADC_specs}
@@ -41,7 +41,7 @@ for ADC.
     % \textwidth forces the table to fit your exact page margins
     \begin{tabular}{l c c} 
         \toprule
-        \textbf{Paramter} & \textbf{Value} & \textbf{Unit} \\
+        \textbf{Parameter} & \textbf{Value} & \textbf{Unit} \\
         \midrule
         Input referred full-scale & -10 & dBm \\
         Resolution & 10 & bits \\ 
@@ -53,13 +53,13 @@ for ADC.
 
 It's clear from the specifications for the RF chain that it's 
 requires very high linearity, this is mainly due to the large 
-in-band blocker, our Analyis will focus on only one CW blocker
+in-band blocker, our Analysis will focus on only one CW blocker
 that has -15dBm power described in LTE standard \cite{3gpp_ts36104_blocking}.
 
-\subsection{Cascade Analyis}%
+\subsection{Cascade Analysis}%
 At Maximum Gain : Noise figure = 2.05dB , IIP3 = -9.97dBm , 
 Gain = 22dB.\\
-This means sensitivity of this reciever (Assuming minimum 
+This means sensitivity of this receiver (Assuming minimum 
 accepted SNR = 0dB).
 \begin{equation}
     P_{noise_{RF}} = -174 + NF  + 10*\log(BW_{RF})
@@ -114,7 +114,7 @@ of Baseband VGA.
 
 \subsubsection{Baseband VGA}%
 Since linearity is a big issue (under blocking) , we can't put 
-large gain in the RF chain , so the remainng gain is added in
+large gain in the RF chain , so the remaining gain is added in
 baseband after the filter which lead to the second modification
 which is the filter in the baseband
 \subsubsection{Modification to the filter}%
@@ -129,7 +129,7 @@ shown in Table~\ref{tab:filter_new_specs}
     \label{tab:filter_new_specs}
     \begin{tabular}{|c|c|}
         \hline
-        Paramter& Value  \\ \hline
+        Parameter& Value  \\ \hline
         Bandwidth (0.5dB) & 250MHz \\ \hline
         Rejection at (300MHz) & 30dB \\ \hline
         Bandwidth (Mode 2) & 600MHz \\ \hline
@@ -146,26 +146,26 @@ Table~\ref{tab:LNA_new_specs}
     \label{tab:LNA_new_specs}
     \begin{tabular}{|c|c|}
         \hline
-        Paramter & Value \\ \hline
+        Parameter & Value \\ \hline
         OIP3 & 25 dBm \\ \hline
         NF & 1 dB \\ \hline
         Gain & 22 dB \\ \hline
     \end{tabular}
 \end{table}
 \subsubsection{RF Amplifier}%
-Since LNA gain is reduced in the RF chain alot of losses can 
-degrade reciever noise figure , so an RF Amplifier is added 
+Since LNA gain is reduced in the RF chain a lot of losses can 
+degrade receiver noise figure , so an RF Amplifier is added 
 to compensate for these losses.
 
 \subsubsection{ADC power modification}%
 Originally $P_{FS}$ for the ADC was -10dBm , which is suitable 
 for sigma-delta ADCs with low Bandwidth , but since Bandwidth is 
-increased to 600MHz (due to DPD) it was hard to impelement 
+increased to 600MHz (due to DPD) it was hard to implement 
 $\Sigma - \Delta $ ADC , so we switched to SAR ADC , but SAR 
 ADC requires full swing, so $P_{FS}$ is changed to 14dBm instead
 of -10dBm , also total chain gain is increased by 24dB.
 
-\subsection{Final Linup specifications}%
+\subsection{Final Lineup specifications}%
 Final Receiver chain specifications are shown in 
 Table~\ref{tab:final_specs}.\\
 At max gain : gain = 57dB , NF = 1.87 dB , IIP3 = -32 dBm.\\
@@ -194,7 +194,7 @@ At min gain : gain = 24dB , NF = 12.6 dB , IIP3 = -1.52 dBm.
 \subsection{Simulation setup}%
 For simulation setup , what we want to achieve is the SNR ,SDR and
 SNDR , that is the required output of the simulation , 
-for simulating SDR and non-linearites , power series (Memoriless-
+for simulating SDR and non-linearities , power series (Memoryless-
 Non-linear model ) is used equation~\ref{eq:lineup_power_series}
 \begin{equation}
     V_{out} = \alpha_1 V_{in} + \alpha_2 V_{in}^2 + \alpha_3 
@@ -203,11 +203,11 @@ Non-linear model ) is used equation~\ref{eq:lineup_power_series}
 \end{equation}
 Also ADC noise is referred to the input according to equation~\ref{eq:noise_ADC}
 
-This approach has some benifits like it takes the accounts for
-not only IM3 but Gain compression and reciever desenstization
+This approach has some benefits like it takes the accounts for
+not only IM3 but Gain compression and receiver desensitization
 due to blockers , also it takes account for IM2s , so results 
-from this simulation gives specification on small singal IP3 that
-are approximatly valid for large signal (ignoring $\alpha_5$).
+from this simulation gives specification on small signal IP3 that
+are approximately valid for large signal (ignoring $\alpha_5$).
 
 For Noise simulation Friis formula is used instead 
 equation~\ref{eq:friis_formula_noise}
@@ -217,19 +217,19 @@ equation~\ref{eq:friis_formula_noise}
     \label{eq:friis_formula_noise}
 \end{equation}
 Signal paramters are shown in Table~\ref{tab:signal_paramters}, a
-picture of Non-linearties output spectrum of the reciever it 
+picture of Non-linearities output spectrum of the receiver it 
 appears IM3 with signal itself , IM3 with blocker , IM2 and
 DC component, Note that this spectrum is double sided we are 
 only showing one side , also note that  Blackman Harris windowing
-is used (it apears like 3dB less).
+is used (it appears like 3dB less).
 
 \begin{table}[htpb]
     \centering
-    \caption{Signal Paramter Table}
+    \caption{Signal Parameter Table}
     \label{tab:signal_paramters}
     \begin{tabular}{|c|c|}
         \hline
-        Paramter &  Value \\ \hline 
+        Parameter &  Value \\ \hline 
         RF tone 1 & 1.17GHz \\ \hline
         RF tone 2 & 1.18GHz \\ \hline
         CW blocker Power & -15 dBm \\ \hline
@@ -243,15 +243,15 @@ is used (it apears like 3dB less).
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=1\linewidth]{images/Spectrum_Non_linearity.png}
-  \caption{Output spectrum (Non-linearties) signal total
+  \caption{Output spectrum (Non-linearities) signal total
   power = -47dBm }
   \label{fig:Spectrum_Non_linearity.png}
 \end{figure}
 
 \subsection{Gain Policy}%
 For the gain policy , two power detectors are placed , one at 
-the output before ADC and the other afeter the mixer before LPF,
-this power detector gives informations about the blocker existance.
+the output before ADC and the other after the mixer before LPF,
+this power detector gives informations about the blocker existence.
 
 \subsubsection{Attenuation Policy:}%
 \label{ssub:Attenuation Policy:}
@@ -275,7 +275,7 @@ so final condition for Attenuation is given by
     P_{out} + P_{at\ mixer}  \geq 2 OIP3_{till \ LPF} + G_{VGA} - G_{LPF} - X
     \label{eq:DSA_atten_cond}
 \end{equation}
-Where X is some value chosen arbitrarly,when this condition
+Where X is some value chosen arbitrary,when this condition
 happens start Attenuation from first DSA, otherwise Attenuation 
 starts with the baseband VGA when $P_{ADC}$ reaches maximum
 
@@ -325,7 +325,7 @@ blocker and the condition at \ref{eq:DSA_atten_cond} is not satisfied.
 \subsubsection{Under blocking}%
 \label{ssub:Under blocking}
 Here results under blocking  , note that when the blocker exists DSA 1
-attenuate 3dB inorder to overcome RF Amp compression (Figure~\ref{fig:DSA1_Gain_policy_under_blocking.png}),
+attenuate 3dB in order to overcome RF Amp compression (Figure~\ref{fig:DSA1_Gain_policy_under_blocking.png}),
 Also DSA 1 starts the Attenuation because condition described by equation~\ref{eq:DSA_atten_cond} is satisfied.
 
 \begin{figure}[!h]
