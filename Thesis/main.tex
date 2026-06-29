@@ -8,7 +8,21 @@
 \usepackage{graphicx}
 \usepackage{tocloft}
 \usepackage[export]{adjustbox}
+%\usepackage{epstopdf}
+%% Yassin 
+%\usepackage{float} % For [H] float placement
+%\usepackage{bmpsize}
+%%%
 
+%%%%%
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage[american]{circuitikz}
+\usepackage{algorithm}      % the floating "Algorithm 1" box + caption + numbering
+\usepackage{algpseudocode}
+\usepackage{booktabs}
+\usepackage{siunitx}
+%%%%%
 \usepackage{booktabs} %Added By badawy
 \usepackage{tabularx} %Added By badawy
 
@@ -19,7 +33,7 @@
 
 % --- Global Image Paths ---
 % Tells LaTeX to search these specific subfolders for images automatically
-\graphicspath{{chapter1/images/}{Lineup/images/}{chapter3/images/}{FILTER/images}{VGA/images/}{chapter5/images}}
+\graphicspath{{./chapter1/images/}{./Lineup/images/}{./chapter3/images/}{./FILTER/images/}{./VGA/images/}{./chapter5_Yassin/images/}{./chapter4/images/} {./chapter6/images/}}
 
 % --- Formatting Configurations ---
 \onehalfspacing % 1.5 Line spacing 
@@ -41,6 +55,9 @@
 \addbibresource{FILTER/refs.bib}
 \addbibresource{VGA/refs.bib}
 %\addbibresource{chapter3/refs.bib} % Uncomment as teams add folders
+\addbibresource{chapter4/refs.bib}
+\addbibresource{chapter5_Yassin/refs.bib}
+\addbibresource{chapter6/refs.bib}
 
 \begin{document}
 
@@ -58,9 +75,13 @@
 \pagenumbering{arabic}
 
 % Dynamically pull chapters from independent folders
-\input{chapter1/chapter1.tex}
+%\input{chapter1/chapter1.tex}
 \input{Lineup/Lineup.tex}
-\input{chpater3/chapter3.tex}
+%\input{chpater3/chapter3.tex}
+\input{chapter4/chapter4.tex}
+\input{chapter5_Yassin/chapter5.tex}
+\input{chapter6/chapter6.tex}
+\input{thesis_chapter_latex/chapter_power_divider_mixer.tex}
 \input{FILTER/filter.tex}
 \input{VGA/VGA.tex}
 \input{chapter5/chapter5.tex}

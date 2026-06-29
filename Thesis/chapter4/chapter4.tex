@@ -1,0 +1,493 @@
+
+\chapter{Digital Step Attenuator (DSA)}
+\label{ch:dsa}
+\raggedbottom
+
+Digital Step Attenuators are widely used in both receiver (Rx) and transmitter (Tx) architectures to handle large variations in signal power and achieve a wide dynamic range. They provide broadband operation, low power consumption, high power-handling capability, and precise attenuation control. Additionally, attenuators offer relatively constant input and output impedances over a wide frequency range, which helps maintain good impedance matching between circuit blocks. By implementing attenuation states using CMOS digitally controlled switches, the attenuation level can be adjusted in discrete steps. Key performance metrics of a DSA include Insertion Loss, Attenuation Step Size, Maximum Attenuation, Input and Output Matching, Linearity, Differential Nonlinearity (DNL), and Bandwidth. Different topologies used are discussed in the literature review~\cite{4639533,8354931}.
+
+%=============================================================
+\section{Literature Review}
+\label{sec:lit_review}
+
+\subsection{Different Attenuator Topologies}
+\label{subsec:topologies}
+
+\subsubsection{Switched Path Attenuator}
+\label{subsubsec:switched_path}
+
+Switched-path attenuators employ \textbf{single-pole double-throw (SPDT)} switches to route the signal either through a low-loss transmission path (thru path) or through a resistive attenuation network, typically implemented using \textbf{$\pi$} or \textbf{T} attenuator structures. Since the resistive network is isolated from the input and output nodes when not selected, this topology exhibits very low phase variation and excellent wideband performance.
+
+However, switched-path attenuators suffer from relatively high insertion loss in the reference (minimum attenuation) state. In multi-bit implementations, the signal must pass through several cascaded SPDT or DPDT switches, resulting in cumulative switch losses. Additionally, the large number of switches increases the required chip area and design complexity. Due to these drawbacks, particularly the high insertion loss and increased area consumption, the switched-path topology is generally not preferred for applications where low loss and compact implementation are critical.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.7\textwidth]{1.png}
+    \caption{Switched path attenuator topology}
+    \label{fig:switched_path}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsubsection{Distributed Attenuators}
+\label{subsubsec:distributed}
+
+Distributed attenuators consist of multiple attenuation cells, where each cell typically includes a shunt resistor connected to ground through an NMOS switch. Adjacent cells are separated by quarter-wavelength ($\lambda/4$) transmission lines. These transmission lines act as impedance inverters, helping to maintain impedance matching between the cells and across the attenuator structure.
+
+Since this topology does not require SPDT or DPDT switches in the main signal path, it can achieve relatively low insertion loss compared to switched-path attenuators. However, distributed attenuators are generally limited to low attenuation values and are not well-suited for implementing high-attenuation states. Furthermore, the quarter-wavelength transmission lines are inherently frequency-dependent, providing optimum performance only around their design frequency. As a result, the achievable bandwidth is limited. Additionally, the use of multiple transmission lines leads to a large chip area. Due to these limitations, distributed attenuators are primarily suitable for narrowband applications rather than wideband systems.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.7\textwidth]{2.png}
+    \caption{Distributed attenuator}
+    \label{fig:distributed}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsubsection{Switched T Attenuator}
+\label{subsubsec:switched_T}
+
+This topology uses two series resistors in the signal path and a shunt branch consisting of a resistor connected to ground through an NMOS switch at the intermediate node. The desired attenuation is achieved by appropriately selecting the resistor values and controlling the NMOS switch. The T-type attenuator offers a compact area size and relatively low insertion loss, making it attractive for integrated RF applications. Due to the parasitic capacitances of NMOS, amplitude and phase variations may occur across the operating frequency range, limiting the achievable bandwidth compared to switched-path attenuators.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.4\textwidth]{3.png}
+    \caption{Switched T attenuator}
+    \label{fig:switched_T}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsubsection{Bridged-T Attenuator}
+\label{subsubsec:bridged_T}
+
+The Bridged-T attenuator is derived from the conventional T attenuator by adding an additional bridging resistor between the input and output nodes. This extra path provides an alternative signal path that modifies the attenuation characteristics while helping maintain impedance matching. The Bridged-T topology can achieve relatively large attenuation values with fewer switching elements and often exhibits lower insertion loss in certain attenuation states compared to a conventional T attenuator.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.4\textwidth]{4.png}
+    \caption{Bridged-T attenuator}
+    \label{fig:bridged_T}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsubsection{Switched $\pi$ Attenuator}
+\label{subsubsec:switched_pi}
+
+The switched $\pi$ attenuator employs a $\pi$-shaped resistive network consisting of two shunt branches and a series resistor. Compared to the T attenuator, the intermediate node is effectively split into two separate nodes, reducing the parasitic capacitance associated with a single central node. This reduction in parasitic loading improves the high-frequency response and helps maintain more consistent attenuation over a wider frequency range. As a result, the switched $\pi$ attenuator can achieve better broadband performance than the T attenuator~\cite{4639533}. However, it requires two branches and careful optimization to maintain good impedance matching and low insertion loss across all attenuation states.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.4\textwidth]{fig5.png}
+    \caption{$\pi$ attenuator}
+    \label{fig:pi_att}
+\end{figure}
+
+%=============================================================
+\subsection{DSA Architectures}
+\label{subsec:architectures}
+
+\subsubsection{Thermometer Attenuator Architecture}
+\label{subsubsec:thermometer}
+
+This architecture uses a standard attenuation cell as a building block, and different attenuation values are realized by combining multiple identical cells. This modular structure simplifies the design process and improves layout regularity, which can lead to better matching, easier integration, and more predictable performance. However, since the signal passes through multiple attenuation cells with switches, this leads to higher insertion loss and larger area.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.75\textwidth]{fig6.png}
+    \caption{thermometer  attenuator architecture}
+    \label{fig:thermometer}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsubsection{Binary-Weighted Attenuator Architecture}
+\label{subsubsec:binary_weighted}
+
+Binary-weighted architecture uses attenuation cells with different weights, typically following a binary progression (e.g., 1\,dB, 2\,dB, 4\,dB, 8\,dB). This approach reduces the number of required cells and switches compared to thermometer architectures, leading to a more compact area design and lower insertion loss. However, since each bit contributes differently to the total attenuation, this architecture is more sensitive to device mismatches and process variations. As a result, it may exhibit higher Differential and Integral Nonlinearity (DNL/INL) and reduced monotonicity compared to thermometer implementations.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.65\textwidth]{fig7.png}
+    \caption{Binary-weighted attenuator architecture}
+    \label{fig:binary_weighted}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsubsection{Segmented Attenuator Architecture}
+\label{subsubsec:segmented}
+
+The segmented attenuator architecture combines both thermometer-coded and binary-weighted structures to achieve a trade-off between the advantages of each approach. Typically, the lower attenuation bits are implemented using thermometer coding to ensure good matching, monotonicity, and reduced quantization error, while the higher attenuation bits are implemented using binary-weighted cells to reduce the total number of switches and minimize area and insertion loss.
+
+%=============================================================
+\section{Proposed Design}
+\label{sec:proposed_design}
+
+Due to the requirement for wideband performance and compact area, a switched $\pi$ attenuator is selected as the core topology. The $\pi$ structure provides improved high-frequency behaviour, better bandwidth, and lower insertion loss compared to the T-type attenuator, while maintaining a relatively compact implementation. For more optimized insertion loss, a binary-weighted architecture is employed for the attenuation control~\cite{8354931}. This approach reduces the number of cascaded cells compared to segmented implementations, thereby minimizing the overall signal path loss and improving power efficiency. The combination of a switched $\pi$ topology with binary-weighted control offers a good trade-off between bandwidth, chip area, and insertion loss for the proposed DSA design. The design is optimized for $Z_0 = 50\,\Omega$ differential.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.85\textwidth]{fig8.png}
+    \caption{Proposed architecture design}
+    \label{fig:proposed_arch}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.5\textwidth]{fig9.png}
+    \caption{Proposed topology}
+    \label{fig:proposed_topo}
+\end{figure}
+
+The resistor values for each attenuation cell are summarized in Table~\ref{tab:resistor_values}.
+
+\begin{table}[H]
+    \centering
+    \caption{Resistor values for each attenuation cell}
+    \label{tab:resistor_values}
+    \begin{tabular}{lcccc}
+        \hline
+        \textbf{Attenuation} & \textbf{1\,dB} & \textbf{2\,dB} & \textbf{4\,dB} & \textbf{8\,dB} \\
+        \hline
+        $R_s\,(\Omega)$ & 3.5   & 7     & 132.6 & 69.7  \\
+        $R_p\,(\Omega)$ & 521   & 262   & 14.3  & 31.7  \\
+        \hline
+    \end{tabular}
+\end{table}
+
+%=============================================================
+\section{Design Challenges}
+\label{sec:design_challenges}
+
+\subsection{Trade-off Between Minimum Insertion Loss and Frequency}
+\label{subsec:IL_freq_tradeoff}
+
+Decreasing $R_\text{on}$ of the series switch leads to decreasing the minimum insertion loss. This is achieved by increasing the series device width, which results in larger parasitic capacitance, causing roll-off in both the attenuation state and insertion loss state. As a result, there is a fundamental trade-off between achieving low insertion loss and maintaining wideband frequency response in CMOS-based attenuator designs.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.75\textwidth]{fig10.png}
+    \caption{(b) Insertion loss state and (c) attenuation state}
+    \label{fig:IL_att_states}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.65\textwidth]{fig11.png}
+    \caption{Minimum insertion loss vs.\ frequency}
+    \label{fig:IL_vs_freq}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Non-Linearity}
+\label{subsec:nonlinearity}
+
+To enhance linearity, 6-terminal NMOS devices are used with the bulk floating through a large resistance. This allows the parasitic capacitances to be floated, leading to better linearity.
+
+Leaving the control gate without a large resistance creates a virtual ground at AC, which short-circuits $C_{gs}$, causing all the voltage swing to appear at the drain. Adding a large resistance at the gate makes it an open circuit at AC, allowing the swing to be divided between $C_{gs}$ and $C_{gd}$, which reduces the drain swing and thereby improves linearity.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.5\textwidth]{fig12.png}
+    \caption{Shunt device after $R_G$}
+    \label{fig:shunt_RG}
+\end{figure}
+
+For further linearity improvement, replacing the single shunt device with two stacked shunt devices helps reduce the drain swing further by dividing it. To maintain the same $R_\text{on}$, the width of each device is doubled, halving the $R_\text{on}$ of each individual device and keeping the combined $R_\text{on}$ constant.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.5\textwidth]{fig13.png}
+    \caption{Two stacked shunt devices}
+    \label{fig:two_shunt}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Matching the Input and Output at the Low Attenuation State}
+\label{subsec:matching}
+
+The input and output matching is optimized for most attenuation states; however, the insertion loss state and the first attenuation state exhibited the worst $S_{11}$ and $S_{22}$. In the insertion loss state, all shunt devices are off, resulting in a large series resistance with no shunt resistance. This increases the effective impedance and causes a mismatch to $Z_0$. This is mitigated by increasing the width of the series devices to reduce their $R_\text{on}$, and by decreasing the series resistance.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=0.65\textwidth]{fig14.png}
+    \caption{Series resistance in the insertion loss state}
+    \label{fig:series_res}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Response Across Process and Temperature Corners}
+\label{subsec:corners}
+
+Variations in process and temperature corners cause changes in resistance values and transistor parameters, which affect the attenuation accuracy of the DSA. These variations can lead to deviations from the target attenuation levels, resulting in increased Differential Nonlinearity (DNL) and degradation of matching between attenuation states. To minimize these effects, low-mismatch resistor structures were selected, and the resistor dimensions ($L$ and $W$) were increased. Larger resistor area reduces the impact of random process variations and improves matching accuracy, leading to more stable attenuation values across process and temperature corners.
+
+%=============================================================
+\section{Proposed Layout}
+\label{sec:layout}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig15.png}
+    \caption{Proposed layout of the attenuator cell}
+    \label{fig:cell_layout}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth]{fig16.png}
+    \caption{Full DSA layout}
+    \label{fig:full_layout}
+\end{figure}
+
+%=============================================================
+\section{Post-Layout Results}
+\label{sec:post_layout}
+
+\subsection{Return Loss}
+\label{subsec:return_loss}
+
+As expected, the DSA provides good wideband matching at both input and output. The matching is further improved by reducing the series resistance as described in Section~\ref{subsec:matching}.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig17.png}
+    \caption{$S_{11}$ vs.\ frequency for different attenuation states}
+    \label{fig:S11_typical}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig18.png}
+    \caption{$S_{22}$ vs.\ frequency for different attenuation states}
+    \label{fig:S22_typical}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Attenuation States Across Frequency}
+\label{subsec:att_states}
+
+The insertion loss is minimized and successfully meets the required specification. This performance was optimized by reducing the on-resistance ($R_\text{on}$) of the series switches without degrading the Differential Nonlinearity (DNL). Furthermore, an almost 1\,dB step size is successfully maintained across the entire operating frequency band without large DNL.
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig19.png}
+    \caption{attenuation States across frequency}
+    \label{fig:Attenuation states tt}
+\end{figure}
+%-------------------------------------------------------------
+\subsection{Differential Nonlinearity (DNL)}
+\label{subsec:DNL}
+
+Differential Nonlinearity (DNL) quantifies the deviation of the achieved attenuation steps from the ideal step. For a 1\,dB step size, it measures the deviation of the actual step from the ideal 1\,dB step:
+\begin{equation}
+    \text{DNL}_i = \frac{A_\text{actual} - A_\text{ideal}}{A_\text{ideal}}
+    \label{eq:DNL}
+\end{equation}
+
+The achieved DNL is excellent for almost all states and all frequencies. The highest DNL occurs at the upper end of the wideband at 8\,GHz for two states only; however, it still achieves a good DNL of less than a quarter of the step size. This was further optimized during the DSA and amplifier integration, as the high-frequency impedance shift of the DSA and amplifier together maintains good matching.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig20.png}
+    \caption{DNL across attenuation states for different frequencies}
+    \label{fig:DNL_typical}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Noise Figure Across Frequency and Attenuation States}
+\label{subsec:NF}
+
+The Noise Figure (NF) equals the attenuation loss as expected, since the DSA is well matched.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig21.png}
+    \caption{NF across frequency for different attenuation states}
+    \label{fig:NF_typical}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{OIP3 vs.\ Frequency}
+\label{subsec:OIP3}
+
+The OIP3 is characterized at the reference insertion loss (IL) state. It successfully satisfies the linearity target, maintaining an OIP3 above 35\,dBm from 2\,GHz up to 8\,GHz. Within the lower sub-2\,GHz to 400\,MHz range, the block consistently exhibits robust high-linearity performance. This linearity enhancement is primarily achieved by employing a stacked-transistor topology and using a large gate resistance $R_G$.
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig22.png}
+    \caption{OIP3 vs.\ Frequency for the IL state}
+    \label{fig:OIP3}
+\end{figure}
+
+\subsection{OP1dB vs.\ Frequency}
+\label{subsec:Op1dB}.
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{OP1DB_dsa.png}
+    \caption{OP1dB vs.\ Frequency for the IL state}
+    \label{fig:OP1dB}
+\end{figure}
+%=============================================================
+\section{Post-Layout Response Across Corners}
+\label{sec:corners_results}
+
+\subsection{FF/Cold Corner}
+\label{subsec:ff_cold}
+
+\subsubsection{Return Loss --- FF/Cold}
+\label{subsubsec:RL_ff_cold}
+
+The FF/Cold corner reduces the series resistance, which helps reduce the series resistance in the IL state as described earlier. This improves input and output matching and keeps the DNL close to the typical value.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig23.png}
+    \caption{$S_{11}$ for FF/Cold across frequency with attenuation states}
+    \label{fig:S11_ff_cold}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig24.png}
+    \caption{$S_{22}$ for FF/Cold across frequency with attenuation states}
+    \label{fig:S22_ff_cold}
+\end{figure}
+
+\subsubsection{Attenuation States --- FF/Cold}
+\label{subsubsec:att_ff_cold}
+
+Insertion loss and all attenuation states decrease (shift upward) due to the reduction of $R_\text{on}$ of the series switches, caused by a lower $V_\text{th}$ and increased overdrive voltage.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig25.png}
+    \caption{Attenuation states for FF/Cold vs.\ frequency}
+    \label{fig:att_ff_cold}
+\end{figure}
+
+\subsubsection{DNL --- FF/Cold}
+\label{subsubsec:DNL_ff_cold}
+
+The DNL achieves good values close to the typical corner, remaining below a quarter of the step size.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig26.png}
+    \caption{DNL for FF/Cold across attenuation states}
+    \label{fig:DNL_ff_cold}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{SS/Hot Corner}
+\label{subsec:ss_hot}
+
+\subsubsection{Return Loss --- SS/Hot}
+\label{subsubsec:RL_ss_hot}
+
+As discussed in Section~\ref{subsec:matching}, increasing the switch on-resistance in the insertion loss state leads to a large series resistance, which degrades input and output matching.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig27.png}
+    \caption{$S_{11}$ for SS/Hot across frequency with attenuation states}
+    \label{fig:S11_ss_hot}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig28.png}
+    \caption{$S_{22}$ for SS/Hot across frequency with attenuation states}
+    \label{fig:S22_ss_hot}
+\end{figure}
+
+\subsubsection{Attenuation States --- SS/Hot}
+\label{subsubsec:att_ss_hot}
+
+Insertion loss and all attenuation states increase (shift downward) due to the increase of $R_\text{on}$ of the series switches, caused by a higher $V_\text{th}$ and reduced overdrive voltage.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig29.png}
+    \caption{Attenuation states for SS/Hot vs.\ frequency}
+    \label{fig:att_ss_hot}
+\end{figure}
+
+\subsubsection{DNL --- SS/Hot}
+\label{subsubsec:DNL_ss_hot}
+
+This response is measured at a fixed ideal output port with $Z_0 = 50\,\Omega$ differential. DNL remains good in almost all states and frequencies; only two steps show degradation, but they remain below half the step size, which still meets the requirement. This is further improved by replacing the port with the integrated amplifier, as the amplifier impedance tracks with the DSA as shown below.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig30.png}
+    \caption{DNL for SS/Hot across attenuation states}
+    \label{fig:DNL_ss_hot}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig31.png}
+    \caption{DNL for SS/Hot across attenuation states after integration}
+    \label{fig:DNL_ss_hot_integrated}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{OIP3 vs.\ Frequency Across Corners}
+\label{subsec:OIP3_corners}
+
+OIP3 increases in the SS/Hot corner due to the higher insertion loss, and decreases in the FF/Cold corner due to the lower insertion loss.
+
+\begin{figure}[H]
+    \centering
+    \vspace{-4pt}
+    \includegraphics[width=\textwidth,
+    height=8cm]{fig32.png}
+    \caption{OIP3 across frequency for FF/Cold and SS/Hot corners}
+    \label{fig:OIP3_corners}
+\end{figure}
+%\renewcommand{\bibname}{References}
+%\bibliographystyle{ieeetr}
+%\bibliography{chapter4/refs}
